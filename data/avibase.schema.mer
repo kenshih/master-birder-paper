@@ -1,0 +1,65 @@
+erDiagram
+    AvibaseID }|..|{ OriginalConcepts : is-a
+    AvibaseID ||--o{ ParentChildRelationships : parent
+    AvibaseID ||--o{ ParentChildRelationships : child
+    AvibaseID ||--o{ OtherRelationships : has
+    AvibaseID ||--o{ OtherRelationships : toRelation
+    TaxanomicConcepts ||--|{ OriginalConcepts : are
+    NameConcepts ||--o{ TaxanomicConcepts : are
+    AvibaseID ||--o{ Synonyms : has
+    AvibaseID ||--o{ LifeHistory : has
+    AvibaseID ||--o{ GeoGraphicRange : has
+    AvibaseID {
+        Avibase_ID 🔑 PK
+        Concept_label str
+    }
+    ParentChildRelationships {
+        Avibase_ID 🔑 FK
+        Version 🔑
+        Parent_ID id FK
+        FractWeight float
+    }
+    OriginalConcepts {
+        Avibase_ID 🔑 FK
+        Concept_ID id FK
+    }
+    TaxanomicConcepts {
+        Concept_ID 🔑 PK
+        Avibase_ID id FK
+        Taxon_Name_ID id FK
+        Authority str
+        Scientific_Name str
+        Common_Name str
+        Higher_Classification str
+        
+    }
+    NameConcepts {
+        Taxon_Name_ID 🔑 PK
+        Protonym str
+        Authors arr
+        Year int
+        Publication_Source str
+        TSN id
+    }
+    LifeHistory {
+        Avibase_ID cid FK
+        Trait cid FK
+        Reference cid FK
+        Value str
+    }
+    GeoGraphicRange {
+        Avibase_ID id FK
+        Region id FK
+        Status enum    
+    }
+    OtherRelationships {
+        Avibase_ID id FK
+        Related_ID id FK
+        Relationship_Type enum
+    }
+    Synonyms {
+        Avibase_ID id FK
+        Language id FK
+        Synonym id FK
+        Reference str
+    }
