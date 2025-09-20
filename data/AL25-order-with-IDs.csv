@@ -1,0 +1,47 @@
+concept_id,Sequence,Taxon_rank,Order,Scientific_name,Proposal_number,Decision_summary,AvibaseID,taxon_name_id
+ORDER-1,1,order,Struthioniformes,Struthioniformes,,,avibase-order-1,taxonname-order-1
+ORDER-10,10,order,Casuariiformes,Casuariiformes,,,avibase-order-10,taxonname-order-10
+ORDER-24,24,order,Apterygiformes,Apterygiformes,,,avibase-order-24,taxonname-order-24
+ORDER-34,34,order,Rheiformes,Rheiformes,,,avibase-order-34,taxonname-order-34
+ORDER-47,47,order,Tinamiformes,Tinamiformes,,,avibase-order-47,taxonname-order-47
+ORDER-230,230,order,Anseriformes,Anseriformes,,,avibase-order-230,taxonname-order-230
+ORDER-588,588,order,Galliformes,Galliformes,,,avibase-order-588,taxonname-order-588
+ORDER-1613,1613,order,Phoenicopteriformes,Phoenicopteriformes,,,avibase-order-1613,taxonname-order-1613
+ORDER-1626,1626,order,Podicipediformes,Podicipediformes,,,avibase-order-1626,taxonname-order-1626
+ORDER-1701,1701,order,Musophagiformes,Musophagiformes,,,avibase-order-1701,taxonname-order-1701
+ORDER-1761,1761,order,Otidiformes,Otidiformes,,,avibase-order-1761,taxonname-order-1761
+ORDER-1830,1830,order,Cuculiformes,Cuculiformes,,,avibase-order-1830,taxonname-order-1830
+ORDER-2219,2219,order,Mesitornithiformes,Mesitornithiformes,,,avibase-order-2219,taxonname-order-2219
+ORDER-2226,2226,order,Pterocliformes,Pterocliformes,,,avibase-order-2226,taxonname-order-2226
+ORDER-2274,2274,order,Columbiformes,Columbiformes,,,avibase-order-2274,taxonname-order-2274
+ORDER-3233,3233,order,Opisthocomiformes,Opisthocomiformes,,,avibase-order-3233,taxonname-order-3233
+ORDER-3237,3237,order,Gruiformes,Gruiformes,,,avibase-order-3237,taxonname-order-3237
+ORDER-3725,3725,order,Charadriiformes,Charadriiformes,,,avibase-order-3725,taxonname-order-3725
+ORDER-4639,4639,order,Eurypygiformes,Eurypygiformes,,,avibase-order-4639,taxonname-order-4639
+ORDER-4649,4649,order,Phaethontiformes,Phaethontiformes,,,avibase-order-4649,taxonname-order-4649
+ORDER-4668,4668,order,Gaviiformes,Gaviiformes,,,avibase-order-4668,taxonname-order-4668
+ORDER-4678,4678,order,Sphenisciformes,Sphenisciformes,,,avibase-order-4678,taxonname-order-4678
+ORDER-4715,4715,order,Procellariiformes,Procellariiformes,,,avibase-order-4715,taxonname-order-4715
+ORDER-4970,4970,order,Ciconiiformes,Ciconiiformes,,,avibase-order-4970,taxonname-order-4970
+ORDER-5006,5006,order,Suliformes,Suliformes,,,avibase-order-5006,taxonname-order-5006
+ORDER-5142,5142,order,Pelecaniformes,Pelecaniformes,,,avibase-order-5142,taxonname-order-5142
+ORDER-5431,5431,order,Caprimulgiformes,Caprimulgiformes,1183,"The Caprimulgiformes sensu lato are treated as six orders based on evidence of ancient genetic divergences obtained from densely sampled nuclear DNA (Prum et al. 2015) and genomic data (Stiller et al. 2024), combined with the great morphological and ecological diversity represented within the group: Apodiformes (Hemiprocnidae, Apodidae, Trochilidae); Steatornithiformes (Steatornithidae); Nyctibiiformes (Nyctibiidae); Podargiformes (Podargidae); Caprimulgiformes (Caprimulgidae); and Aegotheliformes (Aegothelidae). However, recognition of an expanded Caprimulgiformes would also be valid and would retain information on the common evolutionary history of these divergent lineages.",avibase-order-5431,taxonname-order-5431
+ORDER-5722,5722,order,Steatornithiformes,Steatornithiformes,1183,"The Caprimulgiformes sensu lato are treated as six orders based on evidence of ancient genetic divergences obtained from densely sampled nuclear DNA (Prum et al. 2015) and genomic data (Stiller et al. 2024), combined with the great morphological and ecological diversity represented within the group: Apodiformes (Hemiprocnidae, Apodidae, Trochilidae); Steatornithiformes (Steatornithidae); Nyctibiiformes (Nyctibiidae); Podargiformes (Podargidae); Caprimulgiformes (Caprimulgidae); and Aegotheliformes (Aegothelidae). However, recognition of an expanded Caprimulgiformes would also be valid and would retain information on the common evolutionary history of these divergent lineages.",avibase-order-5722,taxonname-order-5722
+ORDER-5726,5726,order,Nyctibiiformes,Nyctibiiformes,1183,"The Caprimulgiformes sensu lato are treated as six orders based on evidence of ancient genetic divergences obtained from densely sampled nuclear DNA (Prum et al. 2015) and genomic data (Stiller et al. 2024), combined with the great morphological and ecological diversity represented within the group: Apodiformes (Hemiprocnidae, Apodidae, Trochilidae); Steatornithiformes (Steatornithidae); Nyctibiiformes (Nyctibiidae); Podargiformes (Podargidae); Caprimulgiformes (Caprimulgidae); and Aegotheliformes (Aegothelidae). However, recognition of an expanded Caprimulgiformes would also be valid and would retain information on the common evolutionary history of these divergent lineages.",avibase-order-5726,taxonname-order-5726
+ORDER-5747,5747,order,Podargiformes,Podargiformes,1183,"The Caprimulgiformes sensu lato are treated as six orders based on evidence of ancient genetic divergences obtained from densely sampled nuclear DNA (Prum et al. 2015) and genomic data (Stiller et al. 2024), combined with the great morphological and ecological diversity represented within the group: Apodiformes (Hemiprocnidae, Apodidae, Trochilidae); Steatornithiformes (Steatornithidae); Nyctibiiformes (Nyctibiidae); Podargiformes (Podargidae); Caprimulgiformes (Caprimulgidae); and Aegotheliformes (Aegothelidae). However, recognition of an expanded Caprimulgiformes would also be valid and would retain information on the common evolutionary history of these divergent lineages.",avibase-order-5747,taxonname-order-5747
+ORDER-5785,5785,order,Aegotheliformes,Aegotheliformes,1183,"The Caprimulgiformes sensu lato are treated as six orders based on evidence of ancient genetic divergences obtained from densely sampled nuclear DNA (Prum et al. 2015) and genomic data (Stiller et al. 2024), combined with the great morphological and ecological diversity represented within the group: Apodiformes (Hemiprocnidae, Apodidae, Trochilidae); Steatornithiformes (Steatornithidae); Nyctibiiformes (Nyctibiidae); Podargiformes (Podargidae); Caprimulgiformes (Caprimulgidae); and Aegotheliformes (Aegothelidae). However, recognition of an expanded Caprimulgiformes would also be valid and would retain information on the common evolutionary history of these divergent lineages.",avibase-order-5785,taxonname-order-5785
+ORDER-5803,5803,order,Apodiformes,Apodiformes,1183,"The Caprimulgiformes sensu lato are treated as six orders based on evidence of ancient genetic divergences obtained from densely sampled nuclear DNA (Prum et al. 2015) and genomic data (Stiller et al. 2024), combined with the great morphological and ecological diversity represented within the group: Apodiformes (Hemiprocnidae, Apodidae, Trochilidae); Steatornithiformes (Steatornithidae); Nyctibiiformes (Nyctibiidae); Podargiformes (Podargidae); Caprimulgiformes (Caprimulgidae); and Aegotheliformes (Aegothelidae). However, recognition of an expanded Caprimulgiformes would also be valid and would retain information on the common evolutionary history of these divergent lineages.",avibase-order-5803,taxonname-order-5803
+ORDER-7156,7156,order,Strigiformes,Strigiformes,,,avibase-order-7156,taxonname-order-7156
+ORDER-7920,7920,order,Cathartiformes,Cathartiformes,,,avibase-order-7920,taxonname-order-7920
+ORDER-7942,7942,order,Accipitriformes,Accipitriformes,,,avibase-order-7942,taxonname-order-7942
+ORDER-8664,8664,order,Coliiformes,Coliiformes,,,avibase-order-8664,taxonname-order-8664
+ORDER-8706,8706,order,Leptosomiformes,Leptosomiformes,,,avibase-order-8706,taxonname-order-8706
+ORDER-8713,8713,order,Trogoniformes,Trogoniformes,,,avibase-order-8713,taxonname-order-8713
+ORDER-8858,8858,order,Bucerotiformes,Bucerotiformes,,,avibase-order-8858,taxonname-order-8858
+ORDER-9017,9017,order,Coraciiformes,Coraciiformes,,,avibase-order-9017,taxonname-order-9017
+ORDER-9607,9607,order,Galbuliformes,Galbuliformes,,,avibase-order-9607,taxonname-order-9607
+ORDER-9759,9759,order,Piciformes,Piciformes,,,avibase-order-9759,taxonname-order-9759
+ORDER-11081,11081,order,Cariamiformes,Cariamiformes,,,avibase-order-11081,taxonname-order-11081
+ORDER-11087,11087,order,Falconiformes,Falconiformes,,,avibase-order-11087,taxonname-order-11087
+ORDER-11278,11278,order,Psittaciformes,Psittaciformes,,,avibase-order-11278,taxonname-order-11278
+ORDER-12324,12324,order,Passeriformes,Passeriformes,,,avibase-order-12324,taxonname-order-12324
