@@ -1,0 +1,253 @@
+concept_id,Sequence,Taxon_rank,Order,Family,Family_English_name,Scientific_name,Proposal_number,Decision_summary,AvibaseID,taxon_name_id
+FAMILY-2,2,family,Struthioniformes,Struthionidae,Ostriches,Struthionidae,,,avibase-family-2,taxonname-family-2
+FAMILY-11,11,family,Casuariiformes,Casuariidae,Emu and Cassowaries,Casuariidae,,,avibase-family-11,taxonname-family-11
+FAMILY-25,25,family,Apterygiformes,Apterygidae,Kiwis,Apterygidae,,,avibase-family-25,taxonname-family-25
+FAMILY-35,35,family,Rheiformes,Rheidae,Rheas,Rheidae,,,avibase-family-35,taxonname-family-35
+FAMILY-48,48,family,Tinamiformes,Tinamidae,Tinamous,Tinamidae,,,avibase-family-48,taxonname-family-48
+FAMILY-231,231,family,Anseriformes,Anhimidae,Screamers,Anhimidae,,,avibase-family-231,taxonname-family-231
+FAMILY-237,237,family,Anseriformes,Anseranatidae,Magpie Goose,Anseranatidae,,,avibase-family-237,taxonname-family-237
+FAMILY-240,240,family,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Anatidae,,,avibase-family-240,taxonname-family-240
+FAMILY-589,589,family,Galliformes,Megapodiidae,Megapodes,Megapodiidae,,,avibase-family-589,taxonname-family-589
+FAMILY-645,645,family,Galliformes,Cracidae,"Guans, Curassows, and Chachalacas",Cracidae,,,avibase-family-645,taxonname-family-645
+FAMILY-762,762,family,Galliformes,Numididae,Guineafowl,Numididae,,,avibase-family-762,taxonname-family-762
+FAMILY-790,790,family,Galliformes,Odontophoridae,New World Quail,Odontophoridae,,,avibase-family-790,taxonname-family-790
+FAMILY-949,949,family,Galliformes,Phasianidae,"Partridges, Pheasants, Grouse, and Allies",Phasianidae,,,avibase-family-949,taxonname-family-949
+FAMILY-1614,1614,family,Phoenicopteriformes,Phoenicopteridae,Flamingos,Phoenicopteridae,,,avibase-family-1614,taxonname-family-1614
+FAMILY-1627,1627,family,Podicipediformes,Podicipedidae,Grebes,Podicipedidae,,,avibase-family-1627,taxonname-family-1627
+FAMILY-1702,1702,family,Musophagiformes,Musophagidae,Turacos,Musophagidae,,,avibase-family-1702,taxonname-family-1702
+FAMILY-1762,1762,family,Otidiformes,Otididae,Bustards,Otididae,,,avibase-family-1762,taxonname-family-1762
+FAMILY-1831,1831,family,Cuculiformes,Cuculidae,Cuckoos,Cuculidae,,,avibase-family-1831,taxonname-family-1831
+FAMILY-2220,2220,family,Mesitornithiformes,Mesitornithidae,Mesites,Mesitornithidae,,,avibase-family-2220,taxonname-family-2220
+FAMILY-2227,2227,family,Pterocliformes,Pteroclidae,Sandgrouse,Pteroclidae,,,avibase-family-2227,taxonname-family-2227
+FAMILY-2275,2275,family,Columbiformes,Columbidae,Doves and Pigeons,Columbidae,,,avibase-family-2275,taxonname-family-2275
+FAMILY-3234,3234,family,Opisthocomiformes,Opisthocomidae,Hoatzin,Opisthocomidae,,,avibase-family-3234,taxonname-family-3234
+FAMILY-3238,3238,family,Gruiformes,Psophiidae,Trumpeters,Psophiidae,,,avibase-family-3238,taxonname-family-3238
+FAMILY-3249,3249,family,Gruiformes,Aramidae,Limpkin,Aramidae,,,avibase-family-3249,taxonname-family-3249
+FAMILY-3256,3256,family,Gruiformes,Gruidae,Cranes,Gruidae,,,avibase-family-3256,taxonname-family-3256
+FAMILY-3288,3288,family,Gruiformes,Heliornithidae,Finfoots,Heliornithidae,,,avibase-family-3288,taxonname-family-3288
+FAMILY-3299,3299,family,Gruiformes,Sarothruridae,Flufftails,Sarothruridae,,,avibase-family-3299,taxonname-family-3299
+FAMILY-3339,3339,family,Gruiformes,Rallidae,"Rails, Gallinules, and Coots",Rallidae,,,avibase-family-3339,taxonname-family-3339
+FAMILY-3726,3726,family,Charadriiformes,Pluvianellidae,Magellanic Plover,Pluvianellidae,,,avibase-family-3726,taxonname-family-3726
+FAMILY-3729,3729,family,Charadriiformes,Chionidae,Sheathbills,Chionidae,,,avibase-family-3729,taxonname-family-3729
+FAMILY-3737,3737,family,Charadriiformes,Burhinidae,Thick-knees and Stone-curlews,Burhinidae,,,avibase-family-3737,taxonname-family-3737
+FAMILY-3766,3766,family,Charadriiformes,Pluvianidae,Egyptian Plover,Pluvianidae,,,avibase-family-3766,taxonname-family-3766
+FAMILY-3769,3769,family,Charadriiformes,Recurvirostridae,Stilts and Avocets,Recurvirostridae,,,avibase-family-3769,taxonname-family-3769
+FAMILY-3785,3785,family,Charadriiformes,Ibidorhynchidae,Ibisbill,Ibidorhynchidae,,,avibase-family-3785,taxonname-family-3785
+FAMILY-3788,3788,family,Charadriiformes,Haematopodidae,Oystercatchers,Haematopodidae,,,avibase-family-3788,taxonname-family-3788
+FAMILY-3810,3810,family,Charadriiformes,Charadriidae,Plovers and Lapwings,Charadriidae,,,avibase-family-3810,taxonname-family-3810
+FAMILY-3957,3957,family,Charadriiformes,Pedionomidae,Plains-wanderer,Pedionomidae,,,avibase-family-3957,taxonname-family-3957
+FAMILY-3960,3960,family,Charadriiformes,Thinocoridae,Seedsnipes,Thinocoridae,,,avibase-family-3960,taxonname-family-3960
+FAMILY-3975,3975,family,Charadriiformes,Rostratulidae,Painted-Snipes,Rostratulidae,,,avibase-family-3975,taxonname-family-3975
+FAMILY-3981,3981,family,Charadriiformes,Jacanidae,Jacanas,Jacanidae,,,avibase-family-3981,taxonname-family-3981
+FAMILY-4002,4002,family,Charadriiformes,Scolopacidae,Sandpipers and Allies,Scolopacidae,,,avibase-family-4002,taxonname-family-4002
+FAMILY-4192,4192,family,Charadriiformes,Turnicidae,Buttonquail,Turnicidae,,,avibase-family-4192,taxonname-family-4192
+FAMILY-4258,4258,family,Charadriiformes,Dromadidae,Crab-Plover,Dromadidae,,,avibase-family-4258,taxonname-family-4258
+FAMILY-4261,4261,family,Charadriiformes,Glareolidae,Coursers and Pratincoles,Glareolidae,,,avibase-family-4261,taxonname-family-4261
+FAMILY-4308,4308,family,Charadriiformes,Stercorariidae,Jaegers and Skuas,Stercorariidae,,,avibase-family-4308,taxonname-family-4308
+FAMILY-4322,4322,family,Charadriiformes,Alcidae,"Auks, Puffins, and Murres",Alcidae,,,avibase-family-4322,taxonname-family-4322
+FAMILY-4386,4386,family,Charadriiformes,Laridae,"Skimmers, Noddies, Terns, and Gulls",Laridae,,,avibase-family-4386,taxonname-family-4386
+FAMILY-4640,4640,family,Eurypygiformes,Eurypygidae,Sunbittern,Eurypygidae,,,avibase-family-4640,taxonname-family-4640
+FAMILY-4646,4646,family,Eurypygiformes,Rhynochetidae,Kagu,Rhynochetidae,,,avibase-family-4646,taxonname-family-4646
+FAMILY-4650,4650,family,Phaethontiformes,Phaethontidae,Tropicbirds,Phaethontidae,,,avibase-family-4650,taxonname-family-4650
+FAMILY-4669,4669,family,Gaviiformes,Gaviidae,Loons,Gaviidae,,,avibase-family-4669,taxonname-family-4669
+FAMILY-4679,4679,family,Sphenisciformes,Spheniscidae,Penguins,Spheniscidae,,,avibase-family-4679,taxonname-family-4679
+FAMILY-4716,4716,family,Procellariiformes,Diomedeidae,Albatrosses,Diomedeidae,,,avibase-family-4716,taxonname-family-4716
+FAMILY-4749,4749,family,Procellariiformes,Oceanitidae,Southern Storm Petrels,Oceanitidae,,,avibase-family-4749,taxonname-family-4749
+FAMILY-4782,4782,family,Procellariiformes,Hydrobatidae,Northern Storm Petrels,Hydrobatidae,,,avibase-family-4782,taxonname-family-4782
+FAMILY-4810,4810,family,Procellariiformes,Procellariidae,"Petrels, Shearwaters, and Diving Petrels",Procellariidae,,,avibase-family-4810,taxonname-family-4810
+FAMILY-4971,4971,family,Ciconiiformes,Ciconiidae,Storks,Ciconiidae,,,avibase-family-4971,taxonname-family-4971
+FAMILY-5007,5007,family,Suliformes,Fregatidae,Frigatebirds,Fregatidae,,,avibase-family-5007,taxonname-family-5007
+FAMILY-5022,5022,family,Suliformes,Sulidae,Boobies and Gannets,Sulidae,,,avibase-family-5022,taxonname-family-5022
+FAMILY-5050,5050,family,Suliformes,Anhingidae,Anhinga and Darters,Anhingidae,,,avibase-family-5050,taxonname-family-5050
+FAMILY-5063,5063,family,Suliformes,Phalacrocoracidae,Cormorants and Shags,Phalacrocoracidae,,,avibase-family-5063,taxonname-family-5063
+FAMILY-5143,5143,family,Pelecaniformes,Threskiornithidae,Ibises and Spoonbills,Threskiornithidae,,,avibase-family-5143,taxonname-family-5143
+FAMILY-5216,5216,family,Pelecaniformes,Balaenicipitidae,Shoebill,Balaenicipitidae,,,avibase-family-5216,taxonname-family-5216
+FAMILY-5219,5219,family,Pelecaniformes,Scopidae,Hamerkop,Scopidae,,,avibase-family-5219,taxonname-family-5219
+FAMILY-5224,5224,family,Pelecaniformes,Pelecanidae,Pelicans,Pelecanidae,,,avibase-family-5224,taxonname-family-5224
+FAMILY-5239,5239,family,Pelecaniformes,Ardeidae,"Herons, Egrets, and Bitterns",Ardeidae,,,avibase-family-5239,taxonname-family-5239
+FAMILY-5432,5432,family,Caprimulgiformes,Caprimulgidae,Nightjars and Nighthawks,Caprimulgidae,,,avibase-family-5432,taxonname-family-5432
+FAMILY-5723,5723,family,Steatornithiformes,Steatornithidae,Oilbird,Steatornithidae,,,avibase-family-5723,taxonname-family-5723
+FAMILY-5727,5727,family,Nyctibiiformes,Nyctibiidae,Potoos,Nyctibiidae,,,avibase-family-5727,taxonname-family-5727
+FAMILY-5748,5748,family,Podargiformes,Podargidae,Frogmouths,Podargidae,,,avibase-family-5748,taxonname-family-5748
+FAMILY-5786,5786,family,Aegotheliformes,Aegothelidae,Owlet-nightjars,Aegothelidae,,,avibase-family-5786,taxonname-family-5786
+FAMILY-5804,5804,family,Apodiformes,Hemiprocnidae,Treeswifts,Hemiprocnidae,,,avibase-family-5804,taxonname-family-5804
+FAMILY-5822,5822,family,Apodiformes,Apodidae,Swifts,Apodidae,,,avibase-family-5822,taxonname-family-5822
+FAMILY-6175,6175,family,Apodiformes,Trochilidae,Hummingbirds,Trochilidae,,,avibase-family-6175,taxonname-family-6175
+FAMILY-7157,7157,family,Strigiformes,Tytonidae,Bay Owls and Barn Owls,Tytonidae,,,avibase-family-7157,taxonname-family-7157
+FAMILY-7233,7233,family,Strigiformes,Strigidae,Owls,Strigidae,,,avibase-family-7233,taxonname-family-7233
+FAMILY-7921,7921,family,Cathartiformes,Cathartidae,New World Vultures,Cathartidae,,,avibase-family-7921,taxonname-family-7921
+FAMILY-7943,7943,family,Accipitriformes,Sagittariidae,Secretarybird,Sagittariidae,,,avibase-family-7943,taxonname-family-7943
+FAMILY-7946,7946,family,Accipitriformes,Pandionidae,Osprey,Pandionidae,,,avibase-family-7946,taxonname-family-7946
+FAMILY-7953,7953,family,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Accipitridae,,,avibase-family-7953,taxonname-family-7953
+FAMILY-8665,8665,family,Coliiformes,Coliidae,Mousebirds,Coliidae,,,avibase-family-8665,taxonname-family-8665
+FAMILY-8707,8707,family,Leptosomiformes,Leptosomidae,Cuckoo-roller,Leptosomidae,,,avibase-family-8707,taxonname-family-8707
+FAMILY-8714,8714,family,Trogoniformes,Trogonidae,Trogons,Trogonidae,,,avibase-family-8714,taxonname-family-8714
+FAMILY-8859,8859,family,Bucerotiformes,Upupidae,Hoopoes,Upupidae,,,avibase-family-8859,taxonname-family-8859
+FAMILY-8872,8872,family,Bucerotiformes,Phoeniculidae,Wood Hoopoes and Scimitarbills,Phoeniculidae,,,avibase-family-8872,taxonname-family-8872
+FAMILY-8907,8907,family,Bucerotiformes,Bucerotidae,Hornbills,Bucerotidae,1177,"Bucorvus is placed in Bucerotidae rather than Bucorvidae based on available mitochondrial and nuclear DNA data (Viseshakul et al. 2011; Gonzalez et al. 2013), and obvious morphological affinities with other hornbills. Although forming a divergent clade, Bucorvus was recovered as part of a basal polytomy by Viseshakul et al. (2011), and clade ages may be substantially over-estimated.",avibase-family-8907,taxonname-family-8907
+FAMILY-9018,9018,family,Coraciiformes,Brachypteraciidae,Ground Rollers,Brachypteraciidae,,,avibase-family-9018,taxonname-family-9018
+FAMILY-9028,9028,family,Coraciiformes,Coraciidae,Rollers,Coraciidae,,,avibase-family-9028,taxonname-family-9028
+FAMILY-9068,9068,family,Coraciiformes,Meropidae,Bee-eaters,Meropidae,,,avibase-family-9068,taxonname-family-9068
+FAMILY-9137,9137,family,Coraciiformes,Todidae,Todies,Todidae,,,avibase-family-9137,taxonname-family-9137
+FAMILY-9144,9144,family,Coraciiformes,Momotidae,Motmots,Momotidae,,,avibase-family-9144,taxonname-family-9144
+FAMILY-9205,9205,family,Coraciiformes,Alcedinidae,Kingfishers,Alcedinidae,,,avibase-family-9205,taxonname-family-9205
+FAMILY-9608,9608,family,Galbuliformes,Galbulidae,Jacamars,Galbulidae,,,avibase-family-9608,taxonname-family-9608
+FAMILY-9657,9657,family,Galbuliformes,Bucconidae,Puffbirds,Bucconidae,,,avibase-family-9657,taxonname-family-9657
+FAMILY-9760,9760,family,Piciformes,Megalaimidae,Asian Barbets,Megalaimidae,,,avibase-family-9760,taxonname-family-9760
+FAMILY-9851,9851,family,Piciformes,Lybiidae,African Barbets,Lybiidae,,,avibase-family-9851,taxonname-family-9851
+FAMILY-10003,10003,family,Piciformes,Capitonidae,New World Barbets,Capitonidae,,,avibase-family-10003,taxonname-family-10003
+FAMILY-10047,10047,family,Piciformes,Semnornithidae,Prong-billed Barbet and Toucan Barbet,Semnornithidae,,,avibase-family-10047,taxonname-family-10047
+FAMILY-10053,10053,family,Piciformes,Ramphastidae,Toucans,Ramphastidae,,,avibase-family-10053,taxonname-family-10053
+FAMILY-10157,10157,family,Piciformes,Indicatoridae,Honeyguides,Indicatoridae,,,avibase-family-10157,taxonname-family-10157
+FAMILY-10205,10205,family,Piciformes,Picidae,Woodpeckers,Picidae,,,avibase-family-10205,taxonname-family-10205
+FAMILY-11082,11082,family,Cariamiformes,Cariamidae,Seriemas,Cariamidae,,,avibase-family-11082,taxonname-family-11082
+FAMILY-11088,11088,family,Falconiformes,Falconidae,Falcons and Caracaras,Falconidae,,,avibase-family-11088,taxonname-family-11088
+FAMILY-11279,11279,family,Psittaciformes,Strigopidae,New Zealand Parrots,Strigopidae,,,avibase-family-11279,taxonname-family-11279
+FAMILY-11288,11288,family,Psittaciformes,Cacatuidae,Cockatoos,Cacatuidae,,,avibase-family-11288,taxonname-family-11288
+FAMILY-11355,11355,family,Psittaciformes,Psittacidae,African and New World Parrots,Psittacidae,,,avibase-family-11355,taxonname-family-11355
+FAMILY-11789,11789,family,Psittaciformes,Psittaculidae,Old World Parrots,Psittaculidae,,,avibase-family-11789,taxonname-family-11789
+FAMILY-12325,12325,family,Passeriformes,Acanthisittidae,New Zealand Wrens,Acanthisittidae,,,avibase-family-12325,taxonname-family-12325
+FAMILY-12338,12338,family,Passeriformes,Philepittidae,Asities,Philepittidae,,,avibase-family-12338,taxonname-family-12338
+FAMILY-12345,12345,family,Passeriformes,Eurylaimidae,Grauer's Broadbill and Asian Broadbills,Eurylaimidae,,,avibase-family-12345,taxonname-family-12345
+FAMILY-12386,12386,family,Passeriformes,Calyptomenidae,African and Green Broadbills,Calyptomenidae,,,avibase-family-12386,taxonname-family-12386
+FAMILY-12412,12412,family,Passeriformes,Sapayoidae,Sapayoa,Sapayoidae,,,avibase-family-12412,taxonname-family-12412
+FAMILY-12415,12415,family,Passeriformes,Pittidae,Pittas,Pittidae,,,avibase-family-12415,taxonname-family-12415
+FAMILY-12534,12534,family,Passeriformes,Pipridae,Manakins,Pipridae,,,avibase-family-12534,taxonname-family-12534
+FAMILY-12692,12692,family,Passeriformes,Cotingidae,Cotingas,Cotingidae,,,avibase-family-12692,taxonname-family-12692
+FAMILY-12825,12825,family,Passeriformes,Tityridae,"Tityras, Becards, and Allies",Tityridae,,,avibase-family-12825,taxonname-family-12825
+FAMILY-12957,12957,family,Passeriformes,Oxyruncidae,Sharpbill,Oxyruncidae,1178,"Oxyruncus is placed in the family Oxyruncidae based on genomic DNA evidence (Harvey et al. 2020). Sometimes subsumed into Tityridae, or recognized as a separate family that also includes Onychorhynchus, Myiobius, and Terenotriccus. However, recognition of Oxyruncidae is supported by the lack of a sister relationship with the Tityridae (Harvey et al. 2020), combined with the deep separation of Oxyruncus from Onychorhynchus, Myiobius, and Terenotriccus, and the lack of morphological or behavioral characters uniting them; the latter three genera are placed in the family Onychorhynchidae.",avibase-family-12957,taxonname-family-12957
+FAMILY-12964,12964,family,Passeriformes,Onychorhynchidae,Royal Flycatchers and Allies,Onychorhynchidae,1178,"Oxyruncus is placed in the family Oxyruncidae based on genomic DNA evidence (Harvey et al. 2020). Sometimes subsumed into Tityridae, or recognized as a separate family that also includes Onychorhynchus, Myiobius, and Terenotriccus. However, recognition of Oxyruncidae is supported by the lack of a sister relationship with the Tityridae (Harvey et al. 2020), combined with the deep separation of Oxyruncus from Onychorhynchus, Myiobius, and Terenotriccus, and the lack of morphological or behavioral characters uniting them; the latter three genera are placed in the family Onychorhynchidae.",avibase-family-12964,taxonname-family-12964
+FAMILY-13006,13006,family,Passeriformes,Tyrannidae,Tyrant Flycatchers and Allies,Tyrannidae,,,avibase-family-13006,taxonname-family-13006
+FAMILY-14306,14306,family,Passeriformes,Melanopareiidae,Crescentchests,Melanopareiidae,,,avibase-family-14306,taxonname-family-14306
+FAMILY-14320,14320,family,Passeriformes,Conopophagidae,Gnateaters,Conopophagidae,,,avibase-family-14320,taxonname-family-14320
+FAMILY-14357,14357,family,Passeriformes,Thamnophilidae,"Antbirds, Antshrikes, Antwrens, and Antvireos",Thamnophilidae,,,avibase-family-14357,taxonname-family-14357
+FAMILY-15062,15062,family,Passeriformes,Grallariidae,Antpittas,Grallariidae,,,avibase-family-15062,taxonname-family-15062
+FAMILY-15231,15231,family,Passeriformes,Rhinocryptidae,Tapaculos,Rhinocryptidae,,,avibase-family-15231,taxonname-family-15231
+FAMILY-15338,15338,family,Passeriformes,Formicariidae,Antthrushes,Formicariidae,,,avibase-family-15338,taxonname-family-15338
+FAMILY-15395,15395,family,Passeriformes,Furnariidae,Ovenbirds and Woodcreepers,Furnariidae,,,avibase-family-15395,taxonname-family-15395
+FAMILY-16501,16501,family,Passeriformes,Menuridae,Lyrebirds,Menuridae,,,avibase-family-16501,taxonname-family-16501
+FAMILY-16508,16508,family,Passeriformes,Atrichornithidae,Scrubbirds,Atrichornithidae,,,avibase-family-16508,taxonname-family-16508
+FAMILY-16514,16514,family,Passeriformes,Climacteridae,Australasian Treecreepers,Climacteridae,,,avibase-family-16514,taxonname-family-16514
+FAMILY-16538,16538,family,Passeriformes,Ptilonorhynchidae,Bowerbirds,Ptilonorhynchidae,,,avibase-family-16538,taxonname-family-16538
+FAMILY-16595,16595,family,Passeriformes,Maluridae,"Grasswrens, Fairywrens, and Emu-wrens",Maluridae,,,avibase-family-16595,taxonname-family-16595
+FAMILY-16695,16695,family,Passeriformes,Dasyornithidae,Bristlebirds,Dasyornithidae,,,avibase-family-16695,taxonname-family-16695
+FAMILY-16705,16705,family,Passeriformes,Pardalotidae,Pardalotes,Pardalotidae,,,avibase-family-16705,taxonname-family-16705
+FAMILY-16722,16722,family,Passeriformes,Acanthizidae,"Gerygones, Thornbills, Scrubwrens, and Allies",Acanthizidae,,,avibase-family-16722,taxonname-family-16722
+FAMILY-16959,16959,family,Passeriformes,Meliphagidae,Honeyeaters,Meliphagidae,,,avibase-family-16959,taxonname-family-16959
+FAMILY-17442,17442,family,Passeriformes,Orthonychidae,Logrunner and Chowchilla,Orthonychidae,,,avibase-family-17442,taxonname-family-17442
+FAMILY-17451,17451,family,Passeriformes,Pomatostomidae,Australasian Babblers,Pomatostomidae,,,avibase-family-17451,taxonname-family-17451
+FAMILY-17465,17465,family,Passeriformes,Cinclosomatidae,Jewel-babblers and Quail-thrushes,Cinclosomatidae,,,avibase-family-17465,taxonname-family-17465
+FAMILY-17508,17508,family,Passeriformes,Campephagidae,Cuckooshrikes,Campephagidae,,,avibase-family-17508,taxonname-family-17508
+FAMILY-17861,17861,family,Passeriformes,Mohouidae,Whiteheads,Mohouidae,,,avibase-family-17861,taxonname-family-17861
+FAMILY-17866,17866,family,Passeriformes,Machaerirhynchidae,Boatbills,Machaerirhynchidae,,,avibase-family-17866,taxonname-family-17866
+FAMILY-17879,17879,family,Passeriformes,Artamidae,"Woodswallows, Bellmagpies, and Allies",Artamidae,,,avibase-family-17879,taxonname-family-17879
+FAMILY-17967,17967,family,Passeriformes,Rhagologidae,Berryhunter,Rhagologidae,,,avibase-family-17967,taxonname-family-17967
+FAMILY-17972,17972,family,Passeriformes,Pityriasidae,Bristlehead,Pityriasidae,,,avibase-family-17972,taxonname-family-17972
+FAMILY-17975,17975,family,Passeriformes,Aegithinidae,Ioras,Aegithinidae,,,avibase-family-17975,taxonname-family-17975
+FAMILY-17997,17997,family,Passeriformes,Malaconotidae,Bushshrikes and Allies,Malaconotidae,,,avibase-family-17997,taxonname-family-17997
+FAMILY-18169,18169,family,Passeriformes,Platysteiridae,Wattle-eyes and Batises,Platysteiridae,,,avibase-family-18169,taxonname-family-18169
+FAMILY-18239,18239,family,Passeriformes,Vangidae,"Vangas, Helmetshrikes, and Allies",Vangidae,,,avibase-family-18239,taxonname-family-18239
+FAMILY-18360,18360,family,Passeriformes,Neosittidae,Sittellas,Neosittidae,,,avibase-family-18360,taxonname-family-18360
+FAMILY-18374,18374,family,Passeriformes,Psophodidae,Whipbirds and Wedgebills,Psophodidae,,,avibase-family-18374,taxonname-family-18374
+FAMILY-18388,18388,family,Passeriformes,Eulacestomatidae,Ploughbill,Eulacestomatidae,,,avibase-family-18388,taxonname-family-18388
+FAMILY-18391,18391,family,Passeriformes,Oreoicidae,Australasian Bellbirds,Oreoicidae,,,avibase-family-18391,taxonname-family-18391
+FAMILY-18403,18403,family,Passeriformes,Falcunculidae,Shriketits,Falcunculidae,,,avibase-family-18403,taxonname-family-18403
+FAMILY-18408,18408,family,Passeriformes,Paramythiidae,Tit Berrypecker and Crested Berrypeckers,Paramythiidae,,,avibase-family-18408,taxonname-family-18408
+FAMILY-18414,18414,family,Passeriformes,Vireonidae,"Shrike-babblers, Erpornis, and Vireos",Vireonidae,,,avibase-family-18414,taxonname-family-18414
+FAMILY-18681,18681,family,Passeriformes,Oriolidae,Old World Orioles,Oriolidae,,,avibase-family-18681,taxonname-family-18681
+FAMILY-18817,18817,family,Passeriformes,Pachycephalidae,Whistlers and Allies,Pachycephalidae,,,avibase-family-18817,taxonname-family-18817
+FAMILY-19038,19038,family,Passeriformes,Rhipiduridae,Fantails and Silktails,Rhipiduridae,,,avibase-family-19038,taxonname-family-19038
+FAMILY-19220,19220,family,Passeriformes,Dicruridae,Drongos,Dicruridae,,,avibase-family-19220,taxonname-family-19220
+FAMILY-19350,19350,family,Passeriformes,Monarchidae,"Monarch Flycatchers, Paradise Flycatchers, and Shrikebills",Monarchidae,,,avibase-family-19350,taxonname-family-19350
+FAMILY-19673,19673,family,Passeriformes,Corcoracidae,White-winged Chough and Apostlebird,Corcoracidae,,,avibase-family-19673,taxonname-family-19673
+FAMILY-19682,19682,family,Passeriformes,Ifritidae,Ifrit,Ifritidae,,,avibase-family-19682,taxonname-family-19682
+FAMILY-19685,19685,family,Passeriformes,Paradisaeidae,Birds-of-paradise,Paradisaeidae,,,avibase-family-19685,taxonname-family-19685
+FAMILY-19790,19790,family,Passeriformes,Melampittidae,Melampittas,Melampittidae,,,avibase-family-19790,taxonname-family-19790
+FAMILY-19795,19795,family,Passeriformes,Platylophidae,Jayshrike,Platylophidae,,,avibase-family-19795,taxonname-family-19795
+FAMILY-19802,19802,family,Passeriformes,Laniidae,Shrikes,Laniidae,,,avibase-family-19802,taxonname-family-19802
+FAMILY-19917,19917,family,Passeriformes,Corvidae,"Crows, Jays, and Magpies",Corvidae,,,avibase-family-19917,taxonname-family-19917
+FAMILY-20338,20338,family,Passeriformes,Cnemophilidae,Satinbirds,Cnemophilidae,,,avibase-family-20338,taxonname-family-20338
+FAMILY-20348,20348,family,Passeriformes,Melanocharitidae,Longbills and Berrypeckers,Melanocharitidae,,,avibase-family-20348,taxonname-family-20348
+FAMILY-20385,20385,family,Passeriformes,Notiomystidae,Stitchbird,Notiomystidae,,,avibase-family-20385,taxonname-family-20385
+FAMILY-20390,20390,family,Passeriformes,Callaeidae,New Zealand Wattlebirds,Callaeidae,,,avibase-family-20390,taxonname-family-20390
+FAMILY-20399,20399,family,Passeriformes,Eupetidae,Rail-babbler,Eupetidae,,,avibase-family-20399,taxonname-family-20399
+FAMILY-20404,20404,family,Passeriformes,Chaetopidae,Rockjumpers,Chaetopidae,,,avibase-family-20404,taxonname-family-20404
+FAMILY-20408,20408,family,Passeriformes,Picathartidae,Rockfowl,Picathartidae,,,avibase-family-20408,taxonname-family-20408
+FAMILY-20412,20412,family,Passeriformes,Petroicidae,Australasian Robins,Petroicidae,985,"A revised genus-level taxonomy for the Microecinae and Eopsaltriinae recognizes 11 genera based mostly on the multilocus DNA data of Christidis et al. (2011) and Loynes et al. (2009) with some minor revisions. Within the Eopsaltriinae, Peneothello is placed in Melanodryas, while Gennaeodryas, Quoyornis, and Tregellasia are placed in Eopsaltria, and taxon brachyurus is transferred from Poecilodryas to Heteromyias following Beehler & Pratt (2016).",avibase-family-20412,taxonname-family-20412
+FAMILY-20585,20585,family,Passeriformes,Stenostiridae,Fairy Flycatchers,Stenostiridae,,,avibase-family-20585,taxonname-family-20585
+FAMILY-20621,20621,family,Passeriformes,Hyliotidae,Hyliotas,Hyliotidae,,,avibase-family-20621,taxonname-family-20621
+FAMILY-20634,20634,family,Passeriformes,Remizidae,Penduline Tits,Remizidae,,,avibase-family-20634,taxonname-family-20634
+FAMILY-20682,20682,family,Passeriformes,Paridae,"Tits, Chickadees, and Titmice",Paridae,,,avibase-family-20682,taxonname-family-20682
+FAMILY-20986,20986,family,Passeriformes,Panuridae,Reedling,Panuridae,,,avibase-family-20986,taxonname-family-20986
+FAMILY-20992,20992,family,Passeriformes,Alaudidae,Larks,Alaudidae,,,avibase-family-20992,taxonname-family-20992
+FAMILY-21466,21466,family,Passeriformes,Nicatoridae,Nicators,Nicatoridae,,,avibase-family-21466,taxonname-family-21466
+FAMILY-21471,21471,family,Passeriformes,Macrosphenidae,"Longbills, Crombecs, and Allies",Macrosphenidae,,,avibase-family-21471,taxonname-family-21471
+FAMILY-21541,21541,family,Passeriformes,Cisticolidae,Cisticolas and Allies,Cisticolidae,,,avibase-family-21541,taxonname-family-21541
+FAMILY-22204,22204,family,Passeriformes,Acrocephalidae,Reed Warblers and Allies,Acrocephalidae,,,avibase-family-22204,taxonname-family-22204
+FAMILY-22354,22354,family,Passeriformes,Donacobiidae,Donacobius,Donacobiidae,,,avibase-family-22354,taxonname-family-22354
+FAMILY-22361,22361,family,Passeriformes,Bernieridae,Malagasy Warblers and Tetrakas,Bernieridae,,,avibase-family-22361,taxonname-family-22361
+FAMILY-22387,22387,family,Passeriformes,Locustellidae,"Grasshopper Warblers, Grassbirds, and Allies",Locustellidae,,,avibase-family-22387,taxonname-family-22387
+FAMILY-22559,22559,family,Passeriformes,Pnoepygidae,Cupwings,Pnoepygidae,,,avibase-family-22559,taxonname-family-22559
+FAMILY-22575,22575,family,Passeriformes,Hirundinidae,Swallows,Hirundinidae,,,avibase-family-22575,taxonname-family-22575
+FAMILY-22848,22848,family,Passeriformes,Hyliidae,Hylias,Hyliidae,957,"Hylia and Pholidornis are placed in the family Hyliidae based on the genomic DNA data of Oliveros et al. 2019 (see also Sefc et al. 2003; Johansson et al. 2008). Hylia and Pholidornis were recovered as sister genera, and are deeply diverged from related clades (Aegithalidae, Erythrocercidae, and Cettiidae).",avibase-family-22848,taxonname-family-22848
+FAMILY-22859,22859,family,Passeriformes,Aegithalidae,"Tit-warblers, Bushtits, and Long-tailed Tit",Aegithalidae,,,avibase-family-22859,taxonname-family-22859
+FAMILY-22918,22918,family,Passeriformes,Erythrocercidae,Yellow Flycatchers,Erythrocercidae,956,"The family Erythrocercidae is recognized for the genus Erythrocercus based on divergence in multilocus (Fregin et al. 2012) and genomic DNA (Oliveros et al. 2019) data, supported by behavioral differences. Scotocerca, however, is combined with Cettia and relatives in a single family, Cettiidae.",avibase-family-22918,taxonname-family-22918
+FAMILY-22929,22929,family,Passeriformes,Cettiidae,Bush Warblers and Allies,Cettiidae,956,"The family Erythrocercidae is recognized for the genus Erythrocercus based on divergence in multilocus (Fregin et al. 2012) and genomic DNA (Oliveros et al. 2019) data, supported by behavioral differences. Scotocerca, however, is combined with Cettia and relatives in a single family, Cettiidae.",avibase-family-22929,taxonname-family-22929
+FAMILY-23062,23062,family,Passeriformes,Phylloscopidae,Leaf Warblers,Phylloscopidae,,,avibase-family-23062,taxonname-family-23062
+FAMILY-23278,23278,family,Passeriformes,Pycnonotidae,Bulbuls,Pycnonotidae,,,avibase-family-23278,taxonname-family-23278
+FAMILY-23735,23735,family,Passeriformes,Sylviidae,Sylviid Warblers and Allies,Sylviidae,,,avibase-family-23735,taxonname-family-23735
+FAMILY-23837,23837,family,Passeriformes,Paradoxornithidae,Parrotbills and Allies,Paradoxornithidae,955,"Paradoxornithidae is recognized as a family separate from Sylviidae based on the depth of divergence in multilocus DNA (Cai et al. 2019), supported by biogeography, with Sylviidae centered in the western Palearctic, whereas Paradoxornithidae is centered in the eastern Palearctic.",avibase-family-23837,taxonname-family-23837
+FAMILY-23971,23971,family,Passeriformes,Zosteropidae,"White-eyes, Yuhinas, and Allies",Zosteropidae,,,avibase-family-23971,taxonname-family-23971
+FAMILY-24333,24333,family,Passeriformes,Timaliidae,"Tree Babblers, Scimitar Babblers, and Allies",Timaliidae,,,avibase-family-24333,taxonname-family-24333
+FAMILY-24569,24569,family,Passeriformes,Pellorneidae,Ground Babblers and Allies,Pellorneidae,,,avibase-family-24569,taxonname-family-24569
+FAMILY-24807,24807,family,Passeriformes,Leiothrichidae,Laughingthrushes and Allies,Leiothrichidae,,,avibase-family-24807,taxonname-family-24807
+FAMILY-25256,25256,family,Passeriformes,Dulidae,Palmchat,Dulidae,,,avibase-family-25256,taxonname-family-25256
+FAMILY-25259,25259,family,Passeriformes,Bombycillidae,Waxwings,Bombycillidae,,,avibase-family-25259,taxonname-family-25259
+FAMILY-25266,25266,family,Passeriformes,Ptiliogonatidae,Silky-flycatchers,Ptiliogonatidae,,,avibase-family-25266,taxonname-family-25266
+FAMILY-25282,25282,family,Passeriformes,Hylocitreidae,Hylocitrea,Hylocitreidae,,,avibase-family-25282,taxonname-family-25282
+FAMILY-25287,25287,family,Passeriformes,Hypocoliidae,Hypocolius,Hypocoliidae,,,avibase-family-25287,taxonname-family-25287
+FAMILY-25290,25290,family,Passeriformes,Mohoidae,Hawaiian Honeyeaters,Mohoidae,,,avibase-family-25290,taxonname-family-25290
+FAMILY-25298,25298,family,Passeriformes,Regulidae,Kinglets,Regulidae,,,avibase-family-25298,taxonname-family-25298
+FAMILY-25333,25333,family,Passeriformes,Tichodromidae,Wallcreeper,Tichodromidae,1180a,Tichodroma is placed in the monotypic family Tichodromidae based on genomic (Oliveros et al. 2019) and multilocus DNA data (Imfeld et al. 2024) that consistently place it as sister to both Sittidae and Certhiidae.,avibase-family-25333,taxonname-family-25333
+FAMILY-25338,25338,family,Passeriformes,Sittidae,Nuthatches,Sittidae,,,avibase-family-25338,taxonname-family-25338
+FAMILY-25439,25439,family,Passeriformes,Salpornithidae,Spotted Creepers,Salpornithidae,1180b,"Salpornis is placed in the monotypic family Salpornithidae based on genomic (Oliveros et al. 2019) and multilocus DNA data (Imfeld et al. 2024). Although recovered as sister to Certhiidae, with which it shares behavioral similarities, the divergence is deeper than between other recognized families in Certhiodea.",avibase-family-25439,taxonname-family-25439
+FAMILY-25449,25449,family,Passeriformes,Certhiidae,Treecreepers,Certhiidae,,,avibase-family-25449,taxonname-family-25449
+FAMILY-25499,25499,family,Passeriformes,Polioptilidae,Gnatwrens and Gnatcatchers,Polioptilidae,,,avibase-family-25499,taxonname-family-25499
+FAMILY-25585,25585,family,Passeriformes,Troglodytidae,Wrens,Troglodytidae,,,avibase-family-25585,taxonname-family-25585
+FAMILY-26060,26060,family,Passeriformes,Elachuridae,Elachura,Elachuridae,,,avibase-family-26060,taxonname-family-26060
+FAMILY-26063,26063,family,Passeriformes,Buphagidae,Oxpeckers,Buphagidae,,,avibase-family-26063,taxonname-family-26063
+FAMILY-26069,26069,family,Passeriformes,Mimidae,Mockingbirds and Thrashers,Mimidae,,,avibase-family-26069,taxonname-family-26069
+FAMILY-26183,26183,family,Passeriformes,Sturnidae,"Rhabdornis, Starlings, and Mynas",Sturnidae,,,avibase-family-26183,taxonname-family-26183
+FAMILY-26499,26499,family,Passeriformes,Cinclidae,Dippers,Cinclidae,,,avibase-family-26499,taxonname-family-26499
+FAMILY-26531,26531,family,Passeriformes,Turdidae,Thrushes and Allies,Turdidae,,,avibase-family-26531,taxonname-family-26531
+FAMILY-27122,27122,family,Passeriformes,Muscicapidae,"Chats, Old World Flycatchers, and Allies",Muscicapidae,,,avibase-family-27122,taxonname-family-27122
+FAMILY-28151,28151,family,Passeriformes,Promeropidae,Sugarbirds,Promeropidae,,,avibase-family-28151,taxonname-family-28151
+FAMILY-28157,28157,family,Passeriformes,Modulatricidae,Dapple-throat and Allies,Modulatricidae,,,avibase-family-28157,taxonname-family-28157
+FAMILY-28167,28167,family,Passeriformes,Dicaeidae,Flowerpeckers,Dicaeidae,,,avibase-family-28167,taxonname-family-28167
+FAMILY-28343,28343,family,Passeriformes,Nectariniidae,Spiderhunters and Sunbirds,Nectariniidae,,,avibase-family-28343,taxonname-family-28343
+FAMILY-28829,28829,family,Passeriformes,Chloropseidae,Leafbirds,Chloropseidae,,,avibase-family-28829,taxonname-family-28829
+FAMILY-28863,28863,family,Passeriformes,Irenidae,Fairy-bluebirds,Irenidae,,,avibase-family-28863,taxonname-family-28863
+FAMILY-28878,28878,family,Passeriformes,Peucedramidae,Olive Warbler,Peucedramidae,,,avibase-family-28878,taxonname-family-28878
+FAMILY-28886,28886,family,Passeriformes,Urocynchramidae,Przevalski's Finch,Urocynchramidae,,,avibase-family-28886,taxonname-family-28886
+FAMILY-28889,28889,family,Passeriformes,Ploceidae,Weavers and Allies,Ploceidae,,,avibase-family-28889,taxonname-family-28889
+FAMILY-29189,29189,family,Passeriformes,Viduidae,Whydahs and Indigobirds,Viduidae,,,avibase-family-29189,taxonname-family-29189
+FAMILY-29222,29222,family,Passeriformes,Estrildidae,"Munias, Parrotfinches, Waxbills, and Allies",Estrildidae,557,"The genus recommendations proposed by Olsson & Alström (2020) are accepted, with the exception that Bathilda ruficauda and Aidemosyne modesta are placed in the genus Emblema, along with E. pictum. Multilocus genetic data (Olsson & Alström 2020), as well as plumage and ecological similarities, unite these three species.",avibase-family-29222,taxonname-family-29222
+FAMILY-29644,29644,family,Passeriformes,Prunellidae,Accentors,Prunellidae,,,avibase-family-29644,taxonname-family-29644
+FAMILY-29689,29689,family,Passeriformes,Passeridae,Snowfinches and Old World Sparrows,Passeridae,,,avibase-family-29689,taxonname-family-29689
+FAMILY-29820,29820,family,Passeriformes,Motacillidae,Wagtails and Pipits,Motacillidae,,,avibase-family-29820,taxonname-family-29820
+FAMILY-30052,30052,family,Passeriformes,Fringillidae,"Finches, Euphonias, and Allies",Fringillidae,,,avibase-family-30052,taxonname-family-30052
+FAMILY-30722,30722,family,Passeriformes,Rhodinocichlidae,Thrush-tanager,Rhodinocichlidae,,,avibase-family-30722,taxonname-family-30722
+FAMILY-30730,30730,family,Passeriformes,Calcariidae,Longspurs and Snow Buntings,Calcariidae,,,avibase-family-30730,taxonname-family-30730
+FAMILY-30749,30749,family,Passeriformes,Emberizidae,Old World Buntings,Emberizidae,,,avibase-family-30749,taxonname-family-30749
+FAMILY-30892,30892,family,Passeriformes,Passerellidae,New World Sparrows,Passerellidae,,,avibase-family-30892,taxonname-family-30892
+FAMILY-31478,31478,family,Passeriformes,Calyptophilidae,Chat-tanagers,Calyptophilidae,,,avibase-family-31478,taxonname-family-31478
+FAMILY-31485,31485,family,Passeriformes,Zeledoniidae,Wrenthrush,Zeledoniidae,,,avibase-family-31485,taxonname-family-31485
+FAMILY-31488,31488,family,Passeriformes,Phaenicophilidae,Hispaniolan Tanagers,Phaenicophilidae,,,avibase-family-31488,taxonname-family-31488
+FAMILY-31501,31501,family,Passeriformes,Nesospingidae,Puerto Rican Tanager,Nesospingidae,,,avibase-family-31501,taxonname-family-31501
+FAMILY-31504,31504,family,Passeriformes,Spindalidae,Spindalises,Spindalidae,,,avibase-family-31504,taxonname-family-31504
+FAMILY-31515,31515,family,Passeriformes,Teretistridae,Cuban Warblers,Teretistridae,,,avibase-family-31515,taxonname-family-31515
+FAMILY-31521,31521,family,Passeriformes,Icteridae,"New World Blackbirds, Troupials, and Allies",Icteridae,,,avibase-family-31521,taxonname-family-31521
+FAMILY-31872,31872,family,Passeriformes,Parulidae,New World Warblers,Parulidae,,,avibase-family-31872,taxonname-family-31872
+FAMILY-32245,32245,family,Passeriformes,Cardinalidae,Cardinals and Allies,Cardinalidae,,,avibase-family-32245,taxonname-family-32245
+FAMILY-32443,32443,family,Passeriformes,Mitrospingidae,Mitrospingid Tanagers,Mitrospingidae,,,avibase-family-32443,taxonname-family-32443
+FAMILY-32455,32455,family,Passeriformes,Thraupidae,Tanagers and Allies,Thraupidae,,,avibase-family-32455,taxonname-family-32455
