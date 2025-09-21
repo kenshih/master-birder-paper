@@ -1,0 +1,11 @@
+{
+"sqltools.useNodeRuntime": true,
+"sqltools.connections": [
+    {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "master-birder-avibase",
+        "database": "${workspaceFolder:master-birder-paper}/data/master_birder.db"
+    }
+]
+}
