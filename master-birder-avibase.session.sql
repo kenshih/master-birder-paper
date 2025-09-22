@@ -1,7 +1,10 @@
+/* some discovery and sanity checking queries ran along the way*/
 select *
 FROM AvibaseID
-where concept_label in ('Myiothlypis griseiceps', 'Aegotheles albertisi')
+limit 100
 /*
+where concept_label in ('Myiothlypis griseiceps', 'Aegotheles albertisi')
+
 SELECT *
 FROM TaxanomicConcepts
 where concept_id in ('SPECIES-5792', 'SPECIES-32087')
