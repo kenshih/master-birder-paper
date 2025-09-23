@@ -9,4 +9,4 @@ pip install pdm
 - https://www.avilist.org/
 - https://avibase.bsc-eoc.org/species.jsp?avibaseid=42393721
     - avibase-42393721
-    -  TSN: 178036
+    - TSN: 178036
