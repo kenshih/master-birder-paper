@@ -1,6 +1,8 @@
 /* some discovery and sanity checking queries ran along the way*/
 select *
-FROM AvibaseID
+FROM AvibaseID a
+JOIN TaxanomicConcepts tc on a.avibase_id = tc.avibase_id
+WHERE tc.scientific_name like 'Calypte %'
 limit 100
 /*
 where concept_label in ('Myiothlypis griseiceps', 'Aegotheles albertisi')
