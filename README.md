@@ -35,3 +35,74 @@ From there I was able to connect to it to run a number of queries just to explor
 - https://avibase.bsc-eoc.org/species.jsp?avibaseid=42393721
     - avibase-42393721
     - TSN: 178036
+
+# Ontology investigation
+
+### Setup
+
+- ncbitaxon.owl is 1.7G, so instead i trimmed it down to living Aves species-only -> ncbi_neornithes.owl
+    - from https://jena.apache.org/download/
+    - download apache-jena-fuseki-5.5.0.tar.gz
+    - unpack and cd into it...
+        ```
+        ./fuseki-server
+        # go to http://localhost:3030/#/
+        # in Fuseki CONSTRUCT query to create ncbi_neornithes.owl file
+        PREFIX obo:        <http://purl.obolibrary.org/obo/>
+        PREFIX ncbitaxon:  <http://purl.obolibrary.org/obo/ncbitaxon#>
+        PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+
+        CONSTRUCT {
+        ?cls ?p ?o .
+        ?s ?pp ?cls .
+        }
+        WHERE {
+        # species-level descendants of Neornithes (NCBITaxon:8825)
+        ?cls rdfs:subClassOf+ obo:NCBITaxon_8825 ;
+            ncbitaxon:has_rank obo:NCBITaxon_species .
+
+        { ?cls ?p ?o }        # triples where the species is subject
+        UNION
+        { ?s ?pp ?cls }       # triples where the species is object
+        }
+        ```
+
+
+```bash
+# Install dependencies
+pdm install
+
+# Test the processing pipeline
+python scripts/test_jena_processing.py
+```
+
+### Processing Methods
+
+1. **RDFLib Streaming** - Memory efficient for large files
+   ```python
+   from scripts.jena_owl_processor import JenaOWLProcessor
+   processor = JenaOWLProcessor()
+   stats = processor.process_with_rdflib_streaming(owl_file, output_dir)
+   ```
+
+2. **Database Storage** - For efficient querying
+   ```python
+   stats = processor.process_to_database(owl_file, db_file)
+   df = processor.query_database(db_file, "SELECT * FROM triples LIMIT 10")
+   ```
+
+3. **Jupyter Notebook** - Interactive exploration
+   - `notebooks/jena_owl_processing.ipynb` - Comprehensive processing examples
+
+### Files
+- `data/ontology/ncbitaxon.owl` (~1.7GB) - NCBI Taxonomy
+- `data/ontology/taxmeon.owl` (~61KB) - TaxMeOn ontology
+- `scripts/jena_owl_processor.py` - Main processing class
+- `scripts/test_jena_processing.py` - Test script
+
+### Why Jena?
+- **Memory Efficiency**: Handles large files without loading everything into memory
+- **Streaming Processing**: Processes files incrementally
+- **Database Integration**: Stores ontologies in SQLite for efficient querying
+- **SPARQL Support**: Complex queries on large datasets
+- **OWL Reasoning**: Full OWL 2 support with reasoning capabilities

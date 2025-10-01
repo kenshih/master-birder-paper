@@ -1,0 +1,697 @@
+<http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N8e3bc3d020184fd8bdc22d4bc89cfcfe <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N92cb435d289c4fc38088218fa23b97ee .
+<http://www.yso.fi/onto/taxonomic-ranks/TaxonomicRank> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomic rank"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N916510f6cae544d18c13885ebcaec85e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/Valid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+_:N6cabddd8db604614bfda31ee613307f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#label> "Has scientific name"@en .
+_:N2edba44814f74a6e831f85d9c03ce82a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N53816e791496464a8d24beb8d7ec99b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/2000/01/rdf-schema#range> _:N078e60f3a6dc47eeb8701bc5ce1ae797 .
+<http://www.yso.fi/onto/taxmeon/OtherSource> <http://www.w3.org/2000/01/rdf-schema#label> "Other source"@en .
+_:N351e6afad8e1491f81cca7252a45dab8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+_:N0600c46dbabf4c3996c4d9289f7d2346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is part of taxon"@en .
+<http://www.yso.fi/onto/taxmeon/publishedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N709b19c9392a4d89a78df167fe0971c2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N81bb08ef489946f89b21286f6d7155ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/Valid> <http://www.w3.org/2000/01/rdf-schema#label> "Valid"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N5057f27474d543739942f1536275ff4a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/publishedInYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/hasVernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "Has  vernacular name"@en .
+<http://www.yso.fi/onto/taxmeon/hasPartInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nfbe0787b758d43638f99a409b74cda2d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/TaxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomic status"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/isPartOfOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Päällekkäinen taksonin kanssa"@fi .
+<http://www.yso.fi/onto/taxmeon/lastName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/Reference> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N5057f27474d543739942f1536275ff4a <http://www.w3.org/2002/07/owl#unionOf> _:Ndfa0df2dc406458d891668f83886b7fa .
+_:N9b44895072724a8d8f1c6d4c0ffb1392 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/nomenclaturalCode> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N927f36b370484fbabf4699843a300b00 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/SpellingStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "e.g. misspelling"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/AcceptedVernacularName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/VernacularNameStatus> .
+_:N9aef0432b31142be9361433fc712b24c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd4788fef790d425b9becd5316f7013e1 .
+<http://www.yso.fi/onto/taxmeon/Author> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N78115cded5e04146a22ed932012691d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/VernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "Vernacular name"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N3b89ab00347c477f806a448f25b7f61a <http://www.w3.org/2002/07/owl#unionOf> _:N2c74199c0a014804b19db78e138e08d0 .
+_:N838be6e951924b6b84c31b6a8c20486c <http://www.w3.org/2002/07/owl#unionOf> _:Nf5f63220297644da889a81b8f61408a8 .
+<http://www.yso.fi/onto/taxmeon/TaxonInChecklist> <http://www.w3.org/2000/01/rdf-schema#label> "Taxon in a checklist"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N973f427b3bb5477d9af6d8ab3613c616 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:Nfae484ae4edc440a941663a0d47afb44 <http://www.w3.org/2002/07/owl#unionOf> _:N8e3bc3d020184fd8bdc22d4bc89cfcfe .
+_:N60bc7804dbe64eb78c81c4d29b148c8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N7544b4dbdd654f81ba4bfeea8d05b779 .
+<http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nomenklatuurinen status"@fi .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+_:N4f96ec3d4b7a406f93f2859d2424551b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N586d7a3a6e0a41f5bcfbb69cf0eed134 .
+<http://www.yso.fi/onto/taxmeon/ChangeInCircumscription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/VernacularNameStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Vernacular name status"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasVernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "Kansankielinen nimi"@fi .
+<http://www.yso.fi/onto/taxmeon/lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N554b3b6930d14b5a9c26c00046751484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/VernacularNameStatus> .
+<http://www.yso.fi/onto/taxmeon/abbreviation> <http://www.w3.org/2000/01/rdf-schema#label> "Author abbreviation"@en .
+<http://www.yso.fi/onto/taxmeon/TaxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/occursInChecklist> <http://www.w3.org/2000/01/rdf-schema#label> "Esiintyy lajilistassa"@fi .
+<http://www.yso.fi/onto/taxmeon/hasNameStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Reference> .
+<http://www.yso.fi/onto/taxmeon/VernacularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nfae484ae4edc440a941663a0d47afb44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7b62b7eb7a314e8bb27fa57fc3e4cf93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Na9b2d760aa4b48ba804b87719da91f28 .
+<http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/auctorumYear> <http://www.w3.org/2000/01/rdf-schema#label> "Alkuperäisjulkaisun vuosi"@fi .
+<http://www.yso.fi/onto/taxmeon/ChangeInClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/Change> .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/completeAuctorumString> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nb434b562626f468a8a9506145e767677 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N7b62b7eb7a314e8bb27fa57fc3e4cf93 .
+<http://www.yso.fi/onto/taxmeon/bibliographicCitation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/refersToTaxon> <http://www.w3.org/2000/01/rdf-schema#comment> ""^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N6e224191801d45f8a8d86b6025fd334f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxonomic-ranks/TaxonomicRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/hasNonvalidName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/hasNonvalidName> <http://www.w3.org/2000/01/rdf-schema#label> "Muu kuin voimassaoleva nimi"@fi .
+<http://www.yso.fi/onto/taxmeon/ScientificName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/isPartOfOst> <http://www.w3.org/2000/01/rdf-schema#label> "Is ostensively part of taxon"@en .
+_:N1f0f815c657047d89c8fd9cec230f66e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:N3644b3e5d5524f4c9176a1c1e8a35903 .
+_:N3596932c972a47cab51a3a4ebcee7d01 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+_:Nabece5769433424a9f44d55a880ae020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+_:N430fd7df4acd4386ae0765cd78a6dd6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+_:Nf48115e801704684aa2e1eb9000b172c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N927f36b370484fbabf4699843a300b00 .
+<http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N00f3fd143aab4a34835a30577d0e32a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+<http://www.yso.fi/onto/taxmeon/Synonym> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/lastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/publishedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Julkaisu"@fi .
+<http://www.yso.fi/onto/taxmeon/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#label> "Published in year"@en .
+<http://www.yso.fi/onto/taxmeon/Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@en .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> .
+<http://www.yso.fi/onto/taxmeon/orderingWeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the order in which taxa are shown in a checklist"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/Synonym> <http://www.w3.org/2000/01/rdf-schema#label> "Synonym"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> .
+<http://www.yso.fi/onto/taxmeon/Lump> <http://www.w3.org/2000/01/rdf-schema#label> "Lump of taxa"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/Author> .
+<http://www.yso.fi/onto/taxmeon/VernacularNameStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> _:Nd0317ec93cff4cdfb453f8288e2e2283 .
+<http://www.yso.fi/onto/taxmeon/before> <http://www.w3.org/2000/01/rdf-schema#label> "Nimi ennen muutosta"@fi .
+_:Ncdb2b7deacf3492e8da6d41b63a8362a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:Na9b2d760aa4b48ba804b87719da91f28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/TaxonomicConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/occursInChecklist> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N56e54bb5340e45b386ef69254e82b208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne75c8d04f9f04fe6aa02579e6f287070 .
+_:Nfae6ada1e3b84ee8b60c26379501469c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/lastName> <http://www.w3.org/2000/01/rdf-schema#label> "Last name"@en .
+_:Nbc7823efc6624afb99850c76cc228fa4 <http://www.w3.org/2002/07/owl#unionOf> _:Nfb2f4d60b8f347a39dd7266130ba0ebc .
+<http://www.yso.fi/onto/taxmeon/identificationQualifier> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nfae484ae4edc440a941663a0d47afb44 .
+<http://www.yso.fi/onto/taxmeon/Checklist> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd2a238b845cb4b42816b59357fd4f858 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/after> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd7f7a642208a414b9c83e12904d899d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship> <http://www.w3.org/2000/01/rdf-schema#domain> _:N31789bc3fa1341eeb9eca9e9c3affb53 .
+_:N3457c7dfbb3041ab9fbd91248ae986a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship> <http://www.w3.org/2000/01/rdf-schema#label> "Has scientific name authorship"@en .
+_:N150821868fee4503b5ed6871da08be80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N10a8ceed03c44db78729c58ed470f23a .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Samaa tarkoittava taksoni"@fi .
+_:Nd56cdade9d1a4f6a9455623d56e29caa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/ChangeInCircumscription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/Change> .
+_:N45934e19bb07405e8dd01eebb59f28bb <http://www.w3.org/2002/07/owl#unionOf> _:N7ced9477f44546e580fc65f8190eb251 .
+<http://www.yso.fi/onto/taxmeon/abbreviation> <http://www.w3.org/2000/01/rdf-schema#label> "Auktorin nimen lyhenne"@fi .
+_:N8f45a1f67954402589a6abf4b4b0baf2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N2ff39996c52f4d6e87749a8f44d1805d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N102267ec31cc49918eb25fe9cf6f0e30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N102267ec31cc49918eb25fe9cf6f0e30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N44a1a21dbdd14787a2534e8e5ec1c64d .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N0b14a6ee29464d4fa5d0474bb33bf365 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/AlternativeVernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/2000/01/rdf-schema#domain> _:N903ce5a58d1849668dc71557b58ed0f2 .
+_:Nb6af33ba11b848edb7de44a5f2d79519 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/occursInChecklist> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/Checklist> .
+_:N4b4122ddd0564a7da5b469c57f8fa188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N351e6afad8e1491f81cca7252a45dab8 .
+_:N903ce5a58d1849668dc71557b58ed0f2 <http://www.w3.org/2002/07/owl#unionOf> _:Nabece5769433424a9f44d55a880ae020 .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N7544b4dbdd654f81ba4bfeea8d05b779 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+_:N7f43a04f7b6f4b0d845a85b63936ad41 <http://www.w3.org/2002/07/owl#unionOf> _:N0600c46dbabf4c3996c4d9289f7d2346 .
+_:Naedd3eebc5b2463f9a3bd511f305a97c <http://www.w3.org/2002/07/owl#unionOf> _:N0c7aa2b5530243dfb33bc9a208be705f .
+<http://www.w3.org/2002/07/owl#Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/AcceptedVernacularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/completeAuctorumString> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:Ndfa0df2dc406458d891668f83886b7fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N8dad19a1212e4382aaf48fd2291cd9b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> .
+<http://www.yso.fi/onto/taxmeon/Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Is part of higher taxon"@en .
+<http://www.yso.fi/onto/taxmeon/publishedOriginallyIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Author> .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Yhteys taksoniin"@fi .
+<http://www.yso.fi/onto/taxmeon/Lump> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/isPartOfInt> <http://www.w3.org/2000/01/rdf-schema#label> "Is intensionally part of taxon"@en .
+<http://www.yso.fi/onto/taxmeon/auctorumYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#label> "Nomenclatural code"@en .
+_:Nd0317ec93cff4cdfb453f8288e2e2283 <http://www.w3.org/2002/07/owl#unionOf> _:N5cbdebc4fa9144a9bb088d60c530d98e .
+<http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasPartOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/identificationQualifier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N78115cded5e04146a22ed932012691d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8dad19a1212e4382aaf48fd2291cd9b4 .
+<http://www.yso.fi/onto/taxmeon/occursInNameCollection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/abbreviation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Author> .
+_:Na7284bbd71a84fa99313ffdf3f2516e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne7ec226778b24212bee6b29b0ce28caf .
+_:N4f96ec3d4b7a406f93f2859d2424551b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/Checklist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/Reference> .
+<http://www.yso.fi/onto/taxmeon/Reference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd13b3849d6194423818c55e5d5bad56a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nec84b99b46d94e449c5021334a372ed1 .
+<http://www.yso.fi/onto/taxmeon/occursInNameCollection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/OtherSource> .
+<http://www.yso.fi/onto/taxmeon/SpellingStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/before> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N52939c3a00e34494875ac6c38b8e9361 <http://www.w3.org/2002/07/owl#unionOf> _:Na7284bbd71a84fa99313ffdf3f2516e2 .
+<http://www.yso.fi/onto/taxmeon/isPartOfOst> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/isPartOf> .
+<http://www.yso.fi/onto/taxmeon/isPartOfInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/orderingWeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Reference> .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N56e54bb5340e45b386ef69254e82b208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/refersToTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Viittaa taksoniin"@fi .
+<http://www.yso.fi/onto/taxmeon/Author> <http://www.w3.org/2000/01/rdf-schema#comment> "An author name of a taxon"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Na67a34d5f5d54105963acc13b5a2866e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N397ccda2c0c44fe2a7da7b24eb8f1260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/SpellingStatus> .
+_:N1755488cfad84b58863203542ea73b99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc89b0c8e790f4e33a75f37df4e961a45 .
+<http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nf6045f0123ed4b38ae84dc91748bb840 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1755488cfad84b58863203542ea73b99 .
+<http://www.yso.fi/onto/taxmeon/Accepted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/refersToTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/TaxonomicStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N45934e19bb07405e8dd01eebb59f28bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> .
+_:N4acdf290c58b494daa54599e03089e0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#label> "Julkaisuvuosi"@fi .
+_:N879aaff7ae264c768c280f0944ef1eb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8e7037ac2c404845bd9c0e0b1fd65bd5 .
+_:N46bbeabce884408ebd0849b7d2d0bc9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+<http://www.yso.fi/onto/taxmeon/hasPartInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:N2edba44814f74a6e831f85d9c03ce82a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N430fd7df4acd4386ae0765cd78a6dd6f .
+<http://www.yso.fi/onto/taxmeon/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/auctorum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/publishedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/Reference> .
+<http://www.yso.fi/onto/taxmeon/ProposedVernacularName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd90829aeb6204d19b06aa72cea2336ad <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/before> <http://www.w3.org/2000/01/rdf-schema#label> "Before"@en .
+_:Nbc7823efc6624afb99850c76cc228fa4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N927f36b370484fbabf4699843a300b00 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Reference> .
+_:Nb18923adacf143d2bf3d91be30022893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/2000/01/rdf-schema#range> _:N2b10718eb7fa42ab926e2097a76ef650 .
+<http://www.yso.fi/onto/taxmeon/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliographic citation"@en .
+<http://www.yso.fi/onto/taxmeon/Synonym> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd4a9cbd4ab314e7b8157b062749f8ce5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+_:Na8e483d3b19f42c785f767cb3d2ec56c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N47f149f26c7e41d8b65ba447cd53e9af <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/VernacularName> .
+<http://www.yso.fi/onto/taxmeon/nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#label> "Nimistökoodi"@fi .
+_:N69741b2907514adca832fc67946c2222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Taxon in a name collection"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N3644b3e5d5524f4c9176a1c1e8a35903 <http://www.w3.org/2002/07/owl#unionOf> _:N4acdf290c58b494daa54599e03089e0a .
+_:Nfae6ada1e3b84ee8b60c26379501469c <http://www.w3.org/2002/07/owl#unionOf> _:Nf48115e801704684aa2e1eb9000b172c .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> .
+<http://www.yso.fi/onto/taxmeon/Lump> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/ProposedVernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "Proposed vernacular name"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/completeAuctorumString> <http://www.w3.org/2000/01/rdf-schema#domain> _:N47f149f26c7e41d8b65ba447cd53e9af .
+<http://www.yso.fi/onto/taxmeon/Misapplied> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<http://www.yso.fi/onto/taxmeon/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#label> "Tieteellinen nimi"@fi .
+<http://www.yso.fi/onto/taxmeon/abbreviation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd6949fd13f604bb2a6841015b3de79c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N3644b3e5d5524f4c9176a1c1e8a35903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na7284bbd71a84fa99313ffdf3f2516e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+_:Nb6af33ba11b848edb7de44a5f2d79519 <http://www.w3.org/2002/07/owl#unionOf> _:N081c82522221450fa836babd602ec486 .
+<http://www.yso.fi/onto/taxmeon/isPartOfOst> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/AcceptedVernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted vernacular name"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N397ccda2c0c44fe2a7da7b24eb8f1260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N37498e8a0a3b45098c6aa78fbcec15ef .
+<http://www.yso.fi/onto/taxmeon/occursInNameCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/Split> <http://www.w3.org/2000/01/rdf-schema#label> "Split of a taxon"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/hasPartInt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/hasPart> .
+_:N8e7037ac2c404845bd9c0e0b1fd65bd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/identificationQualifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identification qualifier"@en .
+_:N31789bc3fa1341eeb9eca9e9c3affb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/Checklist> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N350cab6e4a794443b1aa0edfd57bc15e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N916510f6cae544d18c13885ebcaec85e <http://www.w3.org/2002/07/owl#unionOf> _:N879aaff7ae264c768c280f0944ef1eb8 .
+<http://www.yso.fi/onto/taxmeon/hasNonvalidName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd77aa176892a42c2acae5b29d46e480a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Has vernacular name status"@en .
+<http://www.yso.fi/onto/taxmeon/TaxonomicConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomic concept"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> <http://www.w3.org/2000/01/rdf-schema#label> "Taxon in an upper classification"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/hasPartOst> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/isPartOfOst> .
+_:Ne75c8d04f9f04fe6aa02579e6f287070 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd13b3849d6194423818c55e5d5bad56a .
+_:N9aef0432b31142be9361433fc712b24c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.yso.fi/onto/taxmeon/VernacularNameStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd13b3849d6194423818c55e5d5bad56a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/Checklist> .
+<http://www.yso.fi/onto/taxmeon/AlternativeVernacularName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nb0cbbddc93c342c1ad50ad0d18ddacc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/TaxonGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "Taxon general"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/publishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nb6af33ba11b848edb7de44a5f2d79519 .
+_:Nd4a9cbd4ab314e7b8157b062749f8ce5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N190df7d4c48f4574827d235d454c36f9 .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/after> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Change> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.yso.fi/onto/taxmeon/Accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/OtherSource> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N46bbeabce884408ebd0849b7d2d0bc9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N397ccda2c0c44fe2a7da7b24eb8f1260 .
+_:Nf922390c912f4bf89b4549792cb68481 <http://www.w3.org/2002/07/owl#unionOf> _:N46bbeabce884408ebd0849b7d2d0bc9b .
+_:N2b10718eb7fa42ab926e2097a76ef650 <http://www.w3.org/2002/07/owl#unionOf> _:Nd4a9cbd4ab314e7b8157b062749f8ce5 .
+_:Nf5f63220297644da889a81b8f61408a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N709b19c9392a4d89a78df167fe0971c2 .
+<http://www.yso.fi/onto/taxmeon/hasNameStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nimen status"@fi .
+<http://www.yso.fi/onto/taxmeon/orderingWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalCode> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/ChangeInClassification> <http://www.w3.org/2000/01/rdf-schema#label> "Change in a hierarchy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/Misapplied> <http://www.w3.org/2000/01/rdf-schema#label> "Misapplied"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/auctorum> <http://www.w3.org/2000/01/rdf-schema#label> "Auctorum"@en .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "Has part"@en .
+<http://www.yso.fi/onto/taxmeon/hasPartInt> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/2000/01/rdf-schema#comment> "Is used for describing the hierarchy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/ProposedVernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N78e9fe04b5b749b98e9ce01f31f86f19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/auctorumYear> <http://www.w3.org/2000/01/rdf-schema#domain> _:N52939c3a00e34494875ac6c38b8e9361 .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/congruentWithTaxon> .
+<http://www.yso.fi/onto/taxmeon/hasVernacularName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/before> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/identificationQualifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/identificationQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N586d7a3a6e0a41f5bcfbb69cf0eed134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N4d1fb89f18c94d9fb2b4e10c6f0fe658 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/hasNameStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Has name status"@en .
+<http://www.yso.fi/onto/taxmeon/firstName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N49bd476712ea4a3fb85e17dfd2f2ae35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N2c74199c0a014804b19db78e138e08d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonGeneral> .
+_:N081c82522221450fa836babd602ec486 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf6045f0123ed4b38ae84dc91748bb840 .
+<http://www.yso.fi/onto/taxmeon/Lump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/nomenclaturalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N429d4e4945ce4b32a37842134c0d767c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/AlternativeVernacularName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/VernacularNameStatus> .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/2000/01/rdf-schema#domain> _:N7c27cd2de8964d998383bf84ccbff261 .
+<http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Taksonominen status"@fi .
+<http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/Misapplied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd0317ec93cff4cdfb453f8288e2e2283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/abbreviation> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N7c27cd2de8964d998383bf84ccbff261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/isPartOfOst> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> _:N7f43a04f7b6f4b0d845a85b63936ad41 .
+<http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Reference> .
+<http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/lastName> <http://www.w3.org/2000/01/rdf-schema#label> "Sukunimi"@fi .
+_:Na67a34d5f5d54105963acc13b5a2866e <http://www.w3.org/2002/07/owl#unionOf> _:N3596932c972a47cab51a3a4ebcee7d01 .
+_:Nd7f7a642208a414b9c83e12904d899d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2edba44814f74a6e831f85d9c03ce82a .
+<http://www.yso.fi/onto/taxmeon/Split> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nd90829aeb6204d19b06aa72cea2336ad <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+_:N10a8ceed03c44db78729c58ed470f23a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nf922390c912f4bf89b4549792cb68481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/auctorum> <http://www.w3.org/2000/01/rdf-schema#label> "Auktori"@fi .
+_:N190df7d4c48f4574827d235d454c36f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/hasNonvalidName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/Misapplied> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N3596932c972a47cab51a3a4ebcee7d01 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd77aa176892a42c2acae5b29d46e480a .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N5a5443fe897b448a98836ffd90248327 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ncdb2b7deacf3492e8da6d41b63a8362a .
+_:Nc89b0c8e790f4e33a75f37df4e961a45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N554b3b6930d14b5a9c26c00046751484 .
+<http://www.yso.fi/onto/taxmeon/refersToTaxon> <http://www.w3.org/2000/01/rdf-schema#range> _:N3b89ab00347c477f806a448f25b7f61a .
+_:N9a9c01d1c37c472395faf64ae067e40b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N4acdf290c58b494daa54599e03089e0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb18923adacf143d2bf3d91be30022893 .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/NomenclaturalStatus> .
+_:N5a5443fe897b448a98836ffd90248327 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/completeAuctorumString> <http://www.w3.org/2000/01/rdf-schema#label> "Complete auctorum citation"@en .
+_:N52939c3a00e34494875ac6c38b8e9361 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9b44895072724a8d8f1c6d4c0ffb1392 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/after> <http://www.w3.org/2000/01/rdf-schema#label> "After"@en .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:Na9b2d760aa4b48ba804b87719da91f28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N8e3bc3d020184fd8bdc22d4bc89cfcfe <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+_:Nc09244088a54411780abc4de9ca5d6ae <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/isPartOfInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/isPartOf> .
+_:Nfbe0787b758d43638f99a409b74cda2d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:Na8e483d3b19f42c785f767cb3d2ec56c <http://www.w3.org/2002/07/owl#unionOf> _:N4d1fb89f18c94d9fb2b4e10c6f0fe658 .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N973f427b3bb5477d9af6d8ab3613c616 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N5cbdebc4fa9144a9bb088d60c530d98e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N49bd476712ea4a3fb85e17dfd2f2ae35 .
+<http://www.yso.fi/onto/taxmeon/OtherSource> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N92cb435d289c4fc38088218fa23b97ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/Accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N8dad19a1212e4382aaf48fd2291cd9b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N3b89ab00347c477f806a448f25b7f61a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nec84b99b46d94e449c5021334a372ed1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N1f0f815c657047d89c8fd9cec230f66e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N78115cded5e04146a22ed932012691d0 .
+_:N7b62b7eb7a314e8bb27fa57fc3e4cf93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+<http://www.yso.fi/onto/taxmeon/auctorum> <http://www.w3.org/2000/01/rdf-schema#domain> _:N9f390ec5665d4316b3d07e12a066f294 .
+<http://www.yso.fi/onto/taxmeon/hasNameStatus> <http://www.w3.org/2000/01/rdf-schema#domain> _:N5057f27474d543739942f1536275ff4a .
+<http://www.yso.fi/onto/taxmeon/Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/publishedOriginallyIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:N916510f6cae544d18c13885ebcaec85e .
+<http://www.yso.fi/onto/taxmeon/auctorumYear> <http://www.w3.org/2000/01/rdf-schema#label> "Auctorum year"@en .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/auctorumYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.yso.fi/onto/taxmeon/SpellingStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/hasScientificName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/ScientificName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N879aaff7ae264c768c280f0944ef1eb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/hasPart> .
+<http://www.yso.fi/onto/taxmeon/after> <http://www.w3.org/2000/01/rdf-schema#range> _:Na8e483d3b19f42c785f767cb3d2ec56c .
+_:Ne7ec226778b24212bee6b29b0ce28caf <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N387d8f2c8b7449bc9892efe628254933 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/hasPartOst> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/hasPart> .
+<http://www.yso.fi/onto/taxmeon/ProposedVernacularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/Misapplied> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> .
+<http://www.yso.fi/onto/taxmeon/Change> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasVernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/abbreviation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/congruentWithTaxon> .
+<http://www.yso.fi/onto/taxmeon/Synonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N350cab6e4a794443b1aa0edfd57bc15e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+_:N77695f7dc26944abb99085026757e83a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfbe0787b758d43638f99a409b74cda2d .
+<http://www.yso.fi/onto/taxmeon/completeAuctorumString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N709b19c9392a4d89a78df167fe0971c2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/publishedOriginallyIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/Publication> .
+<http://www.yso.fi/onto/taxmeon/Lump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/Change> .
+_:N37498e8a0a3b45098c6aa78fbcec15ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/NomenclaturalStatus> .
+_:Naf7d2064835b4e08a36c706803490340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N150821868fee4503b5ed6871da08be80 .
+<http://www.yso.fi/onto/taxmeon/occursInChecklist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/TaxonomicStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7ced9477f44546e580fc65f8190eb251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/hasNonvalidName> <http://www.w3.org/2000/01/rdf-schema#domain> _:N2ff39996c52f4d6e87749a8f44d1805d .
+_:N0600c46dbabf4c3996c4d9289f7d2346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd56cdade9d1a4f6a9455623d56e29caa .
+<http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N1755488cfad84b58863203542ea73b99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/after> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/refersToTaxon> <http://www.w3.org/2000/01/rdf-schema#domain> _:N45934e19bb07405e8dd01eebb59f28bb .
+<http://www.yso.fi/onto/taxmeon/OtherSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/Reference> .
+_:N8f45a1f67954402589a6abf4b4b0baf2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N2b10718eb7fa42ab926e2097a76ef650 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Naf7d2064835b4e08a36c706803490340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/Split> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/Checklist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7ced9477f44546e580fc65f8190eb251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd6949fd13f604bb2a6841015b3de79c9 .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/2000/01/rdf-schema#domain> _:N75eb8bd5e3bc4f04a715908dac9d025a .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/Accepted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+_:Nd6949fd13f604bb2a6841015b3de79c9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3457c7dfbb3041ab9fbd91248ae986a2 .
+<http://www.yso.fi/onto/taxmeon/publishedIn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasNameStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N7c27cd2de8964d998383bf84ccbff261 <http://www.w3.org/2002/07/owl#unionOf> _:Nc09244088a54411780abc4de9ca5d6ae .
+<http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Kansankielisen nimen status"@fi .
+_:Ncdb2b7deacf3492e8da6d41b63a8362a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/hasPartInt> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/isPartOfInt> .
+<http://www.yso.fi/onto/taxmeon/hasPartInt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Ned2cb6c99f614a47acbe992d3509d781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0b14a6ee29464d4fa5d0474bb33bf365 .
+<http://www.yso.fi/onto/taxmeon/occursInNameCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Esiintyy nimikokoelmassa"@fi .
+<http://www.yso.fi/onto/taxmeon/AlternativeVernacularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N3decf1421d4f4c7899a39b3973c01150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/isPartOfInt> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/Homonym> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/NomenclaturalCode> .
+<http://www.yso.fi/onto/taxmeon/hasNonvalidName> <http://www.w3.org/2000/01/rdf-schema#label> "Has other than valid name"@en .
+_:N60bc7804dbe64eb78c81c4d29b148c8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:Nde971c840d55470ca18bda4506133641 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/OtherSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Na0078318e16d48768ca1b087cd592c91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Kuuluu ylempään taksoniin"@fi .
+<http://www.yso.fi/onto/taxmeon/isPartOfOst> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/hasPartOst> .
+_:N59a07d60da3f4e43a080121fd9ec9e5f <http://www.w3.org/2002/07/owl#unionOf> _:N6cabddd8db604614bfda31ee613307f0 .
+<http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Has  taxonomic status"@en .
+_:N081c82522221450fa836babd602ec486 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/firstName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Has  nomenclatural status"@en .
+_:Nabece5769433424a9f44d55a880ae020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N973f427b3bb5477d9af6d8ab3613c616 .
+<http://www.yso.fi/onto/taxmeon/orderingWeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N0c7aa2b5530243dfb33bc9a208be705f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9b44895072724a8d8f1c6d4c0ffb1392 .
+<http://www.yso.fi/onto/taxmeon/Synonym> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+<http://www.yso.fi/onto/taxmeon/hasScientificName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/ChangeInCircumscription> <http://www.w3.org/2000/01/rdf-schema#label> "Change in a taxonomic concept"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.yso.fi/onto/taxonomic-ranks/TaxonomicRank> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N903ce5a58d1849668dc71557b58ed0f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/before> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Change> .
+<http://www.yso.fi/onto/taxmeon/TaxonInChecklist> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nomenclatural status of a taxon"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/TaxonGeneral> <http://www.w3.org/2000/01/rdf-schema#comment> "General reference to a taxon can be used if an exact relation is not known or relevant"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N31789bc3fa1341eeb9eca9e9c3affb53 <http://www.w3.org/2002/07/owl#unionOf> _:N5a5443fe897b448a98836ffd90248327 .
+<http://www.yso.fi/onto/taxmeon/Change> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/Homonym> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N6e224191801d45f8a8d86b6025fd334f <http://www.w3.org/2002/07/owl#unionOf> _:N56e54bb5340e45b386ef69254e82b208 .
+<http://www.yso.fi/onto/taxmeon/ScientificName> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific name"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/Valid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/publishedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Is published in"@en .
+<http://www.yso.fi/onto/taxmeon/identificationQualifier> <http://www.w3.org/2000/01/rdf-schema#comment> "e.g. aff., cf"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/congruentWithTaxon> .
+<http://www.yso.fi/onto/taxmeon/after> <http://www.w3.org/2000/01/rdf-schema#label> "Muutoksen jälkeen"@fi .
+_:N515a79a4206c48409342ea18d90c17d6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.yso.fi/onto/taxmeon/completeAuctorumString> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:N3457c7dfbb3041ab9fbd91248ae986a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+_:N44a1a21dbdd14787a2534e8e5ec1c64d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/completeAuctorumString> <http://www.w3.org/2000/01/rdf-schema#label> "Täydellinen kirjallisuusviite"@fi .
+<http://www.yso.fi/onto/taxmeon/ProposedVernacularName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/VernacularNameStatus> .
+_:Nf6045f0123ed4b38ae84dc91748bb840 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/NomenclaturalStatus> .
+_:Nd56cdade9d1a4f6a9455623d56e29caa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+_:N078e60f3a6dc47eeb8701bc5ce1ae797 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/occursInNameCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nd77aa176892a42c2acae5b29d46e480a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ned2cb6c99f614a47acbe992d3509d781 .
+_:N44a1a21dbdd14787a2534e8e5ec1c64d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9adbe237f32c42a3b335b330176593c1 .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+_:N00671b8a64804fa798e46be4cc72c46e <http://www.w3.org/2002/07/owl#unionOf> _:N78e9fe04b5b749b98e9ce01f31f86f19 .
+<http://www.yso.fi/onto/taxmeon/Split> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/isPartOfInt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/isPartOf> .
+<http://www.yso.fi/onto/taxmeon/identificationQualifier> <http://www.w3.org/2000/01/rdf-schema#label> "Määrityksen tarkenne"@fi .
+_:N81bb08ef489946f89b21286f6d7155ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> .
+_:Nec84b99b46d94e449c5021334a372ed1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+_:Nb18923adacf143d2bf3d91be30022893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N6cabddd8db604614bfda31ee613307f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9a9c01d1c37c472395faf64ae067e40b .
+<http://www.yso.fi/onto/taxmeon/publishedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/hasNameStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/firstName> <http://www.w3.org/2000/01/rdf-schema#label> "First name"@en .
+<http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N10a8ceed03c44db78729c58ed470f23a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+_:Nf48115e801704684aa2e1eb9000b172c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/ChangeInClassification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/publishedOriginallyIn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nc89b0c8e790f4e33a75f37df4e961a45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+_:N78e9fe04b5b749b98e9ce01f31f86f19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nde971c840d55470ca18bda4506133641 .
+_:Nfbca488bedeb42fdabc547a6dfa16d4f <http://www.w3.org/2002/07/owl#unionOf> _:N102267ec31cc49918eb25fe9cf6f0e30 .
+_:N47f149f26c7e41d8b65ba447cd53e9af <http://www.w3.org/2002/07/owl#unionOf> _:N6cb438c4c7844a769bf3e1e8f717bdc7 .
+_:Nfbca488bedeb42fdabc547a6dfa16d4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/auctorumYear> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nb0cbbddc93c342c1ad50ad0d18ddacc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4f96ec3d4b7a406f93f2859d2424551b .
+<http://www.yso.fi/onto/taxmeon/Publication> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/2000/01/rdf-schema#label> "Intensionally congruent with taxon"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N9f390ec5665d4316b3d07e12a066f294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd4788fef790d425b9becd5316f7013e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "for creating a top level classification"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/SpellingStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Spelling status"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/occursInNameCollection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N6cb438c4c7844a769bf3e1e8f717bdc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> <http://www.w3.org/2000/01/rdf-schema#label> "Overlaps intensionally with taxon"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/isPartOfOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> _:N6e224191801d45f8a8d86b6025fd334f .
+<http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Is associated with  taxon"@en .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Reference> .
+<http://www.yso.fi/onto/taxmeon/AcceptedVernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/auctorum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/Author> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/TaxonGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9adbe237f32c42a3b335b330176593c1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/Checklist> .
+_:N2c74199c0a014804b19db78e138e08d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Naf7d2064835b4e08a36c706803490340 .
+<http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/VernacularNameStatus> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Overlaps with taxon"@en .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/TaxonInChecklist> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/VernacularName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:Nfb2f4d60b8f347a39dd7266130ba0ebc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/hasPartOst> <http://www.w3.org/2000/01/rdf-schema#label> "Has ostensively part"@en .
+<http://www.yso.fi/onto/taxmeon/hasVernacularName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/VernacularName> .
+<http://www.yso.fi/onto/taxmeon/Valid> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N59a07d60da3f4e43a080121fd9ec9e5f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/occursInChecklist> <http://www.w3.org/2000/01/rdf-schema#label> "Occurs in checklist"@en .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/2000/01/rdf-schema#range> _:N838be6e951924b6b84c31b6a8c20486c .
+<http://www.yso.fi/onto/taxmeon/firstName> <http://www.w3.org/2000/01/rdf-schema#label> "Etunimi"@fi .
+<http://www.yso.fi/onto/taxmeon/TaxonGeneral> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N387d8f2c8b7449bc9892efe628254933 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+<http://www.yso.fi/onto/taxmeon/Homonym> <http://www.w3.org/2000/01/rdf-schema#label> "Homonym"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.yso.fi/onto/taxmeon/firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.yso.fi/onto/taxmeon/lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/Author> .
+_:N9adbe237f32c42a3b335b330176593c1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N350cab6e4a794443b1aa0edfd57bc15e .
+_:Nb434b562626f468a8a9506145e767677 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:Nde971c840d55470ca18bda4506133641 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/hasPartOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.yso.fi/onto/taxmeon/hasPartOst> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#label> "Nomenclature code"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N37498e8a0a3b45098c6aa78fbcec15ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/abbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/occursInChecklist> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxmeon/hasVernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> _:N3decf1421d4f4c7899a39b3973c01150 .
+<http://www.yso.fi/onto/taxmeon/isPartOfInt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasNonvalidName> <http://www.w3.org/2000/01/rdf-schema#range> _:Nfae6ada1e3b84ee8b60c26379501469c .
+<http://www.yso.fi/onto/taxmeon/ChangeInCircumscription> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/Split> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/Change> .
+_:Ned2cb6c99f614a47acbe992d3509d781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> .
+_:Nf5f63220297644da889a81b8f61408a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/auctorum> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+_:Nd2a238b845cb4b42816b59357fd4f858 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N53816e791496464a8d24beb8d7ec99b9 .
+<http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+<http://www.yso.fi/onto/taxmeon/nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:Ndfa0df2dc406458d891668f83886b7fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N00f3fd143aab4a34835a30577d0e32a4 .
+_:N77695f7dc26944abb99085026757e83a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+<http://www.yso.fi/onto/taxmeon/Accepted> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/Change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N838be6e951924b6b84c31b6a8c20486c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Naedd3eebc5b2463f9a3bd511f305a97c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/ChangeInClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> <http://www.w3.org/2000/01/rdf-schema#label> "Overlaps ostensively with taxon"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/before> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.yso.fi/onto/taxonomic-ranks/TaxonomicRank> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/TaxonomicConcept> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> .
+<http://www.yso.fi/onto/taxmeon/refersToTaxon> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N49bd476712ea4a3fb85e17dfd2f2ae35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/publishedOriginallyIn> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:Nd4788fef790d425b9becd5316f7013e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/ScientificName> .
+_:N6371f08b7d194f20ac454cda8428043d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+_:N515a79a4206c48409342ea18d90c17d6 <http://www.w3.org/2002/07/owl#unionOf> _:N77695f7dc26944abb99085026757e83a .
+<http://www.yso.fi/onto/taxmeon/auctorumYear> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N429d4e4945ce4b32a37842134c0d767c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/Homonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N6371f08b7d194f20ac454cda8428043d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8f45a1f67954402589a6abf4b4b0baf2 .
+<http://www.yso.fi/onto/taxmeon/publishedInYear> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N53816e791496464a8d24beb8d7ec99b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nfb2f4d60b8f347a39dd7266130ba0ebc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N429d4e4945ce4b32a37842134c0d767c .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Congruent with  taxon"@en .
+_:N0b14a6ee29464d4fa5d0474bb33bf365 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxon> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N351e6afad8e1491f81cca7252a45dab8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N81bb08ef489946f89b21286f6d7155ab .
+_:N3decf1421d4f4c7899a39b3973c01150 <http://www.w3.org/2002/07/owl#unionOf> _:Nb434b562626f468a8a9506145e767677 .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst> <http://www.w3.org/2000/01/rdf-schema#label> "Ostensively congruent with taxon"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/Homonym> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/TaxonomicStatus> .
+_:N5cbdebc4fa9144a9bb088d60c530d98e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+_:Na0078318e16d48768ca1b087cd592c91 <http://www.w3.org/2002/07/owl#unionOf> _:N1f0f815c657047d89c8fd9cec230f66e .
+_:N2ff39996c52f4d6e87749a8f44d1805d <http://www.w3.org/2002/07/owl#unionOf> _:N60bc7804dbe64eb78c81c4d29b148c8e .
+_:N75eb8bd5e3bc4f04a715908dac9d025a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Publisher"@en .
+_:N430fd7df4acd4386ae0765cd78a6dd6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/AlternativeVernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "Alternative vernacular name"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N4d1fb89f18c94d9fb2b4e10c6f0fe658 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd90829aeb6204d19b06aa72cea2336ad .
+_:N150821868fee4503b5ed6871da08be80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/TaxonInChecklist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/hasPartInt> <http://www.w3.org/2000/01/rdf-schema#label> "Has intensionally part"@en .
+<http://www.yso.fi/onto/taxmeon/VernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N586d7a3a6e0a41f5bcfbb69cf0eed134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/refersToTaxon> <http://www.w3.org/2000/01/rdf-schema#label> "Refers to taxon"@en .
+<http://www.yso.fi/onto/taxmeon/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Kuuluu taksoniin"@fi .
+<http://www.yso.fi/onto/taxmeon/hasVernacularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nc09244088a54411780abc4de9ca5d6ae <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4b4122ddd0564a7da5b469c57f8fa188 .
+<http://www.yso.fi/onto/taxmeon/Valid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/lastName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/isPartOfInt> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/hasPartInt> .
+_:N4b4122ddd0564a7da5b469c57f8fa188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/orderingWeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship> <http://www.w3.org/2000/01/rdf-schema#label> "Taksonin kuvaaja"@fi .
+_:N00f3fd143aab4a34835a30577d0e32a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N078e60f3a6dc47eeb8701bc5ce1ae797 <http://www.w3.org/2002/07/owl#unionOf> _:N6371f08b7d194f20ac454cda8428043d .
+_:N9f390ec5665d4316b3d07e12a066f294 <http://www.w3.org/2002/07/owl#unionOf> _:Nb0cbbddc93c342c1ad50ad0d18ddacc9 .
+<http://www.yso.fi/onto/taxmeon/hasNameStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:Nf922390c912f4bf89b4549792cb68481 .
+_:N69741b2907514adca832fc67946c2222 <http://www.w3.org/2002/07/owl#unionOf> _:Nd7f7a642208a414b9c83e12904d899d4 .
+_:N92cb435d289c4fc38088218fa23b97ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/hasPartOst> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/firstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/Change> <http://www.w3.org/2000/01/rdf-schema#label> "Change"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/orderingWeight> <http://www.w3.org/2000/01/rdf-schema#label> "Ordering weight"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.yso.fi/onto/taxmeon/Author> .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt> .
+_:N554b3b6930d14b5a9c26c00046751484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N387d8f2c8b7449bc9892efe628254933 .
+<http://www.yso.fi/onto/taxmeon/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#label> "Kirjallisuusviite"@fi .
+<http://www.yso.fi/onto/taxmeon/Publication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.yso.fi/onto/taxmeon/Reference> .
+<http://www.yso.fi/onto/taxmeon/VernacularNameStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/ChangeInCircumscription> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N8e7037ac2c404845bd9c0e0b1fd65bd5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ne75c8d04f9f04fe6aa02579e6f287070 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/auctorum> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N7f43a04f7b6f4b0d845a85b63936ad41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne7ec226778b24212bee6b29b0ce28caf <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+_:N00671b8a64804fa798e46be4cc72c46e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/hasScientificName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N0c7aa2b5530243dfb33bc9a208be705f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonomicConcept> .
+<http://www.yso.fi/onto/taxmeon/occursInChecklist> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:N6cb438c4c7844a769bf3e1e8f717bdc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9aef0432b31142be9361433fc712b24c .
+<http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.yso.fi/onto/taxmeon/publishedOriginallyIn> <http://www.w3.org/2000/01/rdf-schema#label> "Published originally in"@en .
+<http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon> <http://www.w3.org/2000/01/rdf-schema#range> _:Na67a34d5f5d54105963acc13b5a2866e .
+<http://www.yso.fi/onto/taxmeon/after> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/TaxonInNameCollection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/Reference> <http://www.w3.org/2000/01/rdf-schema#label> "Reference to literature"@en .
+<http://www.yso.fi/onto/taxmeon/AcceptedVernacularName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+_:N9a9c01d1c37c472395faf64ae067e40b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.yso.fi/onto/taxmeon/TaxonInChecklist> .
+<http://www.yso.fi/onto/taxmeon/TaxonomicConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/ChangeInClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/Checklist> <http://www.w3.org/2000/01/rdf-schema#label> "Checklist"@en .
+<http://www.yso.fi/onto/taxmeon/ScientificName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable"@en .
+<http://www.yso.fi/onto/taxmeon/Publication> <http://www.w3.org/2000/01/rdf-schema#comment> ""^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.yso.fi/onto/taxmeon/NomenclaturalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.yso.fi/onto/taxmeon/before> <http://www.w3.org/2000/01/rdf-schema#range> _:N00671b8a64804fa798e46be4cc72c46e .
+<http://www.yso.fi/onto/taxmeon/publishedInYear> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://www.yso.fi/onto/taxmeon/Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N75eb8bd5e3bc4f04a715908dac9d025a <http://www.w3.org/2002/07/owl#unionOf> _:Nd2a238b845cb4b42816b59357fd4f858 .
+<http://www.yso.fi/onto/taxmeon/publishedOriginallyIn> <http://www.w3.org/2000/01/rdf-schema#label> "Alkuperäräisjulkaisu"@fi .
+_:N7544b4dbdd654f81ba4bfeea8d05b779 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.yso.fi/onto/taxmeon/congruentWithTaxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.yso.fi/onto/taxmeon/occursInNameCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Occurs in name collection"@en .
+_:N190df7d4c48f4574827d235d454c36f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

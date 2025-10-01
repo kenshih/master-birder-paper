@@ -1,0 +1,3069 @@
+[
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/OtherSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Other source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/TaxonGeneral",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "General reference to a taxon can be used if an exact relation is not known or relevant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taxon general"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/lastName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Author"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Sukunimi"
+      },
+      {
+        "@language": "en",
+        "@value": "Last name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasPartOst",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has ostensively part"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/hasPart"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/isPartOfOst"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na0078318e16d48768ca1b087cd592c91",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Ostensively congruent with taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxon"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxonOst"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasNomenclaturalStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has  nomenclatural status"
+      },
+      {
+        "@language": "fi",
+        "@value": "Nomenklatuurinen status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/NomenclaturalStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/before",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Change"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Before"
+      },
+      {
+        "@language": "fi",
+        "@value": "Nimi ennen muutosta"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N00671b8a64804fa798e46be4cc72c46e"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N00671b8a64804fa798e46be4cc72c46e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasScientificNameAuthorship",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N31789bc3fa1341eeb9eca9e9c3affb53"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Taksonin kuvaaja"
+      },
+      {
+        "@language": "en",
+        "@value": "Has scientific name authorship"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Author"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N31789bc3fa1341eeb9eca9e9c3affb53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/isPartOfInt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Is intensionally part of taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/hasPartInt"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Author",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "An author name of a taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Author"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "for creating a top level classification"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taxon in an upper classification"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taxonomic concept"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N59a07d60da3f4e43a080121fd9ec9e5f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/bibliographicCitation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Bibliographic citation"
+      },
+      {
+        "@language": "fi",
+        "@value": "Kirjallisuusviite"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Change",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Change"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxonomic-ranks/TaxonomicRank",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taxonomic rank"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Publication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/NomenclaturalCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Nomenclature code"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasNonvalidName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N2ff39996c52f4d6e87749a8f44d1805d"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has other than valid name"
+      },
+      {
+        "@language": "fi",
+        "@value": "Muu kuin voimassaoleva nimi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:Nfae6ada1e3b84ee8b60c26379501469c"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfae6ada1e3b84ee8b60c26379501469c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N2ff39996c52f4d6e87749a8f44d1805d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/firstName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Author"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "First name"
+      },
+      {
+        "@language": "fi",
+        "@value": "Etunimi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Checklist",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Checklist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasTaxonomicStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has  taxonomic status"
+      },
+      {
+        "@language": "fi",
+        "@value": "Taksonominen status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Class",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taxonomic status"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/after",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Change"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Muutoksen jälkeen"
+      },
+      {
+        "@language": "en",
+        "@value": "After"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:Na8e483d3b19f42c785f767cb3d2ec56c"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na8e483d3b19f42c785f767cb3d2ec56c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/SpellingStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "e.g. misspelling"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Spelling status"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N75eb8bd5e3bc4f04a715908dac9d025a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Congruent with  taxon"
+      },
+      {
+        "@language": "fi",
+        "@value": "Samaa tarkoittava taksoni"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N838be6e951924b6b84c31b6a8c20486c"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxon"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N838be6e951924b6b84c31b6a8c20486c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N75eb8bd5e3bc4f04a715908dac9d025a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/publisher",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Publisher"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Creator"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Author"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasPart",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N7f43a04f7b6f4b0d845a85b63936ad41"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has part"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N078e60f3a6dc47eeb8701bc5ce1ae797"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N078e60f3a6dc47eeb8701bc5ce1ae797",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N7f43a04f7b6f4b0d845a85b63936ad41",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/completeAuctorumString",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N47f149f26c7e41d8b65ba447cd53e9af"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Complete auctorum citation"
+      },
+      {
+        "@language": "fi",
+        "@value": "Täydellinen kirjallisuusviite"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N47f149f26c7e41d8b65ba447cd53e9af",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasNameStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N5057f27474d543739942f1536275ff4a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has name status"
+      },
+      {
+        "@language": "fi",
+        "@value": "Nimen status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:Nf922390c912f4bf89b4549792cb68481"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf922390c912f4bf89b4549792cb68481",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/SpellingStatus"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/NomenclaturalStatus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N5057f27474d543739942f1536275ff4a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/nomenclaturalCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N6e224191801d45f8a8d86b6025fd334f"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Nimistökoodi"
+      },
+      {
+        "@language": "en",
+        "@value": "Nomenclatural code"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/NomenclaturalCode"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6e224191801d45f8a8d86b6025fd334f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/Checklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N903ce5a58d1849668dc71557b58ed0f2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Overlaps with taxon"
+      },
+      {
+        "@language": "fi",
+        "@value": "Päällekkäinen taksonin kanssa"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N2b10718eb7fa42ab926e2097a76ef650"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxon"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2b10718eb7fa42ab926e2097a76ef650",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N903ce5a58d1849668dc71557b58ed0f2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasScientificName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has scientific name"
+      },
+      {
+        "@language": "fi",
+        "@value": "Tieteellinen nimi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasPartInt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has intensionally part"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/hasPart"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/isPartOfInt"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Overlaps intensionally with taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxon"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxonInt"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/AlternativeVernacularName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Alternative vernacular name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/VernacularNameStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/publishedInYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Julkaisuvuosi"
+      },
+      {
+        "@language": "en",
+        "@value": "Published in year"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taxon in a name collection"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N69741b2907514adca832fc67946c2222",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Misapplied",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Misapplied"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Reference",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Reference to literature"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Lump",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Lump of taxa"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Change"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfbca488bedeb42fdabc547a6dfa16d4f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/Checklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/ChangeInClassification",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Change in a hierarchy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Change"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Valid",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Valid"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/VernacularNameStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Vernacular name status"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naedd3eebc5b2463f9a3bd511f305a97c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/isPartOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N3644b3e5d5524f4c9176a1c1e8a35903"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Kuuluu taksoniin"
+      },
+      {
+        "@language": "en",
+        "@value": "Is part of taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:Nd0317ec93cff4cdfb453f8288e2e2283"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/hasPart"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd0317ec93cff4cdfb453f8288e2e2283",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N3644b3e5d5524f4c9176a1c1e8a35903",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/ScientificName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Scientific name"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/isPartOfOst",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Is ostensively part of taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/hasPartOst"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/refersToTaxon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N45934e19bb07405e8dd01eebb59f28bb"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Viittaa taksoniin"
+      },
+      {
+        "@language": "en",
+        "@value": "Refers to taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N3b89ab00347c477f806a448f25b7f61a"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3b89ab00347c477f806a448f25b7f61a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonGeneral"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N45934e19bb07405e8dd01eebb59f28bb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/identificationQualifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "e.g. aff., cf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Nfae484ae4edc440a941663a0d47afb44"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Identification qualifier"
+      },
+      {
+        "@language": "fi",
+        "@value": "Määrityksen tarkenne"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfae484ae4edc440a941663a0d47afb44",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/NomenclaturalStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Nomenclatural status of a taxon"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/publishedOriginallyIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N916510f6cae544d18c13885ebcaec85e"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Alkuperäräisjulkaisu"
+      },
+      {
+        "@language": "en",
+        "@value": "Published originally in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Publication"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N916510f6cae544d18c13885ebcaec85e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/orderingWeight",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Specifies the order in which taxa are shown in a checklist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Ordering weight"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Synonym",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Synonym"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/auctorumYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N52939c3a00e34494875ac6c38b8e9361"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Alkuperäisjulkaisun vuosi"
+      },
+      {
+        "@language": "en",
+        "@value": "Auctorum year"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N52939c3a00e34494875ac6c38b8e9361",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasVernacularNameStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/VernacularName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Kansankielisen nimen status"
+      },
+      {
+        "@language": "en",
+        "@value": "Has vernacular name status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/VernacularNameStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/ProposedVernacularName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Proposed vernacular name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/VernacularNameStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Accepted",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Accepted"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/isPartOfHigherTaxon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Is used for describing the hierarchy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N7c27cd2de8964d998383bf84ccbff261"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Kuuluu ylempään taksoniin"
+      },
+      {
+        "@language": "en",
+        "@value": "Is part of higher taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:Na67a34d5f5d54105963acc13b5a2866e"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na67a34d5f5d54105963acc13b5a2866e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c27cd2de8964d998383bf84ccbff261",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Overlaps ostensively with taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxon"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/overlapsWithTaxonOst"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbc7823efc6624afb99850c76cc228fa4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Is associated with  taxon"
+      },
+      {
+        "@language": "fi",
+        "@value": "Yhteys taksoniin"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/isAssociatedWithTaxon"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Taxon in a checklist"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/AcceptedVernacularName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Accepted vernacular name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/VernacularNameStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Homonym",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Homonym"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Intensionally congruent with taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxon"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/congruentWithTaxonInt"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/auctorum",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N9f390ec5665d4316b3d07e12a066f294"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Auctorum"
+      },
+      {
+        "@language": "fi",
+        "@value": "Auktori"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Author"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9f390ec5665d4316b3d07e12a066f294",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N515a79a4206c48409342ea18d90c17d6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/ScientificName"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/occursInChecklist",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Esiintyy lajilistassa"
+      },
+      {
+        "@language": "en",
+        "@value": "Occurs in checklist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Checklist"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/Split",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Split of a taxon"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Change"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/VernacularName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Vernacular name"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/occursInNameCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Occurs in name collection"
+      },
+      {
+        "@language": "fi",
+        "@value": "Esiintyy nimikokoelmassa"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/OtherSource"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/ChangeInCircumscription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Change in a taxonomic concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Change"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/abbreviation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Author"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fi",
+        "@value": "Auktorin nimen lyhenne"
+      },
+      {
+        "@language": "en",
+        "@value": "Author abbreviation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Title"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/hasVernacularName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N3decf1421d4f4c7899a39b3973c01150"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Has  vernacular name"
+      },
+      {
+        "@language": "fi",
+        "@value": "Kansankielinen nimi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/VernacularName"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3decf1421d4f4c7899a39b3973c01150",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInUpperClassification"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.yso.fi/onto/taxmeon/publishedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Nb6af33ba11b848edb7de44a5f2d79519"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Is published in"
+      },
+      {
+        "@language": "fi",
+        "@value": "Julkaisu"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.yso.fi/onto/taxmeon/Reference"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "unstable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb6af33ba11b848edb7de44a5f2d79519",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInChecklist"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/NomenclaturalStatus"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicConcept"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonomicStatus"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/VernacularNameStatus"
+          },
+          {
+            "@id": "http://www.yso.fi/onto/taxmeon/TaxonInNameCollection"
+          }
+        ]
+      }
+    ]
+  }
+]
