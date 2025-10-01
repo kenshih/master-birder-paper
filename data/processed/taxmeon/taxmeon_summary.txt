@@ -1,8 +1,0 @@
-OWL Processing Summary for taxmeon
-==================================================
-
-Total triples: 697
-Classes: 65
-Properties: 43
-Individuals: 0
-Processing time: 0.00 seconds
