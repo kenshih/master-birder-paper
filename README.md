@@ -14,7 +14,7 @@ The goal is just to get a feel of the RDBMS representation and manipulation. Whi
 
 This simple exercise re-creates the database schema described in the Avibase paper, then takes the public list released by AviList (AviList 2025), transforms it and loads it into that database.
 
-From there I was able to connect to it to run a number of queries just to explore what was there to exercise the mechanics involved in manipulating that data for query or a data application.
+From there I was able to connect to it to run a number of queries just to explore what was there to exercise the mechanics involved in manipulating that data for query or a data application. (note data has been moved from data/ to data/avibase, so paths may need to be updated in notebooks)
 
 1. `notebooks/avibase_db_setup.ipynb` - create database
 2. `notebooks/avibase_load_data.ipynb` - clean avilist csv & load into db
@@ -67,14 +67,6 @@ From there I was able to connect to it to run a number of queries just to explor
         }
         ```
 
-
-```bash
-# Install dependencies
-pdm install
-
-# Test the processing pipeline
-python scripts/test_jena_processing.py
-```
 
 ### Processing Methods
 
