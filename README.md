@@ -38,7 +38,18 @@ From there I was able to connect to it to run a number of queries just to explor
 
 # Ontology investigation
 
-### Setup
+1. `data/ontology/3.2.ncbi_neornithes_hier.owl` - NBCI Taxon of Neorthines queried out of large `ncbitaxon.owl` (not in repo) by using `sparql/neorthines_hier.sparql`. Experimented with Jena, Fuseki, ChatGPT, and Kepler AI. Final procedure:
+    1. Downloaded NBCI Taxonomy from OBO Foundry
+    2. Loaded it into local Fuseki Server tbd
+    3. Developed CONSTRUCT query `sparql/neorthines_hier.sparql`
+    4. Ran query in Fuseki and saved as `data/ontology/3.2.ncbi_neornithes_hier.owl`
+    5. Also ran same query with command-line tool with `jena` instead of Fuseki, to take another timing: ~7s to build file
+    6. Viewed file in Protégé
+       ![In Protégé](./data/ontology/3.2.InProtege.png)
+    In all this took several hours over a few days, to get a better feel for SPARQL, troubleshoot/evolve query, experiment.
+    
+
+## Notes
 
 - ncbitaxon.owl is 1.7G, so instead i trimmed it down to living Aves species-only -> ncbi_neornithes.owl
     - from https://jena.apache.org/download/
@@ -75,4 +86,7 @@ From there I was able to connect to it to run a number of queries just to explor
 ```
 time JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_manually_created.sparql > data/ontology/ncbi_neornithes_hier.owl
 107.65s user 11.20s system 109% cpu 1:48.79 total
+
+time JAVA_TOOL_OPTIONS="-Xmx8g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_hier.sparql > data/ontology/ncbi_neornithes_timing.owl
+JAVA_TOOL_OPTIONS="-Xmx8g" tdb2.tdbquery --loc  --query  >   6.92s user 0.47s system 280% cpu 2.632 total
 ```
