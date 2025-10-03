@@ -1,0 +1,37 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX obo:        <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon:  <http://purl.obolibrary.org/obo/ncbitaxon#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?node ?p ?o .
+}
+WHERE {
+  {
+  # species under Neornithes
+  ?node ncbitaxon:has_rank ?r ; rdfs:subClassOf+ obo:NCBITaxon_8825 .
+    VALUES ?r { 
+      obo:NCBITaxon_subclass
+    obo:NCBITaxon_superorder
+    obo:NCBITaxon_order
+    obo:NCBITaxon_suborder
+    obo:NCBITaxon_infraorder
+    obo:NCBITaxon_parvorder
+    obo:NCBITaxon_superfamily
+    obo:NCBITaxon_family
+    obo:NCBITaxon_subfamily
+    obo:NCBITaxon_tribe
+    obo:NCBITaxon_subtribe
+    obo:NCBITaxon_genus
+    obo:NCBITaxon_subgenus
+    obo:NCBITaxon_species_group
+    obo:NCBITaxon_species_subgroup
+    obo:NCBITaxon_species
+    }
+  }
+  UNION
+  {
+        { BIND(obo:NCBITaxon_8825 AS ?node) }
+  }
+  OPTIONAL { ?node ?p ?o }
+}

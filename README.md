@@ -66,35 +66,9 @@ From there I was able to connect to it to run a number of queries just to explor
         { ?s ?pp ?cls }       # triples where the species is object
         }
         ```
-
-
-### Processing Methods
-
-1. **RDFLib Streaming** - Memory efficient for large files
-   ```python
-   from scripts.jena_owl_processor import JenaOWLProcessor
-   processor = JenaOWLProcessor()
-   stats = processor.process_with_rdflib_streaming(owl_file, output_dir)
-   ```
-
-2. **Database Storage** - For efficient querying
-   ```python
-   stats = processor.process_to_database(owl_file, db_file)
-   df = processor.query_database(db_file, "SELECT * FROM triples LIMIT 10")
-   ```
-
-3. **Jupyter Notebook** - Interactive exploration
-   - `notebooks/jena_owl_processing.ipynb` - Comprehensive processing examples
-
-### Files
-- `data/ontology/ncbitaxon.owl` (~1.7GB) - NCBI Taxonomy
-- `data/ontology/taxmeon.owl` (~61KB) - TaxMeOn ontology
-- `scripts/jena_owl_processor.py` - Main processing class
-- `scripts/test_jena_processing.py` - Test script
-
-### Why Jena?
-- **Memory Efficiency**: Handles large files without loading everything into memory
-- **Streaming Processing**: Processes files incrementally
-- **Database Integration**: Stores ontologies in SQLite for efficient querying
-- **SPARQL Support**: Complex queries on large datasets
-- **OWL Reasoning**: Full OWL 2 support with reasoning capabilities
+- Fuseki was not returning so used: `apache-jena-5.5.0` client tools on fuseki `tbd`.
+  ```
+  source .env
+  JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_with_parentage_lite.sparql > data/ontology/ncbi_neornithes_hier.ttl
+  ```
+  Even this light version didn't stop running after 1h of cpu time.
