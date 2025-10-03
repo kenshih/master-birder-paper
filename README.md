@@ -72,3 +72,7 @@ From there I was able to connect to it to run a number of queries just to explor
   JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_with_parentage_lite.sparql > data/ontology/ncbi_neornithes_hier.ttl
   ```
   Even this light version didn't stop running after 1h of cpu time.
+```
+time JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_manually_created.sparql > data/ontology/ncbi_neornithes_hier.owl
+107.65s user 11.20s system 109% cpu 1:48.79 total
+```

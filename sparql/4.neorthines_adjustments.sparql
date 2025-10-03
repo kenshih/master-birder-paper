@@ -1,0 +1,38 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX obo:        <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon:  <http://purl.obolibrary.org/obo/ncbitaxon#>
+PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+?node ?p ?o .
+?parent rdfs:label ?parentLabel .
+}
+WHERE {
+{
+# All taxa under Neornithes, excluding subspecies-level ranks when rank exists
+?node rdfs:subClassOf+ obo:NCBITaxon_8825 .
+OPTIONAL { ?node ncbitaxon:has_rank ?r }
+| FILTER(!BOUND(?r) |  | ?r NOT IN ( |
+| --- | --- |
+obo:NCBITaxon_subspecies,
+obo:NCBITaxon_varietas,
+obo:NCBITaxon_forma,
+obo:NCBITaxon_strain,
+obo:NCBITaxon_isolate,
+obo:NCBITaxon_serotype,
+obo:NCBITaxon_biotype
+))
+}
+UNION
+{
+# Include Neornithes itself (NCBITaxon_8825)
+BIND(obo:NCBITaxon_8825 AS ?node)
+}
+OPTIONAL { ?node ?p ?o }
+
+# Get the label of NCBITaxon_8825's parent
+OPTIONAL {
+obo:NCBITaxon_8825 rdfs:subClassOf ?parent .
+?parent rdfs:label ?parentLabel .
+}
+}
