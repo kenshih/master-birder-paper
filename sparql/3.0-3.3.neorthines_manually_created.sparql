@@ -1,0 +1,42 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?node   ?p   ?o .
+  ?parent rdfs:label ?parentLabel .
+}
+WHERE {
+  {
+    SELECT DISTINCT ?node
+    WHERE {
+      # include Neornithes and all descendants
+      ?node rdfs:subClassOf* obo:NCBITaxon_8825 .
+
+      # keep nodes with no rank, or with a rank NOT in the excluded set
+      OPTIONAL { ?node ncbitaxon:has_rank ?r }
+      FILTER(
+        !BOUND(?r) ||
+        ?r NOT IN (
+          obo:NCBITaxon_subspecies,
+          obo:NCBITaxon_varietas,
+          obo:NCBITaxon_forma,
+          obo:NCBITaxon_strain,
+          obo:NCBITaxon_isolate,
+          obo:NCBITaxon_serotype,
+          obo:NCBITaxon_biotype
+        )
+      )
+    }
+  }
+
+  # pull all triples about each node
+  OPTIONAL { ?node ?p ?o }
+
+  # parent label of Neornithes
+  OPTIONAL {
+    obo:NCBITaxon_8825 rdfs:subClassOf ?parent .
+    ?parent rdfs:label ?parentLabel .
+  }
+}
