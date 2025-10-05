@@ -1,0 +1,22 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+
+SELECT ?taxon ?taxonLabel ?uberon ?uberonLabel
+WHERE {
+  {
+    # local seed: all descendants of Aves (8782), not Neognathae (8825)
+    SELECT DISTINCT ?taxon WHERE {
+      ?taxon rdfs:subClassOf* obo:NCBITaxon_8782;
+             ncbitaxon:has_rank ?tx #obo:NCBITaxon_class . #obo:NCBITaxon_order obo:NCBITaxon_infraclass
+      VALUES ?tx { obo:NCBITaxon_class obo:NCBITaxon_order obo:NCBITaxon_infraclass}
+    } LIMIT 12000
+  }
+  SERVICE <https://ubergraph.apps.renci.org/sparql> {
+    ?uberon obo:RO_0002162 ?taxon ;
+            rdfs:label ?uberonLabel .
+    OPTIONAL { ?taxon rdfs:label ?taxonLabel }
+    FILTER(STRSTARTS(STR(?uberon), STR(obo:UBERON_)))
+  }
+}
+LIMIT 1000

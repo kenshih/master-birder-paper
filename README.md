@@ -25,16 +25,11 @@ From there I was able to connect to it to run a number of queries just to explor
 6. `data/avibase.schema.mermaid` - my version of schema that came from the Avibase paper
 7. `data/Problem.rows.csv` - 3 saved rows I removed that had errors, for expediency
 
-## some takeaways
+## AviList/Avibase investigation: some takeaways
 
 1. There are probably at least 2 tables that describe order. As well, this is suggested by the column "Sequence" in the original AviList 2025 Excel sheet. It could be described with tables Checklist(avibase_id, checklist_name, checklist_version, ..) -- e.g. checklist_name "AviList", version "2025"; and Sequence(checklist_id, avibase_id, seq_num, ..) -- where avibase_id is a taxon concept of a specific conscription found in, say, AviList 2025.
 2. As suggested by the rubric/algorithm of inclusion, there are a number of things that are not self-descriptive about the database schema. There are likely a large number of rules in an application that populates the data that make the data work. The highly normalized structure means, when creating a "row" of, say, a new species, would require careful placement of a single avibaseID across several tables, across a number of dimensions of description. From this normalization, it's not quite clear, beyond reference to article literature, what makes for the conscription of the species. Perhaps other structures exist not described in the paper that do this -- though, it does seem to be extrinsic to, perhaps a precondition of, the data.
-
-## notes: Anna's Hummingbird
-
-- https://avibase.bsc-eoc.org/species.jsp?avibaseid=42393721
-    - avibase-42393721
-    - TSN: 178036
+3. As far as the actual details are concerned, I'm not sure, I've captured the intended schema of the Avibase paper 100% correctly. So, this should be considered a "gist".
 
 # Ontology investigation
 
@@ -47,18 +42,32 @@ From there I was able to connect to it to run a number of queries just to explor
     6. Viewed file in Protégé
        ![In Protégé](./data/ontology/3.2.InProtege.png)
     In all this took several hours over a few days, to get a better feel for SPARQL, troubleshoot/evolve query, experiment.
+2. `sparql/neorthines_uberon_relations.sparql` is a query demonstrating linkage of local data (local NBCI Taxon data) to another ontology, in this case to the "Uberon Multi-species Anatomy Ontology" (https://uberon.org/). Using our desired set (Aves) the resulting list shows mappings that exist in Uberon & the corresponding taxon name in NCBI Taxonomy, resulting in only 92 rows: `data/ontology/neorthines_uberon_relations.csv`
+3. `sparql/sample.uberon.detail.sparql` is a junky query just exploding out a sample of data that exists for anatomical parts in Uberon to illustrate what areas of discovery/traversal/information could be explored between Taxa and Anatomoy using these 2 datasets.
+
+## Ontology investigation: some takeaways
+
+1. While, my first exercise of selecting the Avian subset from NCBI Taxonomy was a good exercise and an essential step in my in understanding the dataset, SPARQL, and Semantic Web workflow, in a real-world scenario this is an artificial step. Instead, I might start with my own dataset, map it to NCBI Taxonomy IDs, in order to unlock Uberon, GO, and other OBO Foundary biological datasets. For example, if my goal is to enrich AviList utility, I can simply map AviList IDs to NCBITaxon IDs. In hindsight, this is the exercise I could have run.
+2. Uberon's finest-grain mapping between Avian taxa is at the Order-level, and here it has a total of only 5 mappings across only 2 orders e.g. "Strigiformes","feathered ear tuft" & "Passeriformes","area X of basal ganglion". Most of the rows simply correspond to class "Aves", with no representation of skeletal structures, such as the avian keel, coracoid bone, or furcula. I will read the Uberon paper to understand more & it may be I need to unpack the Uberon predicate definitions and usages; but in this surface treatment it seems that this coverage would be insufficient for focused or comparative studies of Avian life. For example, the Suliformes do not have external nares, absence of any unique beak structure representation for Suliformes suggests this description would need to come from somewhere else. What of birds that don't have a furcula? How about accounting for the albatross shoulder's lock-hinge? What about feather structures? I expect I'll find 2 things: 1) intent of Uberon is to capture components-only, not anatomical conscriptions for taxa; that should be provided per-taxa elsewhere 2) There are gaps for avian life. Gaps can be filled simply by anyone providing for an extension set of data for missing Avian taxa, since Semantic Web is AAA (anyone can say anything about anything).
+    - Correction: Aves' "carina of sternum" is covered in Uberon as synonym of "keel"
     
 
-## Notes
+## Unstructured Notes
 
+- Anna's Hummingbird
+    - https://avibase.bsc-eoc.org/species.jsp?avibaseid=42393721
+        - avibase-42393721
+        - TSN: 178036
 - ncbitaxon.owl is 1.7G, so instead i trimmed it down to living Aves species-only -> ncbi_neornithes.owl
     - from https://jena.apache.org/download/
     - download apache-jena-fuseki-5.5.0.tar.gz
     - unpack and cd into it...
         ```
+        # to start Fuseki, in dir or put on PATh
         ./fuseki-server
-        # go to http://localhost:3030/#/
-        # in Fuseki CONSTRUCT query to create ncbi_neornithes.owl file
+        # go to http://localhost:3030/#/ in browser for UI
+
+        # in Fuseki CONSTRUCT query to create ncbi_neornithes.owl file (this was 0.ncbi_neornithes.owl)
         PREFIX obo:        <http://purl.obolibrary.org/obo/>
         PREFIX ncbitaxon:  <http://purl.obolibrary.org/obo/ncbitaxon#>
         PREFIX rdfs:       <http://www.w3.org/2000/01/rdf-schema#>
@@ -90,3 +99,13 @@ time JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0
 time JAVA_TOOL_OPTIONS="-Xmx8g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_hier.sparql > data/ontology/ncbi_neornithes_timing.owl
 JAVA_TOOL_OPTIONS="-Xmx8g" tdb2.tdbquery --loc  --query  >   6.92s user 0.47s system 280% cpu 2.632 total
 ```
+break
+```
+Unexpected error making the query: GET https://stars-app.renci.org/ubergraph/sparql?query=SELECT++%2A%0AWHERE%0A++%7B+%7B+?uberon++%3Chttp://purl.obolibrary.org/obo/RO_0002162%3E++%3Chttp://purl.obolibrary.org/obo/NCBITaxon_100%3E+%3B%0A+++++++++++++++%3Chttp://www.w3.org/2000/01/rdf-schema%23label%3E++?uberonLabel%0A++++++OPTIONAL%0A++++++++%7B+%3Chttp://purl.obolibrary.org/obo/NCBITaxon_100%3E%0A++++++++++++++++++++%3Chttp://www.w3.org/2000/01/rdf-schema%23label%3E++?taxonLabel%0A++++++++%7D%0A++++%7D%0A++++FILTER+strstarts%28str%28?uberon%29%2C+%22http://purl.obolibrary.org/obo/UBERON_%22%29%0A++%7D%0A
+```
+
+## notes: Anna's Hummingbird
+
+- https://avibase.bsc-eoc.org/species.jsp?avibaseid=42393721
+    - avibase-42393721
+    - TSN: 178036

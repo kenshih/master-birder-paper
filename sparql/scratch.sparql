@@ -1,0 +1,154 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+# RO:0002162 = in taxon
+
+SELECT DISTINCT ?taxon #?taxonLabel ?uberon ?uberonLabel
+WHERE {
+  # --- local data in Fuseki ---
+  # Example: instances link to NCBITaxon IRIs
+#  ?taxon ncbitaxon:has_rank obo:NCBITaxon_species .
+
+  # --- remote Ubergraph with Uberon + NCBITaxon ---
+  SERVICE <https://ubergraph.apps.renci.org/sparql> {
+    # Ubergraph materializes many relation-graph edges; try the simple edge first:
+    ?uberon obo:RO_0002162 ?taxon .
+#    FILTER(STRSTARTS(STR(?uberon), STR(obo:UBERON_)))
+
+    ?uberon rdfs:label ?uberonLabel .
+    OPTIONAL { ?taxon rdfs:label ?taxonLabel . }
+  }
+}
+LIMIT 200
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+
+SELECT ?taxon ?taxonLabel ?uberon ?uberonLabel
+WHERE {
+  # Pull a bounded list of local taxa (adapt this subquery to your schema)
+  {
+    SELECT DISTINCT ?taxon
+    WHERE {
+      ?taxon ncbitaxon:has_rank obo:NCBITaxon_species .
+    }
+    LIMIT 20
+  }
+
+  # Hit Ubergraph only for those taxa, and LIMIT inside SERVICE
+  SERVICE <https://ubergraph.apps.renci.org/sparql> {
+    SELECT ?taxon ?uberon ?uberonLabel ?taxonLabel
+    WHERE {
+      ?uberon obo:RO_0002162 ?taxon ;
+              rdfs:label ?uberonLabel .
+      OPTIONAL { ?taxon rdfs:label ?taxonLabel }
+      FILTER(STRSTARTS(STR(?uberon), STR(obo:UBERON_)))
+    }
+    LIMIT 1000
+  }
+}
+
+## only bird Uberon has is WIP
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+
+# Aves = NCBITaxon_8782
+SELECT ?taxon ?taxonLabel ?uberon ?uberonLabel
+WHERE {
+  {
+    SELECT DISTINCT ?taxon
+    WHERE {
+      ?taxon rdfs:subClassOf* obo:NCBITaxon_8825 ;
+      	   rdfs:label ?label .
+    }
+  }
+          
+
+  # Hit Ubergraph only for those taxa, and LIMIT inside SERVICE
+  SERVICE <https://ubergraph.apps.renci.org/sparql> {
+    SELECT ?taxon ?uberon ?uberonLabel ?taxonLabel
+    WHERE {
+      ?uberon obo:RO_0002162 ?taxon ;
+              rdfs:label ?uberonLabel .
+      OPTIONAL { ?taxon rdfs:label ?taxonLabel }
+      FILTER(STRSTARTS(STR(?uberon), STR(obo:UBERON_)))
+    }
+    LIMIT 1000
+  }
+}
+
+### 2
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+
+# Aves = NCBITaxon_8782
+SELECT ?taxon ?taxonLabel ?uberon ?uberonLabel
+WHERE {
+  {
+    SELECT DISTINCT ?taxon
+    WHERE {
+      ?taxon rdfs:subClassOf+ obo:NCBITaxon_8782 .
+    }
+  }
+          
+
+  # Hit Ubergraph only for those taxa, and LIMIT inside SERVICE
+  SERVICE <https://ubergraph.apps.renci.org/sparql> {
+    SELECT ?taxon ?uberon ?uberonLabel ?taxonLabel #may be problematic because of format mismatch?
+    WHERE {
+      ?uberon obo:RO_0002162 ?taxon ;
+              rdfs:label ?uberonLabel .
+      OPTIONAL { ?taxon rdfs:label ?taxonLabel }
+      FILTER(STRSTARTS(STR(?uberon), STR(obo:UBERON_)))
+    }
+    LIMIT 1000
+  }
+}
+
+## works from chat
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+
+SELECT ?taxon ?taxonLabel ?uberon ?uberonLabel
+WHERE {
+  {
+    # local seed: all descendants of Aves (8782), not Neognathae (8825)
+    SELECT DISTINCT ?taxon WHERE {
+      ?taxon rdfs:subClassOf* obo:NCBITaxon_8782 .
+    } LIMIT 200
+  }
+  SERVICE <https://ubergraph.apps.renci.org/sparql> {
+    ?uberon obo:RO_0002162 ?taxon ;
+            rdfs:label ?uberonLabel .
+    OPTIONAL { ?taxon rdfs:label ?taxonLabel }
+    FILTER(STRSTARTS(STR(?uberon), STR(obo:UBERON_)))
+  }
+}
+LIMIT 200
+
+# this returns no rows (no species); however, order-specific data exists : runtime 22s
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+
+SELECT ?taxon ?taxonLabel ?uberon ?uberonLabel
+WHERE {
+  {
+    # local seed: all descendants of Aves (8782), not Neognathae (8825)
+    SELECT DISTINCT ?taxon WHERE {
+      ?taxon rdfs:subClassOf* obo:NCBITaxon_8782;
+             ncbitaxon:has_rank obo:NCBITaxon_species . # none for species (failed after ~850s), family (23s), genus (294.3)
+    } LIMIT 12000
+  }
+  SERVICE <https://ubergraph.apps.renci.org/sparql> {
+    ?uberon obo:RO_0002162 ?taxon ;
+            rdfs:label ?uberonLabel .
+    OPTIONAL { ?taxon rdfs:label ?taxonLabel }
+    FILTER(STRSTARTS(STR(?uberon), STR(obo:UBERON_)))
+  }
+}
+LIMIT 200
