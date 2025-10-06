@@ -54,14 +54,14 @@ From there I was able to connect to it to run a number of queries just to explor
         ```
     4. load `avibase-instances.ttl` into Fuseki
     5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
-    ```
-    "aviLabel","taxon","aviId","avidb_link"
-    "Struthio molybdophanes","http://purl.obolibrary.org/obo/NCBITaxon_3150590","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-40329BB6","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-40329BB6"
-    "Struthio camelus","http://purl.obolibrary.org/obo/NCBITaxon_8801","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-2247CB05","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-2247CB05"
-    "Dromaius novaehollandiae","http://purl.obolibrary.org/obo/NCBITaxon_8790","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-FD2456D5","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-FD2456D5"
-    ...
+        ```
+        "aviLabel","taxon","aviId","avidb_link"
+        "Struthio molybdophanes","http://purl.obolibrary.org/obo/NCBITaxon_3150590","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-40329BB6","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-40329BB6"
+        "Struthio camelus","http://purl.obolibrary.org/obo/NCBITaxon_8801","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-2247CB05","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-2247CB05"
+        "Dromaius novaehollandiae","http://purl.obolibrary.org/obo/NCBITaxon_8790","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-FD2456D5","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-FD2456D5"
+        ...
 
-    ```
+        ```
 
 ## Ontology investigation: some takeaways
 
