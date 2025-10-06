@@ -152,3 +152,18 @@ WHERE {
   }
 }
 LIMIT 200
+
+
+# test query to get NCBI Taxon IDs by scientific name
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+
+SELECT DISTINCT ?taxonLabel ?taxon
+WHERE {
+  ?taxon rdfs:subClassOf* obo:NCBITaxon_8782;
+  		ncbitaxon:has_rank obo:NCBITaxon_species;
+	  	rdfs:label ?taxonLabel .
+  		FILTER(STRSTARTS(?taxonLabel, 'Calypte '))
+}
+LIMIT 1000

@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "Ken Shih", email = "ken.shih@gmail.com"},
 ]
-dependencies = ["pandas>=2.3.2", "numpy>=2.3.3", "matplotlib>=3.10.6", "jupyter>=1.1.1", "seaborn>=0.13.2", "owlready2>=0.48", "rdflib>=7.2.1", "lxml>=6.0.2", "requests>=2.32.5", "networkx>=3.5", "py4j>=0.10.9", "SPARQLWrapper>=2.0.0"]
+dependencies = ["pandas>=2.3.2", "numpy>=2.3.3", "matplotlib>=3.10.6", "jupyter>=1.1.1", "seaborn>=0.13.2", "owlready2>=0.48", "rdflib>=7.2.1", "lxml>=6.0.2", "requests>=2.32.5", "networkx>=3.5", "py4j>=0.10.9", "SPARQLWrapper>=2.0.0", "flask>=3.1.2"]
 requires-python = "==3.13.*"
 readme = "README.md"
 license = {text = "apache2"}

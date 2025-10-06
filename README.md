@@ -44,6 +44,22 @@ From there I was able to connect to it to run a number of queries just to explor
     In all this took several hours over a few days, to get a better feel for SPARQL, troubleshoot/evolve query, experiment.
 2. [`neorthines_uberon_relations.sparql`](./sparql/neorthines_uberon_relations.sparql) is a query demonstrating linkage of local data (local NBCI Taxon data) to another ontology, in this case to the "Uberon Multi-species Anatomy Ontology" (https://uberon.org/). Using our desired set (Aves) the resulting list shows mappings that exist in Uberon & the corresponding taxon name in NCBI Taxonomy, resulting in only 92 rows: [`neorthines_uberon_relations.csv`](./data/ontology/neorthines_uberon_relations.csv)
 3. [`sample.uberon.detail.sparql`](./sparql/sample.uberon.detail.sparql) is a junky query just exploding out a sample of data that exists for anatomical parts in Uberon to illustrate what areas of discovery/traversal/information could be explored between Taxa and Anatomoy using these 2 datasets.
+4. create dataset that maps avibase-id to ncbi-taxon-id 
+    1. ```
+        python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl
+       ```
+    1. to mock out as if my ontology was public
+        ```
+        # add to /etc/hosts
+        127.0.0.1 kenshih.com
+        # run web server
+        pdm run site/web-server.py
+        # was this needed?
+        curl -X PUT -H "Content-Type: text/turtle" \
+            --data-binary @index.ttl \
+            "http://localhost:3030/birds?default"
+        ```
+    1. 
 
 ## Ontology investigation: some takeaways
 
@@ -51,6 +67,8 @@ From there I was able to connect to it to run a number of queries just to explor
 2. Uberon's finest-grain mapping between Avian taxa is at the Order-level, and here it has a total of only 5 mappings across only 2 orders e.g. "Strigiformes","feathered ear tuft" & "Passeriformes","area X of basal ganglion". Most of the rows simply correspond to class "Aves", with no representation of skeletal structures, such as the avian keel, coracoid bone, or furcula. I will read the Uberon paper to understand more & it may be I need to unpack the Uberon predicate definitions and usages; but in this surface treatment it seems that this coverage would be insufficient for focused or comparative studies of Avian life. For example, the Suliformes do not have external nares, absence of any unique beak structure representation for Suliformes suggests this description would need to come from somewhere else. What of birds that don't have a furcula? How about accounting for the albatross shoulder's lock-hinge? What about feather structures? I expect I'll find 2 things: 1) intent of Uberon is to capture components-only, not anatomical conscriptions for taxa; that should be provided per-taxa elsewhere 2) There are gaps for avian life. Gaps can be filled simply by anyone providing for an extension set of data for missing Avian taxa, since Semantic Web is AAA (anyone can say anything about anything).
     - Correction: Aves' "carina of sternum" is covered in Uberon as synonym of "keel"
 3. The Uberon anatomy is extremely detailed. e.g. `Aves.telencephalic song nucleus HVC` `has part`s: "ectoderm-derived structure", "cellular anatomical entity", "atomic nucleus", "ectoderm-derived structure", "monoatomic monocation", "s-block molecular entity", etc totalling 54 `has_part` entities. In addition to `has_part`, 15 other relations exist, e.g. "causal agent in process", "developmentally preceded by", "mereotopologically related to", "has developmental contribution from", etc.
+
+# Genetic investigation
     
 
 ## Unstructured Notes

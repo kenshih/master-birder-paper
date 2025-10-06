@@ -1,0 +1,35 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix mb:   <http://kenshih.com/master-birder/ontology#> .
+
+<http://kenshih.com/master-birder/ontology> a owl:Ontology ;
+  rdfs:label "Master Birder Ontology"@en ;
+  owl:versionIRI <http://kenshih.com/master-birder/ontology/2025-10-05> .
+
+### Alternative pattern: model the identifier as a resource (foe links/metadata)
+mb:AvibaseIdentifier a owl:Class ;
+   rdfs:label "Avibase Identifier"@en .
+
+mb:hasAvibaseIdentifier a owl:ObjectProperty ;
+   rdfs:label "has Avibase Identifier"@en ;
+   rdfs:domain obo:NCBITaxon_1 ;
+   rdfs:range  mb:AvibaseIdentifier .
+
+mb:identifierValue a owl:DatatypeProperty ;
+   rdfs:label "identifier value"@en ;
+   rdfs:domain mb:AvibaseIdentifier ;
+   rdfs:range xsd:string .
+
+### DATA
+# Example: Mallard (NCBITaxon:8839) "Anas platyrhynchos" – using the standard OBO IRI
+obo:NCBITaxon_8839
+  rdfs:label "Mallard"@en ;
+  mb:hasAvibaseIdentifier mb:AvibaseID_85625D75 .
+
+mb:AvibaseID_85625D75
+  a mb:AvibaseIdentifier ;
+  mb:identifierValue "85625D75";
+  rdfs:seeAlso <https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-85625D75> .

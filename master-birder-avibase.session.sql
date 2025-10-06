@@ -1,10 +1,20 @@
-/* some discovery and sanity checking queries ran along the way*/
+
+select a.avibase_id, n.ncbi_taxon_id, n.scientific_name
+FROM AvibaseID a
+JOIN NCBITaxonID n on a.concept_label = n.scientific_name
+where n.scientific_name like 'Anas platyrhynchos'
+
+/* some discovery and sanity checking queries ran along the way
+select a.avibase_id, a.concept_label
+FROM AvibaseID a
+JOIN TaxanomicConcepts tc on a.avibase_id = tc.avibase_id
+
 select *
 FROM AvibaseID a
 JOIN TaxanomicConcepts tc on a.avibase_id = tc.avibase_id
 WHERE tc.scientific_name like 'Calypte %'
 limit 100
-/*
+
 where concept_label in ('Myiothlypis griseiceps', 'Aegotheles albertisi')
 
 SELECT *

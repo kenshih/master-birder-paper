@@ -1,0 +1,14 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#>
+
+CONSTRUCT {
+  ?taxon rdfs:label ?taxonLabel 
+}
+WHERE {
+  ?taxon rdfs:subClassOf* obo:NCBITaxon_8782;
+  		ncbitaxon:has_rank obo:NCBITaxon_species;
+	  	rdfs:label ?taxonLabel .
+#  		FILTER(STRSTARTS(?taxonLabel, 'Calypte '))
+}
+LIMIT 1000
