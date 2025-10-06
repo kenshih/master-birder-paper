@@ -45,21 +45,23 @@ From there I was able to connect to it to run a number of queries just to explor
 2. [`neorthines_uberon_relations.sparql`](./sparql/neorthines_uberon_relations.sparql) is a query demonstrating linkage of local data (local NBCI Taxon data) to another ontology, in this case to the "Uberon Multi-species Anatomy Ontology" (https://uberon.org/). Using our desired set (Aves) the resulting list shows mappings that exist in Uberon & the corresponding taxon name in NCBI Taxonomy, resulting in only 92 rows: [`neorthines_uberon_relations.csv`](./data/ontology/neorthines_uberon_relations.csv)
 3. [`sample.uberon.detail.sparql`](./sparql/sample.uberon.detail.sparql) is a junky query just exploding out a sample of data that exists for anatomical parts in Uberon to illustrate what areas of discovery/traversal/information could be explored between Taxa and Anatomoy using these 2 datasets.
 4. create dataset that maps avibase-id to ncbi-taxon-id 
-    1. ```
+    1. `sparql/select.ncbi-taxon-id-2-scientific-name.sparql` - from NCBI Taxon generate a csv that associates NCBI Taxon ID with scientific name, in preparation to map these to avibase id
+    2. `notebooks/ontology_ncbitaxon.ipynb`
+`sparql/create.ncbi-taxon-id-2-avibase-id.ttl` - load csv into new table in our local Avibase database.
+    3. `generate_avibase_turtle.py` - to create turtle data to load into Fuseki.
+        ```
         python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl
-       ```
-    1. to mock out as if my ontology was public
         ```
-        # add to /etc/hosts
-        127.0.0.1 kenshih.com
-        # run web server
-        pdm run site/web-server.py
-        # was this needed?
-        curl -X PUT -H "Content-Type: text/turtle" \
-            --data-binary @index.ttl \
-            "http://localhost:3030/birds?default"
-        ```
-    1. 
+    4. load `avibase-instances.ttl` into Fuseki
+    5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
+    ```
+    "aviLabel","taxon","aviId","avidb_link"
+    "Struthio molybdophanes","http://purl.obolibrary.org/obo/NCBITaxon_3150590","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-40329BB6","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-40329BB6"
+    "Struthio camelus","http://purl.obolibrary.org/obo/NCBITaxon_8801","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-2247CB05","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-2247CB05"
+    "Dromaius novaehollandiae","http://purl.obolibrary.org/obo/NCBITaxon_8790","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-FD2456D5","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-FD2456D5"
+    ...
+
+    ```
 
 ## Ontology investigation: some takeaways
 
@@ -127,6 +129,20 @@ Unexpected error making the query: GET https://stars-app.renci.org/ubergraph/spa
 # counting relation types
 cat data/ontology/sample.uberon.detail.csv | grep "telencephalic song nucleus HVC" | cut -d, -f3 | sort | uniq 
 ```
+
+1. to mock out as if my ontology was public
+        ```
+        # add to /etc/hosts
+        127.0.0.1 kenshih.com
+        # run web server
+        pdm run site/web-server.py
+        # was this needed?
+        curl -X PUT -H "Content-Type: text/turtle" \
+            --data-binary @index.ttl \
+            "http://localhost:3030/birds?default"
+        ```
+    1. would need to put generated ttl into site/index.ttl
+    2. need to make ontology#ref references work. 
 
 ## notes: Anna's Hummingbird
 

@@ -52,7 +52,6 @@ def generate_avibase_turtle(db_path, output_file):
         # Generate Turtle for the NCBI taxon with hasAvibaseIdentifier
         turtle_content.extend([
             f"{ncbi_taxon}",
-            f"  rdfs:label \"{scientific_name}\" ;",
             f"  mb:hasAvibaseIdentifier {avibase_instance} .",
             ""
         ])
@@ -62,7 +61,8 @@ def generate_avibase_turtle(db_path, output_file):
             f"{avibase_instance}",
             f"  rdf:type mb:AvibaseIdentifier ;",
             f"  mb:identifierValue \"{avibase_id}\" ;",
-            f"  rdfs:seeAlso <{avibase_url}> .",
+            f"  rdfs:seeAlso <{avibase_url}> ;",
+            f"  rdfs:label \"{scientific_name}\" .",
             ""
         ])
     
