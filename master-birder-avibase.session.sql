@@ -1,10 +1,14 @@
-
+select count(*) -- count of species in Avibase: 11,125
+FROM AvibaseID a
+JOIN TaxanomicConcepts tc on a.avibase_id = tc.avibase_id
+where tc.concept_id like 'SPECIES-%'
+/* 
 select a.avibase_id, n.ncbi_taxon_id, n.scientific_name
 FROM AvibaseID a
 JOIN NCBITaxonID n on a.concept_label = n.scientific_name
 where n.scientific_name like 'Anas platyrhynchos'
 
-/* some discovery and sanity checking queries ran along the way
+some discovery and sanity checking queries ran along the way
 select a.avibase_id, a.concept_label
 FROM AvibaseID a
 JOIN TaxanomicConcepts tc on a.avibase_id = tc.avibase_id
