@@ -72,6 +72,51 @@ From there I was able to connect to it to run a number of queries just to explor
 
 # Genetic investigation
     
+```
+# mamba
+brew install miniforge
+amba create -n phylo -c conda-forge -c bioconda python=3.11 iqtree mafft trimal ncbi-datasets-cli -y
+
+eval "$(mamba shell hook --shell zsh)"
+To automatically initialize all future (zsh) shells, run:
+    $ mamba shell init --shell zsh --root-prefix=~/.local/share/mamba 
+mamba activate phylo
+```
+- run `phylo1/1.download_genomes.sh`
+
+```
+conda install numpy # (in phylo -n)
+docker pull ezlabgva/busco:v6.0.0_cv1
+docker run --rm -it --platform linux/amd64 ezlabgva/busco:v6.0.0_cv1 busco -v
+docker run --rm -it --platform linux/amd64 -v "$PWD":/data -w /data ezlabgva/busco:v6.0.0_cv1 busco -h
+
+alias busco='docker run --rm -it --platform linux/amd64 -v "$PWD":/data -w /data ezlabgva/busco:v6.0.0_cv1 busco'
+
+busco --list-datasets
+
+busco -i genomes/chicken_genome/ncbi_dataset/data/
+GCF_000002315.5/GCF_000002315.5_GRCg6a_genomic.fna  -l aves_odb12 -o chicken_busco -m genome --cpu 4
+# failed with out of resources
+busco -i genomes/chicken_genome/ncbi_dataset/data/GCF_000002315.5/GCF_000002315.5_GRCg6a_genomic.fna -l aves_odb12 -o chicken_busco -m genome --cpu 2 -f
+...
+
+ 24K    alligator_busco
+3.8G    busco_downloads
+828K    busco.output.png
+3.4G    chicken_busco
+3.5G    duck_busco
+6.7G    genomes
+3.5G    hummingbird_busco
+4.0K    sourceme
+ 24K    turtle_busco
+2.1G    turtle_genome
+652M    turtle_genome.zip
+
+> mamba install pathlib
+> python 3.extract_busco_genes.py
+Successfully extracted 5963 orthologous genes!
+Gene files saved in: orthologous_genes
+```
 
 ## Unstructured Notes
 
