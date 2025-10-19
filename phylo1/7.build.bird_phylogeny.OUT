@@ -1,0 +1,150 @@
+=== Step 5: Build phylogenetic tree with IQ-TREE ===
+Running IQ-TREE with model selection and bootstrap support...
+IQ-TREE version 3.0.1 for MacOS ARM 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    KenMacPro.local (SSE4.2, 16 GB RAM)
+Command: iqtree -s concatenated_alignment.fna -m MFP -bb 1000 -nt AUTO --prefix bird_phylogeny
+Seed:    639862 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Oct 18 20:33:14 2025
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file concatenated_alignment.fna ... Fasta format detected
+Reading fasta file: done in 0.096231 secs using 88.47% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.98069 secs using 55.63% CPU
+Alignment has 3 sequences with 3064528 columns, 6216 distinct patterns
+0 parsimony-informative, 427821 singleton sites, 2636707 constant sites
+             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.10487e-05 secs using 92.89% CPU
+   1  duck           0.01%    failed      0.00%
+   2  chicken        0.00%    failed      0.00%
+   3  hummingbird    0.00%    failed      0.00%
+****  TOTAL          0.00%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: minimal branch length is reduced to 0.000000032631 for long alignment
+Checking for duplicate sequences: done in 4.91142e-05 secs using 109.9% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.014 seconds
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+264 trees examined
+Threads: 1 / Time: 8.025 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -11836421
+Threads: 2 / Time: 3.936 sec / Speedup: 2.039 / Efficiency: 102% / LogL: -11836421
+Threads: 3 / Time: 2.774 sec / Speedup: 2.893 / Efficiency: 96% / LogL: -11836421
+Threads: 4 / Time: 2.313 sec / Speedup: 3.469 / Efficiency: 87% / LogL: -11836421
+Threads: 5 / Time: 2.221 sec / Speedup: 3.613 / Efficiency: 72% / LogL: -11836421
+Threads: 6 / Time: 2.125 sec / Speedup: 3.776 / Efficiency: 63% / LogL: -11836421
+Threads: 7 / Time: 2.157 sec / Speedup: 3.720 / Efficiency: 53% / LogL: -11836421
+Threads: 8 / Time: 2.242 sec / Speedup: 3.580 / Efficiency: 45% / LogL: -11836421
+Determining AUTO threadcount: done in 25.7979 secs using 220.6% CPU
+BEST NUMBER OF THREADS: 6
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.000442028 secs using 0.9049% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -11836135.609
+Optimal log-likelihood: -11836135.609
+Proportion of invariable sites: 0.430
+Gamma shape alpha: 0.804
+Parameters optimization took 1 rounds (0.008 sec)
+Time for fast ML tree search: 0.043 seconds
+
+NOTE: ModelFinder requires 52 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 3064528 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            11873349.169 3   23746704.338 23746704.338 23746743.145
+  2  LG+I          11836921.523 4   23673851.046 23673851.046 23673902.788
+  3  LG+G4         11836481.073 4   23672970.145 23672970.145 23673021.887
+  4  LG+I+G4       11836135.609 5   23672281.217 23672281.217 23672345.894
+  5  LG+R2         11836918.705 5   23673847.411 23673847.411 23673912.088
+  6  LG+R3         11835951.494 7   23671916.989 23671916.989 23672007.537
+  7  LG+R4         11834670.194 9   23669358.389 23669358.389 23669474.808
++R5 reinitialized from +R4 with factor 0.500
++R5 reinitialized from +R4 with factor 0.250
+  8  LG+R5         11834665.632 11  23669353.264 23669353.264 23669495.554
+ 14  LG+I+R2       11836678.752 6   23673369.504 23673369.504 23673447.116
+ 15  LG+I+R3       11835819.039 8   23671654.079 23671654.079 23671757.562
+ 16  LG+I+R4       11834610.983 10  23669241.966 23669241.966 23669371.320
+ 17  LG+I+R5       11834470.529 12  23668965.057 23668965.057 23669120.282
+ 18  LG+I+R6       11834286.113 14  23668600.227 23668600.227 23668781.322
+ 19  LG+I+R7       11834279.787 16  23668591.574 23668591.574 23668798.540
+ 40  LG+F+I+R6     11792066.622 33  23584199.244 23584199.244 23584626.112
+ 62  WAG+I+R6      11836025.973 14  23672079.947 23672079.947 23672261.042
+ 84  WAG+F+I+R6    11791433.796 33  23582933.593 23582933.593 23583360.461
+106  JTT+I+R6      11741665.993 14  23483359.986 23483359.986 23483541.082
+128  JTT+F+I+R6    11721408.081 33  23442882.162 23442882.162 23443309.030
+150  Q.PFAM+I+R6   11837118.576 14  23674265.152 23674265.152 23674446.248
+172  Q.PFAM+F+I+R6 11788680.316 33  23577426.632 23577426.633 23577853.500
+194  Q.BIRD+I+R6   11698192.993 14  23396413.987 23396413.987 23396595.083
+216  Q.BIRD+F+I+R6 11696355.892 33  23392777.783 23392777.784 23393204.652
+238  Q.MAMMAL+I+R6 11708380.916 14  23416789.833 23416789.833 23416970.929
+260  Q.MAMMAL+F+I+R6 11700518.377 33  23401102.755 23401102.755 23401529.623
+282  Q.INSECT+I+R6 11843654.892 14  23687337.785 23687337.785 23687518.881
+304  Q.INSECT+F+I+R6 11759930.121 33  23519926.242 23519926.243 23520353.111
+326  Q.PLANT+I+R6  11765050.926 14  23530129.852 23530129.852 23530310.948
+348  Q.PLANT+F+I+R6 11720961.680 33  23441989.360 23441989.361 23442416.228
+370  Q.YEAST+I+R6  11897808.250 14  23795644.501 23795644.501 23795825.596
+392  Q.YEAST+F+I+R6 11779095.030 33  23558256.059 23558256.060 23558682.927
+414  JTTDCMUT+I+R6 11744858.053 14  23489744.106 23489744.106 23489925.202
+436  JTTDCMUT+F+I+R6 11723804.428 33  23447674.857 23447674.857 23448101.725
+458  DCMUT+I+R6    11876943.258 14  23753914.516 23753914.516 23754095.612
+480  DCMUT+F+I+R6  11796280.599 33  23592627.199 23592627.199 23593054.067
+502  VT+I+R6       11814838.045 14  23629704.090 23629704.090 23629885.186
+524  VT+F+I+R6     11789842.157 33  23579750.314 23579750.315 23580177.182
+546  PMB+I+R6      11902687.887 14  23805403.774 23805403.774 23805584.870
+568  PMB+F+I+R6    11851535.532 33  23703137.064 23703137.065 23703563.933
+590  BLOSUM62+I+R6 11924462.362 14  23848952.723 23848952.724 23849133.819
+612  BLOSUM62+F+I+R6 11858506.590 33  23717079.181 23717079.182 23717506.049
+634  DAYHOFF+I+R6  11876569.894 14  23753167.788 23753167.789 23753348.884
+656  DAYHOFF+F+I+R6 11795958.720 33  23591983.440 23591983.441 23592410.309
+678  MTREV+I+R6    12431181.616 14  24862391.233 24862391.233 24862572.329
+700  MTREV+F+I+R6  11804719.813 33  23609505.625 23609505.626 23609932.493
+722  MTART+I+R6    12539516.046 14  25079060.093 25079060.093 25079241.188
+744  MTART+F+I+R6  11878937.322 33  23757940.644 23757940.645 23758367.513
+766  MTZOA+I+R6    12407155.923 14  24814339.846 24814339.846 24814520.941
+788  MTZOA+F+I+R6  11825675.952 33  23651417.904 23651417.905 23651844.772
+810  MTMET+I+R6    12465179.107 14  24930386.214 24930386.214 24930567.310
+832  MTMET+F+I+R6  11757125.173 33  23514316.345 23514316.346 23514743.213
+854  MTVER+I+R6    12459449.794 14  24918927.588 24918927.588 24919108.684
+876  MTVER+F+I+R6  11762870.490 33  23525806.981 23525806.982 23526233.849
+898  MTINV+I+R6    12671409.155 14  25342846.310 25342846.310 25343027.405
+920  MTINV+F+I+R6  11776380.900 33  23552827.801 23552827.801 23553254.669
+942  MTMAM+I+R6    12464524.697 14  24929077.394 24929077.394 24929258.490
+964  MTMAM+F+I+R6  11808730.089 33  23617526.179 23617526.180 23617953.047
+986  FLAVI+I+R6    11904950.990 14  23809929.979 23809929.980 23810111.075
+1008  FLAVI+F+I+R6  11753279.234 33  23506624.468 23506624.469 23507051.336
+1030  HIVB+I+R6     11843184.235 14  23686396.470 23686396.470 23686577.566
+1052  HIVB+F+I+R6   11739582.432 33  23479230.863 23479230.864 23479657.731
+1074  HIVW+I+R6     12079383.893 14  24158795.786 24158795.786 24158976.881
+1096  HIVW+F+I+R6   11786335.953 33  23572737.906 23572737.907 23573164.775
+1118  FLU+I+R6      11888955.325 14  23777938.650 23777938.650 23778119.746
+1140  FLU+F+I+R6    11766975.019 33  23534016.039 23534016.039 23534442.907
+1162  RTREV+I+R6    11941188.494 14  23882404.987 23882404.987 23882586.083
+1184  RTREV+F+I+R6  11829049.402 33  23658164.804 23658164.805 23658591.673
+1206  CPREV+I+R6    11912690.432 14  23825408.865 23825408.865 23825589.960
+1228  CPREV+F+I+R6  11807697.794 33  23615461.588 23615461.589 23615888.457
+Akaike Information Criterion:           Q.BIRD+F+I+R6
+Corrected Akaike Information Criterion: Q.BIRD+F+I+R6
+Bayesian Information Criterion:         Q.BIRD+F+I+R6
+Best-fit model: Q.BIRD+F+I+R6 chosen according to BIC
+
+All model information printed to bird_phylogeny.model.gz
+CPU time for ModelFinder: 325.854 seconds (0h:5m:25s)
+Wall-clock time for ModelFinder: 112.147 seconds (0h:1m:52s)
+Generating 1000 samples for ultrafast bootstrap (seed: 639862)...
+ERROR: It makes no sense to perform bootstrap with less than 4 sequences.
+=== ANALYSIS COMPLETE! ===
+Results:
+- Phylogenetic tree: bird_phylogeny.treefile
+- Bootstrap tree: bird_phylogeny.contree
+- Log file: bird_phylogeny.log
+View your tree with:
+1. FigTree (GUI): Open bird_phylogeny.contree
+2. Online: Upload to iTOL (https://itol.embl.de/)
+-rw-r--r--  1 ken  staff   8.7K Oct 18 20:35 bird_phylogeny.log
+-rw-r--r--  1 ken  staff   2.6K Oct 18 20:35 bird_phylogeny.model.gz
