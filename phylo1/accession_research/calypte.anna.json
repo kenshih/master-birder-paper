@@ -1,0 +1,857 @@
+{
+  "_command": "datasets summary genome taxon 'Calypte anna' | jq > accession_research/calypte.anna.json",
+  "reports": [
+    {
+      "accession": "GCF_003957555.1",
+      "annotation_info": {
+        "busco": {
+          "busco_lineage": "aves_odb10",
+          "busco_ver": "4.0.2",
+          "complete": 0.9778124,
+          "duplicated": 0.0040777163,
+          "fragmented": 0.0028783882,
+          "missing": 0.019309187,
+          "single_copy": 0.97373474,
+          "total_count": "8338"
+        },
+        "method": "Best-placed RefSeq; Gnomon",
+        "name": "NCBI Calypte anna Annotation Release 101",
+        "pipeline": "NCBI eukaryotic genome annotation pipeline",
+        "provider": "NCBI RefSeq",
+        "release_date": "2019-08-05",
+        "report_url": "https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Calypte_anna/101",
+        "software_version": "8.2",
+        "stats": {
+          "gene_counts": {
+            "non_coding": 1339,
+            "other": 17,
+            "protein_coding": 14711,
+            "pseudogene": 163,
+            "total": 16230
+          }
+        },
+        "status": "Full annotation"
+      },
+      "assembly_info": {
+        "assembly_level": "Chromosome",
+        "assembly_method": "FALCON v. 5.1.1; FALCON unzip v. 1.0.2; scaff10X v. git 4.28.2018; Bionano Solve v. DLS 3.2.1; Salsa2 HiC v. 2.0; smrtanalysis Arrow polishing & gap filling v. 5.1.0.26412; longranger align v. 2.2.2; freebayes v. 1.2.0; purge_haplotigs v. bit 7.10.2018; gEVAL manual curation v. 2018-09-07",
+        "assembly_name": "bCalAnn1_v1.p",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA489139",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA489139",
+                "parent_accessions": [
+                  "PRJNA510144"
+                ],
+                "title": "Calypte anna (Anna's hummingbird) genome sequencing and assembly, primary haplotype, v1"
+              },
+              {
+                "accession": "PRJNA510144",
+                "parent_accessions": [
+                  "PRJNA489243",
+                  "PRJNA489244"
+                ],
+                "title": "Calypte anna (Anna's hummingbird) genome assembly, bCalAnn1"
+              },
+              {
+                "accession": "PRJNA489243",
+                "parent_accessions": [
+                  "PRJNA533106"
+                ],
+                "title": "Vertebrate Genomes Project"
+              },
+              {
+                "accession": "PRJNA489244",
+                "title": "B10K Reference Genome Project"
+              },
+              {
+                "accession": "PRJNA533106",
+                "title": "Earth BioGenome Project (EBP)"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02265252",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "isolate",
+              "value": "BGI_N300"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Calypte anna",
+              "tax_id": 9244
+            },
+            "title": "Generic sample from Calypte anna"
+          },
+          "geo_loc_name": "USA",
+          "isolate": "BGI_N300",
+          "last_updated": "2017-01-25T13:03:46.660",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "Beijing Genome Institute"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-16T06:48:24.127",
+          "sample_ids": [
+            {
+              "db": "BGI",
+              "label": "Sample name",
+              "value": "BGI_N300"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS464260"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2017-01-25T13:03:46"
+          },
+          "submission_date": "2013-07-26T10:05:03.193"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCF_003957555.1",
+        "comments": "In May 2019 the mitochondrial sequence (RRCD01000160) was added to this 01 version of RRCD00000000.\nThis assembly represents the primary haplotype of the diploid genome Calypte anna and includes the chromosomes. The alternate haplotype sequences are in WGS project RRCE00000000.",
+        "paired_assembly": {
+          "accession": "GCA_003957555.2",
+          "differences": "Removed chromosome MT",
+          "only_genbank": "chromosome MT",
+          "refseq_genbank_are_different": true,
+          "status": "current"
+        },
+        "refseq_category": "reference genome",
+        "release_date": "2019-05-16",
+        "sequencing_tech": "PacBio RSII; 10X Genomics linked reads; Bionano Genomics DLS; Arima Genomics HiC",
+        "submitter": "Vertebrate Genomes Project"
+      },
+      "assembly_stats": {
+        "atgc_count": "1043590471",
+        "contig_l50": 21,
+        "contig_n50": 14522327,
+        "gc_count": "433030644",
+        "gc_percent": 41.5,
+        "genome_coverage": "54",
+        "number_of_component_sequences": 159,
+        "number_of_contigs": 584,
+        "number_of_scaffolds": 159,
+        "scaffold_l50": 4,
+        "scaffold_n50": 74081004,
+        "total_number_of_chromosomes": 33,
+        "total_sequence_length": "1059687259",
+        "total_ungapped_length": "1043590483"
+      },
+      "current_accession": "GCF_003957555.1",
+      "organism": {
+        "common_name": "Anna's hummingbird",
+        "infraspecific_names": {
+          "isolate": "BGI_N300",
+          "sex": "female"
+        },
+        "organism_name": "Calypte anna",
+        "tax_id": 9244
+      },
+      "paired_accession": "GCA_003957555.2",
+      "source_database": "SOURCE_DATABASE_REFSEQ",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/RRCD00000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/RRCD01",
+        "wgs_project_accession": "RRCD01"
+      }
+    },
+    {
+      "accession": "GCF_000699085.1",
+      "annotation_info": {
+        "method": "Best-placed RefSeq; Gnomon",
+        "name": "NCBI Calypte anna Annotation Release 100",
+        "pipeline": "NCBI eukaryotic genome annotation pipeline",
+        "provider": "NCBI RefSeq",
+        "release_date": "2014-07-08",
+        "software_version": "6.0",
+        "stats": {
+          "gene_counts": {
+            "non_coding": 74,
+            "other": 8,
+            "protein_coding": 14543,
+            "pseudogene": 130,
+            "total": 14755
+          }
+        },
+        "status": "Full annotation"
+      },
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "SOAPdenovo v. 1.6",
+        "assembly_name": "ASM69908v1",
+        "assembly_status": "suppressed",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA212866",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA212866",
+                "title": "Calypte anna Genome sequencing and assembly"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02265252",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "isolate",
+              "value": "BGI_N300"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Calypte anna",
+              "tax_id": 9244
+            },
+            "title": "Generic sample from Calypte anna"
+          },
+          "geo_loc_name": "USA",
+          "isolate": "BGI_N300",
+          "last_updated": "2017-01-25T13:03:46.660",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "Beijing Genome Institute"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-16T06:48:24.127",
+          "sample_ids": [
+            {
+              "db": "BGI",
+              "label": "Sample name",
+              "value": "BGI_N300"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS464260"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2017-01-25T13:03:46"
+          },
+          "submission_date": "2013-07-26T10:05:03.193"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCF_000699085.1",
+        "comments": "Annotation was added to this genome in September, 2014.",
+        "genome_notes": [
+          "superseded by newer assembly for species"
+        ],
+        "paired_assembly": {
+          "accession": "GCA_000699085.1",
+          "annotation_name": "Annotation submitted by BGI",
+          "status": "current"
+        },
+        "release_date": "2014-06-06",
+        "sequencing_tech": "Illumina HiSeq",
+        "submitter": "BGI",
+        "suppression_reason": "This record was removed as a result of standard genome annotation processing. Please see www.ncbi.nlm.nih.gov/genome/annotation_euk/process/ for more information."
+      },
+      "assembly_stats": {
+        "contig_l50": 11601,
+        "contig_n50": 26738,
+        "genome_coverage": "110",
+        "number_of_component_sequences": 124820,
+        "number_of_contigs": 124820,
+        "number_of_scaffolds": 54736,
+        "scaffold_l50": 81,
+        "scaffold_n50": 4052191,
+        "total_sequence_length": "1105676412",
+        "total_ungapped_length": "1067027607"
+      },
+      "current_accession": "GCF_000699085.1",
+      "organism": {
+        "common_name": "Anna's hummingbird",
+        "infraspecific_names": {
+          "isolate": "BGI_N300",
+          "sex": "female"
+        },
+        "organism_name": "Calypte anna",
+        "tax_id": 9244
+      },
+      "paired_accession": "GCA_000699085.1",
+      "source_database": "SOURCE_DATABASE_REFSEQ",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JJRV00000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JJRV01",
+        "wgs_project_accession": "JJRV01"
+      }
+    },
+    {
+      "accession": "GCA_000699085.1",
+      "annotation_info": {
+        "name": "Annotation submitted by BGI",
+        "provider": "BGI",
+        "release_date": "2014-09-04",
+        "stats": {
+          "gene_counts": {
+            "other": 1134,
+            "protein_coding": 13901,
+            "pseudogene": 909,
+            "total": 15944
+          }
+        }
+      },
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "SOAPdenovo v. 1.6",
+        "assembly_name": "ASM69908v1",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA212866",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA212866",
+                "title": "Calypte anna Genome sequencing and assembly"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02265252",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "isolate",
+              "value": "BGI_N300"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Calypte anna",
+              "tax_id": 9244
+            },
+            "title": "Generic sample from Calypte anna"
+          },
+          "geo_loc_name": "USA",
+          "isolate": "BGI_N300",
+          "last_updated": "2017-01-25T13:03:46.660",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "Beijing Genome Institute"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-16T06:48:24.127",
+          "sample_ids": [
+            {
+              "db": "BGI",
+              "label": "Sample name",
+              "value": "BGI_N300"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS464260"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2017-01-25T13:03:46"
+          },
+          "submission_date": "2013-07-26T10:05:03.193"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_000699085.1",
+        "comments": "Annotation was added to this genome in September, 2014.",
+        "genome_notes": [
+          "superseded by newer assembly for species"
+        ],
+        "paired_assembly": {
+          "accession": "GCF_000699085.1",
+          "annotation_name": "NCBI Calypte anna Annotation Release 100",
+          "status": "suppressed"
+        },
+        "release_date": "2014-06-06",
+        "sequencing_tech": "Illumina HiSeq",
+        "submitter": "BGI"
+      },
+      "assembly_stats": {
+        "atgc_count": "1067027607",
+        "contig_l50": 11601,
+        "contig_n50": 26738,
+        "gc_count": "437855692",
+        "gc_percent": 41,
+        "genome_coverage": "110",
+        "number_of_component_sequences": 124820,
+        "number_of_contigs": 124820,
+        "number_of_scaffolds": 54736,
+        "scaffold_l50": 81,
+        "scaffold_n50": 4052191,
+        "total_sequence_length": "1105676412",
+        "total_ungapped_length": "1067027607"
+      },
+      "current_accession": "GCA_000699085.1",
+      "organism": {
+        "common_name": "Anna's hummingbird",
+        "infraspecific_names": {
+          "isolate": "BGI_N300",
+          "sex": "female"
+        },
+        "organism_name": "Calypte anna",
+        "tax_id": 9244
+      },
+      "paired_accession": "GCF_000699085.1",
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JJRV00000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JJRV01",
+        "wgs_project_accession": "JJRV01"
+      }
+    },
+    {
+      "accession": "GCA_002021895.1",
+      "assembly_info": {
+        "assembly_level": "Contig",
+        "assembly_method": "FALCON-Unzip v. May-2016",
+        "assembly_name": "Canna_diploid_1.0",
+        "assembly_status": "current",
+        "assembly_type": "haploid-with-alt-loci",
+        "bioproject_accession": "PRJNA368994",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA368994",
+                "title": "Diploid genome assembly using PacBio data of avian models for vocal learning"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02265252",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "isolate",
+              "value": "BGI_N300"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Calypte anna",
+              "tax_id": 9244
+            },
+            "title": "Generic sample from Calypte anna"
+          },
+          "geo_loc_name": "USA",
+          "isolate": "BGI_N300",
+          "last_updated": "2017-01-25T13:03:46.660",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "Beijing Genome Institute"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-16T06:48:24.127",
+          "sample_ids": [
+            {
+              "db": "BGI",
+              "label": "Sample name",
+              "value": "BGI_N300"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS464260"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2017-01-25T13:03:46"
+          },
+          "submission_date": "2013-07-26T10:05:03.193"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_002021895.1",
+        "comments": "This is a phased diploid assembly of Calypte anna. The contigs of the primary assembly are located in MUGM01000001-MUGM01001076. The alternative haploid contigs (haplotigs) are located in MUGM01001077-MUGM01005971.",
+        "release_date": "2017-02-28",
+        "sequencing_tech": "PacBio",
+        "submitter": "Pacific Biosciences"
+      },
+      "assembly_stats": {
+        "atgc_count": "1007374986",
+        "contig_l50": 53,
+        "contig_n50": 5366327,
+        "gc_count": "420369890",
+        "gc_percent": 41.5,
+        "genome_coverage": "55",
+        "number_of_component_sequences": 1076,
+        "number_of_contigs": 1076,
+        "number_of_scaffolds": 1076,
+        "scaffold_l50": 53,
+        "scaffold_n50": 5366327,
+        "total_sequence_length": "1007374986",
+        "total_ungapped_length": "1007374986"
+      },
+      "current_accession": "GCA_002021895.1",
+      "organism": {
+        "common_name": "Anna's hummingbird",
+        "infraspecific_names": {
+          "isolate": "BGI_N300",
+          "sex": "female"
+        },
+        "organism_name": "Calypte anna",
+        "tax_id": 9244
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/MUGM00000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/MUGM01",
+        "wgs_project_accession": "MUGM01"
+      }
+    },
+    {
+      "accession": "GCA_003957555.2",
+      "assembly_info": {
+        "assembly_level": "Chromosome",
+        "assembly_method": "FALCON v. 5.1.1; FALCON unzip v. 1.0.2; scaff10X v. git 4.28.2018; Bionano Solve v. DLS 3.2.1; Salsa2 HiC v. 2.0; smrtanalysis Arrow polishing & gap filling v. 5.1.0.26412; longranger align v. 2.2.2; freebayes v. 1.2.0; purge_haplotigs v. bit 7.10.2018; gEVAL manual curation v. 2018-09-07",
+        "assembly_name": "bCalAnn1_v1.p",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA489139",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA489139",
+                "parent_accessions": [
+                  "PRJNA510144"
+                ],
+                "title": "Calypte anna (Anna's hummingbird) genome sequencing and assembly, primary haplotype, v1"
+              },
+              {
+                "accession": "PRJNA510144",
+                "parent_accessions": [
+                  "PRJNA489243",
+                  "PRJNA489244"
+                ],
+                "title": "Calypte anna (Anna's hummingbird) genome assembly, bCalAnn1"
+              },
+              {
+                "accession": "PRJNA489243",
+                "parent_accessions": [
+                  "PRJNA533106"
+                ],
+                "title": "Vertebrate Genomes Project"
+              },
+              {
+                "accession": "PRJNA489244",
+                "title": "B10K Reference Genome Project"
+              },
+              {
+                "accession": "PRJNA533106",
+                "title": "Earth BioGenome Project (EBP)"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02265252",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "isolate",
+              "value": "BGI_N300"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Calypte anna",
+              "tax_id": 9244
+            },
+            "title": "Generic sample from Calypte anna"
+          },
+          "geo_loc_name": "USA",
+          "isolate": "BGI_N300",
+          "last_updated": "2017-01-25T13:03:46.660",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "Beijing Genome Institute"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-16T06:48:24.127",
+          "sample_ids": [
+            {
+              "db": "BGI",
+              "label": "Sample name",
+              "value": "BGI_N300"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS464260"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2017-01-25T13:03:46"
+          },
+          "submission_date": "2013-07-26T10:05:03.193"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_003957555.2",
+        "comments": "In May 2019 the mitochondrial sequence (RRCD01000160) was added to this 01 version of RRCD00000000.\nThis assembly represents the primary haplotype of the diploid genome Calypte anna and includes the chromosomes. The alternate haplotype sequences are in WGS project RRCE00000000.",
+        "diploid_role": "principal_pseudohaplotype_of_diploid",
+        "linked_assemblies": [
+          {
+            "assembly_type": "alternate_pseudohaplotype_of_diploid",
+            "linked_assembly": "GCA_003957575.1"
+          }
+        ],
+        "paired_assembly": {
+          "accession": "GCF_003957555.1",
+          "annotation_name": "NCBI Calypte anna Annotation Release 101",
+          "differences": "Removed chromosome MT",
+          "only_genbank": "chromosome MT",
+          "refseq_genbank_are_different": true,
+          "status": "current"
+        },
+        "refseq_category": "reference genome",
+        "release_date": "2019-05-17",
+        "sequencing_tech": "PacBio RSII; 10X Genomics linked reads; Bionano Genomics DLS; Arima Genomics HiC",
+        "submitter": "Vertebrate Genomes Project"
+      },
+      "assembly_stats": {
+        "atgc_count": "1043590471",
+        "contig_l50": 21,
+        "contig_n50": 14522327,
+        "gc_count": "433030644",
+        "gc_percent": 41.5,
+        "genome_coverage": "54",
+        "number_of_component_sequences": 159,
+        "number_of_contigs": 584,
+        "number_of_organelles": 1,
+        "number_of_scaffolds": 159,
+        "scaffold_l50": 4,
+        "scaffold_n50": 74081004,
+        "total_number_of_chromosomes": 33,
+        "total_sequence_length": "1059687259",
+        "total_ungapped_length": "1043590483"
+      },
+      "current_accession": "GCA_003957555.2",
+      "organelle_info": [
+        {
+          "description": "Mitochondrion",
+          "submitter": "Vertebrate Genomes Project",
+          "total_seq_length": "18981"
+        }
+      ],
+      "organism": {
+        "common_name": "Anna's hummingbird",
+        "infraspecific_names": {
+          "isolate": "BGI_N300",
+          "sex": "female"
+        },
+        "organism_name": "Calypte anna",
+        "tax_id": 9244
+      },
+      "paired_accession": "GCF_003957555.1",
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/RRCD00000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/RRCD01",
+        "wgs_project_accession": "RRCD01"
+      }
+    },
+    {
+      "accession": "GCA_003957575.1",
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "FALCON v. 5.1.1; FALCON unzip v. 1.0.2; smrtanalysis Arrow polishing v. 5.1.0.26412; purge_haplotigs v. bit 7.10.2018; gEVAL manual curation v. 2018-09-07",
+        "assembly_name": "bCalAnn1_v1.h",
+        "assembly_status": "current",
+        "assembly_type": "alternate-pseudohaplotype",
+        "bioproject_accession": "PRJNA489140",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA489140",
+                "parent_accessions": [
+                  "PRJNA510144"
+                ],
+                "title": "Calypte anna (Anna's hummingbird) genome sequencing and assembly, alternate haplotype, v1"
+              },
+              {
+                "accession": "PRJNA510144",
+                "parent_accessions": [
+                  "PRJNA489243",
+                  "PRJNA489244"
+                ],
+                "title": "Calypte anna (Anna's hummingbird) genome assembly, bCalAnn1"
+              },
+              {
+                "accession": "PRJNA489243",
+                "parent_accessions": [
+                  "PRJNA533106"
+                ],
+                "title": "Vertebrate Genomes Project"
+              },
+              {
+                "accession": "PRJNA489244",
+                "title": "B10K Reference Genome Project"
+              },
+              {
+                "accession": "PRJNA533106",
+                "title": "Earth BioGenome Project (EBP)"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02265252",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "isolate",
+              "value": "BGI_N300"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Calypte anna",
+              "tax_id": 9244
+            },
+            "title": "Generic sample from Calypte anna"
+          },
+          "geo_loc_name": "USA",
+          "isolate": "BGI_N300",
+          "last_updated": "2017-01-25T13:03:46.660",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "Beijing Genome Institute"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-16T06:48:24.127",
+          "sample_ids": [
+            {
+              "db": "BGI",
+              "label": "Sample name",
+              "value": "BGI_N300"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS464260"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2017-01-25T13:03:46"
+          },
+          "submission_date": "2013-07-26T10:05:03.193"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_003957575.1",
+        "comments": "This assembly represents the alternate haplotype of the diploid genome Calypte anna. The primary haplotype sequences are in WGS project RRCD00000000.",
+        "diploid_role": "alternate_pseudohaplotype_of_diploid",
+        "linked_assemblies": [
+          {
+            "assembly_type": "principal_pseudohaplotype_of_diploid",
+            "linked_assembly": "GCA_003957555.2"
+          }
+        ],
+        "release_date": "2018-12-20",
+        "sequencing_tech": "PacBio RSII; 10X Genomics linked reads",
+        "submitter": "Vertebrate Genomes Project"
+      },
+      "assembly_stats": {
+        "atgc_count": "952080373",
+        "contig_l50": 168,
+        "contig_n50": 1463522,
+        "gc_count": "393420732",
+        "gc_percent": 41.5,
+        "genome_coverage": "54",
+        "number_of_component_sequences": 3803,
+        "number_of_contigs": 3809,
+        "number_of_scaffolds": 3803,
+        "scaffold_l50": 168,
+        "scaffold_n50": 1463522,
+        "total_sequence_length": "952083371",
+        "total_ungapped_length": "952080373"
+      },
+      "current_accession": "GCA_003957575.1",
+      "organism": {
+        "common_name": "Anna's hummingbird",
+        "infraspecific_names": {
+          "isolate": "BGI_N300",
+          "sex": "female"
+        },
+        "organism_name": "Calypte anna",
+        "tax_id": 9244
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/RRCE00000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/RRCE01",
+        "wgs_project_accession": "RRCE01"
+      }
+    }
+  ],
+  "total_count": 6
+}

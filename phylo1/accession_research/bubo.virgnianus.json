@@ -1,0 +1,136 @@
+{
+  "_command": "datasets summary genome taxon 'Bubo virginianus' | jq > accession_research/bubo.virgnianus.json",
+  "reports": [
+    {
+      "accession": "GCA_044758155.1",
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "SPAdes v. 2024",
+        "assembly_name": "ASM4475815v1",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA806526",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA806526",
+                "title": "Bubo virginianus"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN42720339",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "22-717-kidney"
+            },
+            {
+              "name": "dev_stage",
+              "value": "adult"
+            },
+            {
+              "name": "collection_date",
+              "value": "2024"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA:New Hampshire"
+            },
+            {
+              "name": "sex",
+              "value": "not determined"
+            },
+            {
+              "name": "tissue",
+              "value": "kidney"
+            },
+            {
+              "name": "biomaterial_provider",
+              "value": "David Needle"
+            }
+          ],
+          "biomaterial_provider": "David Needle",
+          "collection_date": "2024",
+          "description": {
+            "organism": {
+              "organism_name": "Bubo virginianus",
+              "tax_id": 56268
+            },
+            "title": "Model organism or animal sample from Bubo virginianus"
+          },
+          "dev_stage": "adult",
+          "geo_loc_name": "USA:New Hampshire",
+          "isolate": "22-717-kidney",
+          "last_updated": "2024-09-18T18:45:21.117",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "contacts": [
+              {}
+            ],
+            "name": "Iridian Genomes"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2024-07-21T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "Bubo virginianus"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS22682438"
+            }
+          ],
+          "sex": "not determined",
+          "status": {
+            "status": "live",
+            "when": "2024-07-21T19:23:03.857"
+          },
+          "submission_date": "2024-07-21T19:23:03.857",
+          "tissue": "kidney"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_044758155.1",
+        "refseq_category": "reference genome",
+        "release_date": "2024-11-10",
+        "sequencing_tech": "Illumina",
+        "submitter": "Iridian Genomes"
+      },
+      "assembly_stats": {
+        "atgc_count": "1129764755",
+        "contig_l50": 74850,
+        "contig_n50": 4629,
+        "gc_count": "468647814",
+        "gc_percent": 41.5,
+        "genome_coverage": "60",
+        "number_of_component_sequences": 55559,
+        "number_of_contigs": 405057,
+        "number_of_scaffolds": 55559,
+        "scaffold_l50": 5,
+        "scaffold_n50": 91425632,
+        "total_sequence_length": "1246975817",
+        "total_ungapped_length": "1129862207"
+      },
+      "current_accession": "GCA_044758155.1",
+      "organism": {
+        "common_name": "great horned owl",
+        "infraspecific_names": {
+          "isolate": "22-717-kidney"
+        },
+        "organism_name": "Bubo virginianus",
+        "tax_id": 56268
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JBIMPA000000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JBIMPA01",
+        "wgs_project_accession": "JBIMPA01"
+      }
+    }
+  ],
+  "total_count": 1
+}

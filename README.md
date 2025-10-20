@@ -129,16 +129,40 @@ iqtree -s concatenated_alignment.fna -m MFP -nt AUTO --prefix bird_3species
 in https://itol.embl.de/
 ![itol](phylo1/itol.3-species.png)
 
+## Issues 
+
+- [ ] anna's wrong assembly (was zebra finch)
+- [ ] mallard wrong assembly (was pink-footed goose)
+
+```
+# use to sanity check: what species am i looking at?
+datasets summary genome accession GCF_000344595.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}' 
 ```
 
+```
 ## will add this to my set in meantime
-datasets download genome accession GCA_002880195.1 --filename owl_genome.zip
+datasets download genome accession GCA_002880195.1 --filename genomes/owl_genome.zip
 
 ```
 
 ## Unstructured Notes
 
+
 ```
+## needed to correct this mistake
+(phylo) ➜  phylo1 git:(main) ✗ datasets summary genome accession GCF_003957555.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}' 
+{
+  "organism_name": "Calypte anna",
+  "common_name": "Anna's hummingbird",
+  "accession": "GCF_003957555.1"
+}
+(phylo) ➜  phylo1 git:(main) ✗ datasets summary genome accession GCA_003957565.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}' 
+{
+  "organism_name": "Taeniopygia guttata",
+  "common_name": "zebra finch",
+  "accession": "GCA_003957565.1"
+}
+###
 ✗ cat alignments/trimmed_alignments/99952at8782_trimmed.fna
 >chicken
 MAISNVRYGEGVTKEIGMDLQNLGAKRVCLMTDRNLSQLPPVDAVLNSLTKSGINFQMYD

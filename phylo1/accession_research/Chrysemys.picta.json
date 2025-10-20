@@ -1,0 +1,1756 @@
+{
+  "reports": [
+    {
+      "accession": "GCF_011386835.1",
+      "annotation_info": {
+        "busco": {
+          "busco_lineage": "sauropsida_odb10",
+          "busco_ver": "4.1.4",
+          "complete": 0.98903745,
+          "duplicated": 0.013770053,
+          "fragmented": 0.0028074866,
+          "missing": 0.0081550805,
+          "single_copy": 0.97526735,
+          "total_count": "7480"
+        },
+        "method": "Best-placed RefSeq; Gnomon; cmsearch; tRNAscan-SE",
+        "name": "GCF_011386835.1-RS_2024_05",
+        "pipeline": "NCBI eukaryotic genome annotation pipeline",
+        "provider": "NCBI RefSeq",
+        "release_date": "2024-05-29",
+        "report_url": "https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Chrysemys_picta_bellii/GCF_011386835.1-RS_2024_05.html",
+        "software_version": "10.2",
+        "stats": {
+          "gene_counts": {
+            "non_coding": 9241,
+            "other": 87,
+            "protein_coding": 25216,
+            "pseudogene": 1155,
+            "total": 35699
+          }
+        },
+        "status": "Full annotation"
+      },
+      "assembly_info": {
+        "assembly_level": "Chromosome",
+        "assembly_method": "HiFiasm v. 0.16.1; Tigmint v. 1.2.5; 3DDNA v. Phasing branch 201008",
+        "assembly_name": "ASM1138683v2",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA589899",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA589899",
+                "parent_accessions": [
+                  "PRJNA994944"
+                ],
+                "title": "Chrysemys picta bellii isolate:R12L10 Genome sequencing and assembly"
+              },
+              {
+                "accession": "PRJNA994944",
+                "title": "Chrysemys picta bellii Umbrella project"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN13293682",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "R12L10"
+            },
+            {
+              "name": "dev_stage",
+              "value": "Adult"
+            },
+            {
+              "name": "sex",
+              "value": "male"
+            },
+            {
+              "name": "tissue",
+              "value": "blood"
+            },
+            {
+              "name": "biomaterial_provider",
+              "value": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA: Mcleod County, MN"
+            },
+            {
+              "name": "sample_type",
+              "value": "tissue"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            }
+          ],
+          "biomaterial_provider": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO",
+          "bioprojects": [
+            {
+              "accession": "PRJNA589899"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Model organism or animal sample from Chrysemys picta bellii"
+          },
+          "dev_stage": "Adult",
+          "geo_loc_name": "USA: Mcleod County, MN",
+          "isolate": "R12L10",
+          "last_updated": "2021-11-18T13:43:17.371",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "contacts": [
+              {}
+            ],
+            "name": "Washington University School of Medicine"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2019-11-15T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "R12 L10 QM2"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS6129357"
+            }
+          ],
+          "sex": "male",
+          "status": {
+            "status": "live",
+            "when": "2019-11-15T19:00:03.668"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2019-11-15T19:00:03.666",
+          "tissue": "blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCF_011386835.1",
+        "comments": "The initial 10XGenomics assembly of the Western Painted Turtle genome was submitted through the McDonnell Genome Institute at Washington University. This new assembly with additional sequence was submitted through St. Louis University in collaboration with Washington University.",
+        "paired_assembly": {
+          "accession": "GCA_011386835.2",
+          "differences": "Removed chromosome MT",
+          "only_genbank": "chromosome MT",
+          "refseq_genbank_are_different": true,
+          "status": "current"
+        },
+        "refseq_category": "reference genome",
+        "release_date": "2023-09-08",
+        "sequencing_tech": "PacBio Sequel; Illumina",
+        "submitter": "St. Louis University"
+      },
+      "assembly_stats": {
+        "atgc_count": "2371548498",
+        "contig_l50": 48,
+        "contig_n50": 13370154,
+        "gc_count": "1064411009",
+        "gc_percent": 45,
+        "genome_coverage": "20.5",
+        "number_of_component_sequences": 9850,
+        "number_of_contigs": 11120,
+        "number_of_scaffolds": 9850,
+        "scaffold_l50": 6,
+        "scaffold_n50": 133555881,
+        "total_number_of_chromosomes": 25,
+        "total_sequence_length": "2372089908",
+        "total_ungapped_length": "2371548498"
+      },
+      "current_accession": "GCF_011386835.1",
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "R12L10",
+          "sex": "male"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "paired_accession": "GCA_011386835.2",
+      "source_database": "SOURCE_DATABASE_REFSEQ",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JAAOEE000000000.2",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JAAOEE02",
+        "wgs_project_accession": "JAAOEE02"
+      }
+    },
+    {
+      "accession": "GCF_000241765.5",
+      "annotation_info": {
+        "method": "Best-placed RefSeq; Gnomon",
+        "name": "NCBI Chrysemys picta Annotation Release 103",
+        "pipeline": "NCBI eukaryotic genome annotation pipeline",
+        "provider": "NCBI RefSeq",
+        "release_date": "2021-08-10",
+        "software_version": "9.0",
+        "stats": {
+          "gene_counts": {
+            "non_coding": 4504,
+            "other": 244,
+            "protein_coding": 21482,
+            "pseudogene": 734,
+            "total": 26964
+          }
+        },
+        "status": "Full annotation"
+      },
+      "assembly_info": {
+        "assembly_level": "Chromosome",
+        "assembly_method": "Newbler v. 2.6",
+        "assembly_name": "Chrysemys_picta_BioNano-3.0.4",
+        "assembly_status": "suppressed",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA78657",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA78657",
+                "parent_accessions": [
+                  "PRJNA176378"
+                ],
+                "title": "Chrysemys picta bellii Genome sequencing and assembly"
+              },
+              {
+                "accession": "PRJNA176378",
+                "title": "Evolution of the human proteome: Completing the Chordate Nodes"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02713681",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA: Grant Co., WA"
+            },
+            {
+              "name": "isolation_source",
+              "value": "small lake 1.3 miles south of Potholes Reservoir"
+            },
+            {
+              "name": "isolate",
+              "value": "RCT428"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            }
+          ],
+          "bioprojects": [
+            {
+              "accession": "PRJNA78657"
+            }
+          ],
+          "description": {
+            "comment": "This sample group is the combination of 27 individual BioSamples: SAMN02230628, SAMN02230629, SAMN01057017, SAMN01057018, SAMN01057019, SAMN01057020, SAMN01057021, SAMN01057022, SAMN01885560, SAMN01885561, SAMN01885562, SAMN01885563, SAMN01885564, SAMN01885565, SAMN01885566, SAMN01885567, SAMN01885568, SAMN01885569, SAMN01885570, SAMN01885571, SAMN01885572, SAMN01885573, SAMN01885574, SAMN01885575, SAMN01885576, SAMN01885577, SAMN01085307.",
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Sample group: combined samples of Chrysemys picta bellii"
+          },
+          "geo_loc_name": "USA: Grant Co., WA",
+          "isolate": "RCT428",
+          "isolation_source": "small lake 1.3 miles south of Potholes Reservoir",
+          "last_updated": "2014-04-03T13:40:10.457",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "The Genome Institute, Washington University School of Medicine"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-02T12:39:45.340",
+          "sample_ids": [
+            {
+              "db": "GenBank",
+              "value": "AHGY"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2014-04-03T13:20:16"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2014-04-01T13:50:09.687"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCF_000241765.5",
+        "comments": "Release Notes - Chrysemys_picta_BioNano-3.0.4\nThe Western painted turtle whole genome shotgun library from primary donor-derived reads (Field number: RCT428 Locality: WA: Grant Co: small lake 1.3 miles south of Potholes Reservoir) were assembled using Newbler (version 2.6). Details of the 3.0.3 assembly can be found in Shaffer, H.B. et al (2013). The 3.0.3 assembly was improved with BioNano Genomics optical mapping resulting in this 3.0.4 assembly. The DNA source for the optical mapping was a captive born female hatchling from a turtle farm. Of the 2.5 Gb assembled genome (Chrysemys_picta_BioNano-3.0.4), the total assembly N50 contig and scaffold lengths are 21.3 kb and 16.0 Mb, respectively. For questions regarding this Chrysemys_picta_BioNano-3.0.4 assembly please contact Nicole Valenzuela, Iowa State , Ames, IA.\nData use: The Chrysemys_picta_BioNano-3.0.4 assembly sequence is made freely available to the community by Nicole Valenzuela, Iowa State; and the McDonnell Genome Institute at Washington University School of Medicine. 1. The data may be freely downloaded, used in analyses, and repackaged in databases. 2. Users are free to use the data in scientific papers analyzing these data if the providers of these data are properly cited. 3. Any redistribution of the data should carry this notice.\nChrysemys picta Sequence and Assembly Credits: Sequencing Funds - National Human Genome Research Institute (NHGRI); and National Science Foundation (NSF) grant IOS 1555999 DNA Source WGS Library - UC-Davis Shaffer lab DNA Source BioNano Optical Mapping - Iowa State University Valenzuela Lab Genome Sequencing - The McDonnell Genome Institute, Washington University School of Medicine Sequence Assembly - The McDonnell Genome Institute, Washington University School of Medicine BAC Mapping - Nicole Valenzuela, Iowa State University BioNano Genomics mapping - Susan J Brown Lab, Kansas State University; and BioNano Genomics San Diego",
+        "genome_notes": [
+          "superseded by newer assembly for species"
+        ],
+        "paired_assembly": {
+          "accession": "GCA_000241765.5",
+          "differences": "Removed 1612 unplaced scaffolds",
+          "only_genbank": "1612 unplaced scaffolds",
+          "refseq_genbank_are_different": true,
+          "status": "current"
+        },
+        "release_date": "2020-08-21",
+        "sequencing_tech": "454 Life Sciences",
+        "submitter": "Painted turtle genome sequencing consortium",
+        "suppression_reason": "This record was removed as a result of standard genome annotation processing. Please see www.ncbi.nlm.nih.gov/genome/annotation_euk/process/ for more information."
+      },
+      "assembly_stats": {
+        "atgc_count": "2170620363",
+        "contig_l50": 29019,
+        "contig_n50": 21334,
+        "gaps_between_scaffolds_count": 41,
+        "gc_count": "959246817",
+        "gc_percent": 44,
+        "genome_coverage": "19.2",
+        "number_of_component_sequences": 259085,
+        "number_of_contigs": 259085,
+        "number_of_scaffolds": 74815,
+        "scaffold_l50": 45,
+        "scaffold_n50": 16028813,
+        "total_number_of_chromosomes": 20,
+        "total_sequence_length": "2480260873",
+        "total_ungapped_length": "2170620363"
+      },
+      "current_accession": "GCF_000241765.5",
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "RCT428",
+          "sex": "female"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "paired_accession": "GCA_000241765.5",
+      "source_database": "SOURCE_DATABASE_REFSEQ",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/AHGY00000000.3",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/AHGY03",
+        "wgs_project_accession": "AHGY03"
+      }
+    },
+    {
+      "accession": "GCA_000241765.5",
+      "assembly_info": {
+        "assembly_level": "Chromosome",
+        "assembly_method": "Newbler v. 2.6",
+        "assembly_name": "Chrysemys_picta_BioNano-3.0.4",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA78657",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA78657",
+                "parent_accessions": [
+                  "PRJNA176378"
+                ],
+                "title": "Chrysemys picta bellii Genome sequencing and assembly"
+              },
+              {
+                "accession": "PRJNA176378",
+                "title": "Evolution of the human proteome: Completing the Chordate Nodes"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN02713681",
+          "attributes": [
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA: Grant Co., WA"
+            },
+            {
+              "name": "isolation_source",
+              "value": "small lake 1.3 miles south of Potholes Reservoir"
+            },
+            {
+              "name": "isolate",
+              "value": "RCT428"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            }
+          ],
+          "bioprojects": [
+            {
+              "accession": "PRJNA78657"
+            }
+          ],
+          "description": {
+            "comment": "This sample group is the combination of 27 individual BioSamples: SAMN02230628, SAMN02230629, SAMN01057017, SAMN01057018, SAMN01057019, SAMN01057020, SAMN01057021, SAMN01057022, SAMN01885560, SAMN01885561, SAMN01885562, SAMN01885563, SAMN01885564, SAMN01885565, SAMN01885566, SAMN01885567, SAMN01885568, SAMN01885569, SAMN01885570, SAMN01885571, SAMN01885572, SAMN01885573, SAMN01885574, SAMN01885575, SAMN01885576, SAMN01885577, SAMN01085307.",
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Sample group: combined samples of Chrysemys picta bellii"
+          },
+          "geo_loc_name": "USA: Grant Co., WA",
+          "isolate": "RCT428",
+          "isolation_source": "small lake 1.3 miles south of Potholes Reservoir",
+          "last_updated": "2014-04-03T13:40:10.457",
+          "models": [
+            "Generic"
+          ],
+          "owner": {
+            "name": "The Genome Institute, Washington University School of Medicine"
+          },
+          "package": "Generic.1.0",
+          "publication_date": "2014-04-02T12:39:45.340",
+          "sample_ids": [
+            {
+              "db": "GenBank",
+              "value": "AHGY"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2014-04-03T13:20:16"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2014-04-01T13:50:09.687"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_000241765.5",
+        "comments": "Release Notes - Chrysemys_picta_BioNano-3.0.4\nThe Western painted turtle whole genome shotgun library from primary donor-derived reads (Field number: RCT428 Locality: WA: Grant Co: small lake 1.3 miles south of Potholes Reservoir) were assembled using Newbler (version 2.6). Details of the 3.0.3 assembly can be found in Shaffer, H.B. et al (2013). The 3.0.3 assembly was improved with BioNano Genomics optical mapping resulting in this 3.0.4 assembly. The DNA source for the optical mapping was a captive born female hatchling from a turtle farm. Of the 2.5 Gb assembled genome (Chrysemys_picta_BioNano-3.0.4), the total assembly N50 contig and scaffold lengths are 21.3 kb and 16.0 Mb, respectively. For questions regarding this Chrysemys_picta_BioNano-3.0.4 assembly please contact Nicole Valenzuela, Iowa State , Ames, IA.\nData use: The Chrysemys_picta_BioNano-3.0.4 assembly sequence is made freely available to the community by Nicole Valenzuela, Iowa State; and the McDonnell Genome Institute at Washington University School of Medicine. 1. The data may be freely downloaded, used in analyses, and repackaged in databases. 2. Users are free to use the data in scientific papers analyzing these data if the providers of these data are properly cited. 3. Any redistribution of the data should carry this notice.\nChrysemys picta Sequence and Assembly Credits: Sequencing Funds - National Human Genome Research Institute (NHGRI); and National Science Foundation (NSF) grant IOS 1555999 DNA Source WGS Library - UC-Davis Shaffer lab DNA Source BioNano Optical Mapping - Iowa State University Valenzuela Lab Genome Sequencing - The McDonnell Genome Institute, Washington University School of Medicine Sequence Assembly - The McDonnell Genome Institute, Washington University School of Medicine BAC Mapping - Nicole Valenzuela, Iowa State University BioNano Genomics mapping - Susan J Brown Lab, Kansas State University; and BioNano Genomics San Diego",
+        "genome_notes": [
+          "superseded by newer assembly for species"
+        ],
+        "paired_assembly": {
+          "accession": "GCF_000241765.5",
+          "annotation_name": "NCBI Chrysemys picta Annotation Release 103",
+          "differences": "Removed 1612 unplaced scaffolds",
+          "only_genbank": "1612 unplaced scaffolds",
+          "refseq_genbank_are_different": true,
+          "status": "suppressed"
+        },
+        "release_date": "2020-08-21",
+        "sequencing_tech": "454 Life Sciences",
+        "submitter": "Painted turtle genome sequencing consortium"
+      },
+      "assembly_stats": {
+        "atgc_count": "2171711154",
+        "contig_l50": 29042,
+        "contig_n50": 21318,
+        "gaps_between_scaffolds_count": 41,
+        "gc_count": "959727982",
+        "gc_percent": 44,
+        "genome_coverage": "19.2",
+        "number_of_component_sequences": 260697,
+        "number_of_contigs": 260697,
+        "number_of_scaffolds": 76427,
+        "scaffold_l50": 45,
+        "scaffold_n50": 16028813,
+        "total_number_of_chromosomes": 20,
+        "total_sequence_length": "2481351664",
+        "total_ungapped_length": "2171711154"
+      },
+      "current_accession": "GCA_000241765.5",
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "RCT428",
+          "sex": "female"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "paired_accession": "GCF_000241765.5",
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/AHGY00000000.3",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/AHGY03",
+        "wgs_project_accession": "AHGY03"
+      }
+    },
+    {
+      "accession": "GCA_011386835.2",
+      "assembly_info": {
+        "assembly_level": "Chromosome",
+        "assembly_method": "HiFiasm v. 0.16.1; Tigmint v. 1.2.5; 3DDNA v. Phasing branch 201008",
+        "assembly_name": "ASM1138683v2",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA589899",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA589899",
+                "parent_accessions": [
+                  "PRJNA994944"
+                ],
+                "title": "Chrysemys picta bellii isolate:R12L10 Genome sequencing and assembly"
+              },
+              {
+                "accession": "PRJNA994944",
+                "title": "Chrysemys picta bellii Umbrella project"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN13293682",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "R12L10"
+            },
+            {
+              "name": "dev_stage",
+              "value": "Adult"
+            },
+            {
+              "name": "sex",
+              "value": "male"
+            },
+            {
+              "name": "tissue",
+              "value": "blood"
+            },
+            {
+              "name": "biomaterial_provider",
+              "value": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA: Mcleod County, MN"
+            },
+            {
+              "name": "sample_type",
+              "value": "tissue"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            }
+          ],
+          "biomaterial_provider": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO",
+          "bioprojects": [
+            {
+              "accession": "PRJNA589899"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Model organism or animal sample from Chrysemys picta bellii"
+          },
+          "dev_stage": "Adult",
+          "geo_loc_name": "USA: Mcleod County, MN",
+          "isolate": "R12L10",
+          "last_updated": "2021-11-18T13:43:17.371",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "contacts": [
+              {}
+            ],
+            "name": "Washington University School of Medicine"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2019-11-15T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "R12 L10 QM2"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS6129357"
+            }
+          ],
+          "sex": "male",
+          "status": {
+            "status": "live",
+            "when": "2019-11-15T19:00:03.668"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2019-11-15T19:00:03.666",
+          "tissue": "blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_011386835.2",
+        "comments": "The initial 10XGenomics assembly of the Western Painted Turtle genome was submitted through the McDonnell Genome Institute at Washington University. This new assembly with additional sequence was submitted through St. Louis University in collaboration with Washington University.",
+        "paired_assembly": {
+          "accession": "GCF_011386835.1",
+          "annotation_name": "GCF_011386835.1-RS_2024_05",
+          "differences": "Removed chromosome MT",
+          "only_genbank": "chromosome MT",
+          "refseq_genbank_are_different": true,
+          "status": "current"
+        },
+        "refseq_category": "reference genome",
+        "release_date": "2023-09-08",
+        "sequencing_tech": "PacBio Sequel; Illumina",
+        "submitter": "St. Louis University"
+      },
+      "assembly_stats": {
+        "atgc_count": "2371548498",
+        "contig_l50": 48,
+        "contig_n50": 13370154,
+        "gc_count": "1064411009",
+        "gc_percent": 45,
+        "genome_coverage": "20.5",
+        "number_of_component_sequences": 9850,
+        "number_of_contigs": 11120,
+        "number_of_organelles": 1,
+        "number_of_scaffolds": 9850,
+        "scaffold_l50": 6,
+        "scaffold_n50": 133555881,
+        "total_number_of_chromosomes": 25,
+        "total_sequence_length": "2372089908",
+        "total_ungapped_length": "2371548498"
+      },
+      "current_accession": "GCA_011386835.2",
+      "organelle_info": [
+        {
+          "description": "Mitochondrion",
+          "submitter": "St. Louis University",
+          "total_seq_length": "16931"
+        }
+      ],
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "R12L10",
+          "sex": "male"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "paired_accession": "GCF_011386835.1",
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JAAOEE000000000.2",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JAAOEE02",
+        "wgs_project_accession": "JAAOEE02"
+      }
+    },
+    {
+      "accession": "GCA_035221575.1",
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "hifiasm v. 0.16.1; Tigmint v. 1.2.5; 3DDNA v. Phasing branch 201008",
+        "assembly_name": "ASM3522157v1",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA961174",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA961174",
+                "parent_accessions": [
+                  "PRJNA994944"
+                ],
+                "title": "Chrysemys picta bellii haplotype 1 genome sequencing"
+              },
+              {
+                "accession": "PRJNA994944",
+                "title": "Chrysemys picta bellii Umbrella project"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN13293682",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "R12L10"
+            },
+            {
+              "name": "dev_stage",
+              "value": "Adult"
+            },
+            {
+              "name": "sex",
+              "value": "male"
+            },
+            {
+              "name": "tissue",
+              "value": "blood"
+            },
+            {
+              "name": "biomaterial_provider",
+              "value": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA: Mcleod County, MN"
+            },
+            {
+              "name": "sample_type",
+              "value": "tissue"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            }
+          ],
+          "biomaterial_provider": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO",
+          "bioprojects": [
+            {
+              "accession": "PRJNA589899"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Model organism or animal sample from Chrysemys picta bellii"
+          },
+          "dev_stage": "Adult",
+          "geo_loc_name": "USA: Mcleod County, MN",
+          "isolate": "R12L10",
+          "last_updated": "2021-11-18T13:43:17.371",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "contacts": [
+              {}
+            ],
+            "name": "Washington University School of Medicine"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2019-11-15T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "R12 L10 QM2"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS6129357"
+            }
+          ],
+          "sex": "male",
+          "status": {
+            "status": "live",
+            "when": "2019-11-15T19:00:03.668"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2019-11-15T19:00:03.666",
+          "tissue": "blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_035221575.1",
+        "diploid_role": "haplotype_1",
+        "linked_assemblies": [
+          {
+            "assembly_type": "haplotype_2",
+            "linked_assembly": "GCA_035221595.1"
+          }
+        ],
+        "release_date": "2024-01-08",
+        "sequencing_tech": "PacBio; Illumina",
+        "submitter": "Washington University"
+      },
+      "assembly_stats": {
+        "atgc_count": "2336311646",
+        "contig_l50": 200,
+        "contig_n50": 3323865,
+        "gc_count": "1046541203",
+        "gc_percent": 45,
+        "genome_coverage": "20.78",
+        "number_of_component_sequences": 5376,
+        "number_of_contigs": 7676,
+        "number_of_scaffolds": 5376,
+        "scaffold_l50": 6,
+        "scaffold_n50": 132972522,
+        "total_sequence_length": "2336887892",
+        "total_ungapped_length": "2336311646"
+      },
+      "current_accession": "GCA_035221575.1",
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "R12L10",
+          "sex": "male"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JAULBH000000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JAULBH01",
+        "wgs_project_accession": "JAULBH01"
+      }
+    },
+    {
+      "accession": "GCA_035221595.1",
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "hifiasm v. 0.16.1; Tigmint v. 1.2.5; 3DDNA v. Phasing branch 201008",
+        "assembly_name": "ASM3522159v1",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA961173",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA961173",
+                "parent_accessions": [
+                  "PRJNA994944"
+                ],
+                "title": "Chrysemys picta bellii haplotype 2 genome sequencing"
+              },
+              {
+                "accession": "PRJNA994944",
+                "title": "Chrysemys picta bellii Umbrella project"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN13293682",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "R12L10"
+            },
+            {
+              "name": "dev_stage",
+              "value": "Adult"
+            },
+            {
+              "name": "sex",
+              "value": "male"
+            },
+            {
+              "name": "tissue",
+              "value": "blood"
+            },
+            {
+              "name": "biomaterial_provider",
+              "value": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "USA: Mcleod County, MN"
+            },
+            {
+              "name": "sample_type",
+              "value": "tissue"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            }
+          ],
+          "biomaterial_provider": "Dr. Daniel Warren lab, Biology Dept, St. Louis University, St. Louis, MO",
+          "bioprojects": [
+            {
+              "accession": "PRJNA589899"
+            }
+          ],
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Model organism or animal sample from Chrysemys picta bellii"
+          },
+          "dev_stage": "Adult",
+          "geo_loc_name": "USA: Mcleod County, MN",
+          "isolate": "R12L10",
+          "last_updated": "2021-11-18T13:43:17.371",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "contacts": [
+              {}
+            ],
+            "name": "Washington University School of Medicine"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2019-11-15T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "R12 L10 QM2"
+            },
+            {
+              "db": "SRA",
+              "value": "SRS6129357"
+            }
+          ],
+          "sex": "male",
+          "status": {
+            "status": "live",
+            "when": "2019-11-15T19:00:03.668"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2019-11-15T19:00:03.666",
+          "tissue": "blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_035221595.1",
+        "diploid_role": "haplotype_2",
+        "linked_assemblies": [
+          {
+            "assembly_type": "haplotype_1",
+            "linked_assembly": "GCA_035221575.1"
+          }
+        ],
+        "release_date": "2024-01-08",
+        "sequencing_tech": "PacBio; Illumina",
+        "submitter": "Washington University"
+      },
+      "assembly_stats": {
+        "atgc_count": "2328673937",
+        "contig_l50": 218,
+        "contig_n50": 3107710,
+        "gc_count": "1042328575",
+        "gc_percent": 45,
+        "genome_coverage": "20.85",
+        "number_of_component_sequences": 9371,
+        "number_of_contigs": 11363,
+        "number_of_scaffolds": 9371,
+        "scaffold_l50": 6,
+        "scaffold_n50": 132077892,
+        "total_sequence_length": "2329101047",
+        "total_ungapped_length": "2328673937"
+      },
+      "current_accession": "GCA_035221595.1",
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "R12L10",
+          "sex": "male"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JAULBI000000000.1",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JAULBI01",
+        "wgs_project_accession": "JAULBI01"
+      }
+    },
+    {
+      "accession": "GCA_037349265.2",
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "hifiasm pacbio+hic mode v. 0.19.4; purge_dups v. 1.2.5; yahs v. 1.2",
+        "assembly_name": "rChrPic2_p1.2",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA1071111",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA1071111",
+                "parent_accessions": [
+                  "PRJNA1025281"
+                ],
+                "title": "Chrysemys picta bellii (western painted turtle) genome assembly, rChrPic2, principal haplotype"
+              },
+              {
+                "accession": "PRJNA1025281",
+                "parent_accessions": [
+                  "PRJNA813333"
+                ],
+                "title": "Chrysemys picta bellii (western painted turtle), rChrPic2"
+              },
+              {
+                "accession": "PRJNA813333",
+                "parent_accessions": [
+                  "PRJNA533106"
+                ],
+                "title": "Canadian BioGenome Project (CBP)"
+              },
+              {
+                "accession": "PRJNA533106",
+                "title": "Earth BioGenome Project (EBP)"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN37797021",
+          "age": "adult",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "WesternPaintedTurtle01"
+            },
+            {
+              "name": "age",
+              "value": "adult"
+            },
+            {
+              "name": "collection_date",
+              "value": "2023-04-19"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "Canada: Ontario, Peterborough"
+            },
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "tissue",
+              "value": "peripheral blood"
+            },
+            {
+              "name": "collected_by",
+              "value": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada"
+            },
+            {
+              "name": "health_state",
+              "value": "healthy (blind but no active health concerns)"
+            },
+            {
+              "name": "isolation_source",
+              "value": "captive; ex situ conservation centre"
+            },
+            {
+              "name": "sample_type",
+              "value": "whole blood"
+            },
+            {
+              "name": "store_cond",
+              "value": "EDTA blood collection tube; stored at 4C within 10 minutes of collection; then transferred to -80C ~2h later"
+            },
+            {
+              "name": "ToLID",
+              "value": "rChrPic2"
+            },
+            {
+              "name": "Common name",
+              "value": "western painted turtle"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            },
+            {
+              "name": "CBP Individual ID",
+              "value": "WesternPaintedTurtle01"
+            },
+            {
+              "name": "identified_by",
+              "value": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada"
+            },
+            {
+              "name": "External Sample ID",
+              "value": "Western Painted Turtle \"22-1322\""
+            }
+          ],
+          "collected_by": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada",
+          "collection_date": "2023-04-19",
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Adult female Chrysemys picta bellii (Western Painted Turtle), WesternPaintedTurtle01: CBPint0053, rChrPic2"
+          },
+          "geo_loc_name": "Canada: Ontario, Peterborough",
+          "identified_by": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada",
+          "isolate": "WesternPaintedTurtle01",
+          "isolation_source": "captive; ex situ conservation centre",
+          "last_updated": "2023-10-12T17:19:04.179",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "name": "Canada's national platform for genome sequencing and analysis"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2023-10-12T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "WesternPaintedTurtle01-specimen"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2023-10-12T17:19:04.179"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2023-10-12T17:19:04.179",
+          "tissue": "peripheral blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_037349265.2",
+        "diploid_role": "principal_pseudohaplotype_of_diploid",
+        "linked_assemblies": [
+          {
+            "assembly_type": "alternate_pseudohaplotype_of_diploid",
+            "linked_assembly": "GCA_037356295.2"
+          }
+        ],
+        "release_date": "2025-08-05",
+        "sequencing_tech": "Revio; Illumina NovaSeq X Plus",
+        "submitter": "Canada's national platform for genome sequencing and analysis"
+      },
+      "assembly_stats": {
+        "atgc_count": "2327230694",
+        "contig_l50": 16,
+        "contig_n50": 41089616,
+        "gc_count": "1041538077",
+        "gc_percent": 45,
+        "genome_coverage": "28.92",
+        "number_of_component_sequences": 188,
+        "number_of_contigs": 482,
+        "number_of_organelles": 1,
+        "number_of_scaffolds": 188,
+        "scaffold_l50": 5,
+        "scaffold_n50": 133228632,
+        "total_sequence_length": "2327289494",
+        "total_ungapped_length": "2327230694"
+      },
+      "current_accession": "GCA_037349265.2",
+      "organelle_info": [
+        {
+          "description": "Mitochondrion",
+          "submitter": "Canada's national platform for genome sequencing and analysis",
+          "total_seq_length": "17018"
+        }
+      ],
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "WesternPaintedTurtle01",
+          "sex": "female"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JAZIAX000000000.2",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JAZIAX02",
+        "wgs_project_accession": "JAZIAX02"
+      }
+    },
+    {
+      "accession": "GCA_037356295.2",
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "hifiasm pacbio+hic mode v. 0.19.4; purge_dups v. 1.2.5; yahs v. 1.2",
+        "assembly_name": "rChrPic2_a1.2",
+        "assembly_status": "current",
+        "assembly_type": "alternate-pseudohaplotype",
+        "bioproject_accession": "PRJNA1071116",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA1071116",
+                "parent_accessions": [
+                  "PRJNA1025281"
+                ],
+                "title": "Chrysemys picta bellii (western painted turtle) genome assembly, rChrPic2, alternate haplotype"
+              },
+              {
+                "accession": "PRJNA1025281",
+                "parent_accessions": [
+                  "PRJNA813333"
+                ],
+                "title": "Chrysemys picta bellii (western painted turtle), rChrPic2"
+              },
+              {
+                "accession": "PRJNA813333",
+                "parent_accessions": [
+                  "PRJNA533106"
+                ],
+                "title": "Canadian BioGenome Project (CBP)"
+              },
+              {
+                "accession": "PRJNA533106",
+                "title": "Earth BioGenome Project (EBP)"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN37797021",
+          "age": "adult",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "WesternPaintedTurtle01"
+            },
+            {
+              "name": "age",
+              "value": "adult"
+            },
+            {
+              "name": "collection_date",
+              "value": "2023-04-19"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "Canada: Ontario, Peterborough"
+            },
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "tissue",
+              "value": "peripheral blood"
+            },
+            {
+              "name": "collected_by",
+              "value": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada"
+            },
+            {
+              "name": "health_state",
+              "value": "healthy (blind but no active health concerns)"
+            },
+            {
+              "name": "isolation_source",
+              "value": "captive; ex situ conservation centre"
+            },
+            {
+              "name": "sample_type",
+              "value": "whole blood"
+            },
+            {
+              "name": "store_cond",
+              "value": "EDTA blood collection tube; stored at 4C within 10 minutes of collection; then transferred to -80C ~2h later"
+            },
+            {
+              "name": "ToLID",
+              "value": "rChrPic2"
+            },
+            {
+              "name": "Common name",
+              "value": "western painted turtle"
+            },
+            {
+              "name": "sub_species",
+              "value": "bellii"
+            },
+            {
+              "name": "CBP Individual ID",
+              "value": "WesternPaintedTurtle01"
+            },
+            {
+              "name": "identified_by",
+              "value": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada"
+            },
+            {
+              "name": "External Sample ID",
+              "value": "Western Painted Turtle \"22-1322\""
+            }
+          ],
+          "collected_by": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada",
+          "collection_date": "2023-04-19",
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta bellii",
+              "tax_id": 8478
+            },
+            "title": "Adult female Chrysemys picta bellii (Western Painted Turtle), WesternPaintedTurtle01: CBPint0053, rChrPic2"
+          },
+          "geo_loc_name": "Canada: Ontario, Peterborough",
+          "identified_by": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada",
+          "isolate": "WesternPaintedTurtle01",
+          "isolation_source": "captive; ex situ conservation centre",
+          "last_updated": "2023-10-12T17:19:04.179",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "name": "Canada's national platform for genome sequencing and analysis"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2023-10-12T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "WesternPaintedTurtle01-specimen"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2023-10-12T17:19:04.179"
+          },
+          "sub_species": "bellii",
+          "submission_date": "2023-10-12T17:19:04.179",
+          "tissue": "peripheral blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_037356295.2",
+        "diploid_role": "alternate_pseudohaplotype_of_diploid",
+        "linked_assemblies": [
+          {
+            "assembly_type": "principal_pseudohaplotype_of_diploid",
+            "linked_assembly": "GCA_037349265.2"
+          }
+        ],
+        "release_date": "2025-08-05",
+        "sequencing_tech": "Revio; Illumina NovaSeq X Plus",
+        "submitter": "Canada's national platform for genome sequencing and analysis"
+      },
+      "assembly_stats": {
+        "atgc_count": "2258745222",
+        "contig_l50": 19,
+        "contig_n50": 39608405,
+        "gc_count": "1007435948",
+        "gc_percent": 44.5,
+        "genome_coverage": "28.92",
+        "number_of_component_sequences": 121,
+        "number_of_contigs": 411,
+        "number_of_scaffolds": 121,
+        "scaffold_l50": 5,
+        "scaffold_n50": 147697218,
+        "total_sequence_length": "2258803222",
+        "total_ungapped_length": "2258745222"
+      },
+      "current_accession": "GCA_037356295.2",
+      "organism": {
+        "common_name": "western painted turtle",
+        "infraspecific_names": {
+          "isolate": "WesternPaintedTurtle01",
+          "sex": "female"
+        },
+        "organism_name": "Chrysemys picta bellii",
+        "tax_id": 8478
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JAZIAY000000000.2",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JAZIAY02",
+        "wgs_project_accession": "JAZIAY02"
+      }
+    },
+    {
+      "accession": "GCA_037418295.2",
+      "assembly_info": {
+        "assembly_level": "Scaffold",
+        "assembly_method": "hifiasm v. 0.19.4; purge_dups v. 1.2.5; yahs v. 1.2",
+        "assembly_name": "rChrPic1_a1.2",
+        "assembly_status": "current",
+        "assembly_type": "alternate-pseudohaplotype",
+        "bioproject_accession": "PRJNA1069022",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA1069022",
+                "parent_accessions": [
+                  "PRJNA1025280"
+                ],
+                "title": "Chrysemys picta marginata (midland painted turtle) genome assembly, rChrPic1, alternate haplotype"
+              },
+              {
+                "accession": "PRJNA1025280",
+                "parent_accessions": [
+                  "PRJNA813333"
+                ],
+                "title": "Chrysemys picta marginata (midland painted turtle), rChrPic1"
+              },
+              {
+                "accession": "PRJNA813333",
+                "parent_accessions": [
+                  "PRJNA533106"
+                ],
+                "title": "Canadian BioGenome Project (CBP)"
+              },
+              {
+                "accession": "PRJNA533106",
+                "title": "Earth BioGenome Project (EBP)"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN37797018",
+          "age": "adult",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "MidlandPaintedTurtle01"
+            },
+            {
+              "name": "age",
+              "value": "adult"
+            },
+            {
+              "name": "collection_date",
+              "value": "2023-04-19"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "Canada: Ontario, Peterborough"
+            },
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "tissue",
+              "value": "peripheral blood"
+            },
+            {
+              "name": "collected_by",
+              "value": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada"
+            },
+            {
+              "name": "health_state",
+              "value": "healthy (shell injury but no active health concerns)"
+            },
+            {
+              "name": "isolation_source",
+              "value": "captive; ex situ conservation centre"
+            },
+            {
+              "name": "sample_type",
+              "value": "whole blood"
+            },
+            {
+              "name": "store_cond",
+              "value": "EDTA blood collection tube; stored at 4C within 10 minutes of collection; then transferred to -80C ~3h later"
+            },
+            {
+              "name": "ToLID",
+              "value": "rChrPic1"
+            },
+            {
+              "name": "Common name",
+              "value": "midland painted turtle"
+            },
+            {
+              "name": "sub_species",
+              "value": "marginata"
+            },
+            {
+              "name": "CBP Individual ID",
+              "value": "MidlandPaintedTurtle01"
+            },
+            {
+              "name": "identified_by",
+              "value": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada"
+            },
+            {
+              "name": "External Sample ID",
+              "value": "Midland Painted Turtle \"Shelby\""
+            }
+          ],
+          "collected_by": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada",
+          "collection_date": "2023-04-19",
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta marginata",
+              "tax_id": 391339
+            },
+            "title": "Adult female Chrysemys picta marginata (midland painted turtle), MidlandPaintedTurtle01: CBPint0052, rChrPic1"
+          },
+          "geo_loc_name": "Canada: Ontario, Peterborough",
+          "identified_by": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada",
+          "isolate": "MidlandPaintedTurtle01",
+          "isolation_source": "captive; ex situ conservation centre",
+          "last_updated": "2023-10-12T17:19:03.966",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "name": "Canada's national platform for genome sequencing and analysis"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2023-10-12T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "MidlandPaintedTurtle01-specimen"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2023-10-12T17:19:03.966"
+          },
+          "sub_species": "marginata",
+          "submission_date": "2023-10-12T17:19:03.966",
+          "tissue": "peripheral blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_037418295.2",
+        "diploid_role": "alternate_pseudohaplotype_of_diploid",
+        "linked_assemblies": [
+          {
+            "assembly_type": "principal_pseudohaplotype_of_diploid",
+            "linked_assembly": "GCA_037418315.2"
+          }
+        ],
+        "release_date": "2025-08-18",
+        "sequencing_tech": "Revio; Illumina NovaSeq X Plus",
+        "submitter": "Canada's Genomic Enterprise"
+      },
+      "assembly_stats": {
+        "atgc_count": "2315556550",
+        "contig_l50": 12,
+        "contig_n50": 51334297,
+        "gc_count": "1036066975",
+        "gc_percent": 44.5,
+        "genome_coverage": "26.11",
+        "number_of_component_sequences": 151,
+        "number_of_contigs": 379,
+        "number_of_scaffolds": 151,
+        "scaffold_l50": 5,
+        "scaffold_n50": 146520651,
+        "total_sequence_length": "2315601350",
+        "total_ungapped_length": "2315556550"
+      },
+      "current_accession": "GCA_037418295.2",
+      "organism": {
+        "common_name": "midland painted turtle",
+        "infraspecific_names": {
+          "isolate": "MidlandPaintedTurtle01",
+          "sex": "female"
+        },
+        "organism_name": "Chrysemys picta marginata",
+        "tax_id": 391339
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JBAMNB000000000.2",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JBAMNB02",
+        "wgs_project_accession": "JBAMNB02"
+      }
+    },
+    {
+      "accession": "GCA_037418315.2",
+      "assembly_info": {
+        "assembly_level": "Chromosome",
+        "assembly_method": "hifiasm v. 0.19.4; purge_dups v. 1.2.5; yahs v. 1.2",
+        "assembly_name": "rChrPic1_p1.2",
+        "assembly_status": "current",
+        "assembly_type": "haploid",
+        "bioproject_accession": "PRJNA1069019",
+        "bioproject_lineage": [
+          {
+            "bioprojects": [
+              {
+                "accession": "PRJNA1069019",
+                "parent_accessions": [
+                  "PRJNA1025280"
+                ],
+                "title": "Chrysemys picta marginata (midland painted turtle) genome assembly, rChrPic1"
+              },
+              {
+                "accession": "PRJNA1025280",
+                "parent_accessions": [
+                  "PRJNA813333"
+                ],
+                "title": "Chrysemys picta marginata (midland painted turtle), rChrPic1"
+              },
+              {
+                "accession": "PRJNA813333",
+                "parent_accessions": [
+                  "PRJNA533106"
+                ],
+                "title": "Canadian BioGenome Project (CBP)"
+              },
+              {
+                "accession": "PRJNA533106",
+                "title": "Earth BioGenome Project (EBP)"
+              }
+            ]
+          }
+        ],
+        "biosample": {
+          "accession": "SAMN37797018",
+          "age": "adult",
+          "attributes": [
+            {
+              "name": "isolate",
+              "value": "MidlandPaintedTurtle01"
+            },
+            {
+              "name": "age",
+              "value": "adult"
+            },
+            {
+              "name": "collection_date",
+              "value": "2023-04-19"
+            },
+            {
+              "name": "geo_loc_name",
+              "value": "Canada: Ontario, Peterborough"
+            },
+            {
+              "name": "sex",
+              "value": "female"
+            },
+            {
+              "name": "tissue",
+              "value": "peripheral blood"
+            },
+            {
+              "name": "collected_by",
+              "value": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada"
+            },
+            {
+              "name": "health_state",
+              "value": "healthy (shell injury but no active health concerns)"
+            },
+            {
+              "name": "isolation_source",
+              "value": "captive; ex situ conservation centre"
+            },
+            {
+              "name": "sample_type",
+              "value": "whole blood"
+            },
+            {
+              "name": "store_cond",
+              "value": "EDTA blood collection tube; stored at 4C within 10 minutes of collection; then transferred to -80C ~3h later"
+            },
+            {
+              "name": "ToLID",
+              "value": "rChrPic1"
+            },
+            {
+              "name": "Common name",
+              "value": "midland painted turtle"
+            },
+            {
+              "name": "sub_species",
+              "value": "marginata"
+            },
+            {
+              "name": "CBP Individual ID",
+              "value": "MidlandPaintedTurtle01"
+            },
+            {
+              "name": "identified_by",
+              "value": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada"
+            },
+            {
+              "name": "External Sample ID",
+              "value": "Midland Painted Turtle \"Shelby\""
+            }
+          ],
+          "collected_by": "Pauline Delnatte, Ontario Turtle Conservation Centre, 4-1434 Chemong Rd Peterborough, ON, K9J 6X2 Canada",
+          "collection_date": "2023-04-19",
+          "description": {
+            "organism": {
+              "organism_name": "Chrysemys picta marginata",
+              "tax_id": 391339
+            },
+            "title": "Adult female Chrysemys picta marginata (midland painted turtle), MidlandPaintedTurtle01: CBPint0052, rChrPic1"
+          },
+          "geo_loc_name": "Canada: Ontario, Peterborough",
+          "identified_by": "Ontario Turtle Conservation Centre, Peterborough, Ontario Canada",
+          "isolate": "MidlandPaintedTurtle01",
+          "isolation_source": "captive; ex situ conservation centre",
+          "last_updated": "2023-10-12T17:19:03.966",
+          "models": [
+            "Model organism or animal"
+          ],
+          "owner": {
+            "name": "Canada's national platform for genome sequencing and analysis"
+          },
+          "package": "Model.organism.animal.1.0",
+          "publication_date": "2023-10-12T00:00:00.000",
+          "sample_ids": [
+            {
+              "label": "Sample name",
+              "value": "MidlandPaintedTurtle01-specimen"
+            }
+          ],
+          "sex": "female",
+          "status": {
+            "status": "live",
+            "when": "2023-10-12T17:19:03.966"
+          },
+          "sub_species": "marginata",
+          "submission_date": "2023-10-12T17:19:03.966",
+          "tissue": "peripheral blood"
+        },
+        "blast_url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_SPEC=GDH_GCA_037418315.2",
+        "diploid_role": "principal_pseudohaplotype_of_diploid",
+        "linked_assemblies": [
+          {
+            "assembly_type": "alternate_pseudohaplotype_of_diploid",
+            "linked_assembly": "GCA_037418295.2"
+          }
+        ],
+        "release_date": "2025-08-18",
+        "sequencing_tech": "Revio; Illumina NovaSeq X Plus",
+        "submitter": "Canada's Genomic Enterprise"
+      },
+      "assembly_stats": {
+        "atgc_count": "2315556550",
+        "contig_l50": 12,
+        "contig_n50": 51334297,
+        "gc_count": "1036066975",
+        "gc_percent": 44.5,
+        "genome_coverage": "26.11",
+        "number_of_component_sequences": 151,
+        "number_of_contigs": 379,
+        "number_of_organelles": 1,
+        "number_of_scaffolds": 151,
+        "scaffold_l50": 5,
+        "scaffold_n50": 146520651,
+        "total_number_of_chromosomes": 17,
+        "total_sequence_length": "2315601350",
+        "total_ungapped_length": "2315556550"
+      },
+      "current_accession": "GCA_037418315.2",
+      "organelle_info": [
+        {
+          "description": "Mitochondrion",
+          "submitter": "Canada's Genomic Enterprise",
+          "total_seq_length": "17134"
+        }
+      ],
+      "organism": {
+        "common_name": "midland painted turtle",
+        "infraspecific_names": {
+          "isolate": "MidlandPaintedTurtle01",
+          "sex": "female"
+        },
+        "organism_name": "Chrysemys picta marginata",
+        "tax_id": 391339
+      },
+      "source_database": "SOURCE_DATABASE_GENBANK",
+      "wgs_info": {
+        "master_wgs_url": "https://www.ncbi.nlm.nih.gov/nuccore/JBAMNA000000000.2",
+        "wgs_contigs_url": "https://www.ncbi.nlm.nih.gov/Traces/wgs/JBAMNA02",
+        "wgs_project_accession": "JBAMNA02"
+      }
+    }
+  ],
+  "total_count": 10
+}

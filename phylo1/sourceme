@@ -1,1 +1,3 @@
 alias busco='docker run --rm -it --platform linux/amd64 -v "$PWD":/data -w /data ezlabgva/busco:v6.0.0_cv1 busco'
+eval "$(mamba shell hook --shell zsh)"
+mamba activate phylo
