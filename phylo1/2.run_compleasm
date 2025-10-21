@@ -1,0 +1,4 @@
+compleasm run -a genomes/chicken_genome/ncbi_dataset/data/GCF_000002315.5/GCF_000002315.5_GRCg6a_genomic.fna -o compleasm/chicken_compleasm -l sauropsida_odb12 -t 4
+compleasm run -a genomes/lizard_genome/ncbi_dataset/data/GCF_963506605.1/GCF_963506605.1_rZooViv1.1_genomic.fna -o compleasm/lizard_compleasm -l sauropsida_odb12 -t 3
+compleasm run -a genomes/hummingbird_genome/ncbi_dataset/data/GCF_003957555.1/GCF_003957555.1_bCalAnn1_v1.p_genomic.fna -o compleasm/hummingbird_genome -l sauropsida_odb12 -t 4 >compleasm.OUT 2>&1 & 
+compleasm run -a genomes/duck_genome/ncbi_dataset/data/GCA_002592135.1/GCA_002592135.1_ASM259213v1_genomic.fna -o compleasm/duck_genome -l sauropsida_odb12 -t 4 >compleasm.2.OUT 2>&1 &

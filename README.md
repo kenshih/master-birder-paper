@@ -135,6 +135,21 @@ in https://itol.embl.de/
 - [ ] mallard wrong assembly (was pink-footed goose)
 
 ```
+# trying to switch to compleasm, since mamba install failed
+git clone https://github.com/huangnengCSU/compleasm.git
+cd compleasm
+
+# go into phylo venv and install compleasm locally
+cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo pip install ../compleasm/
+
+cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo conda install -c bioconda miniprot hmmer -y
+
+find /Users/ken/Documents/wk/master-birder-paper/phylo1/genomes -name "*.fna" -type f
+
+cd /Users/ken/Documents/wk/master-birder-paper/phylo1 && mamba run -n phylo compleasm download sauropsida_odb12
+```
+
+```
 # use to sanity check: what species am i looking at?
 datasets summary genome accession GCF_000344595.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}' 
 ```
