@@ -134,6 +134,15 @@ in https://itol.embl.de/
 - [ ] anna's wrong assembly (was zebra finch)
 - [ ] mallard wrong assembly (was pink-footed goose)
 
+## 2nd Phylogenetic Tree
+
+1. Chicken (Gallus gallus)
+1. Mallard Duck (Anas platyrhynchos)
+1. Anna's Hummingbird (Calypte anna)
+1. Common Lizard (Zootoca vivipara) 
+
+![iotl_bird_phylogeny](./phylo1/bird_phylogeny/iotl_bird_phylogeny.png)
+
 ```
 # trying to switch to compleasm, since mamba install failed
 git clone https://github.com/huangnengCSU/compleasm.git

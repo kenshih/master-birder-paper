@@ -1,4 +1,5 @@
-# in phylo1/
+# outputs to phylo1/alignments/trimmed_alignments/
+
 echo "=== Step 3: Trim alignments with TrimAl ==="
 mkdir -p alignments/trimmed_alignments
 

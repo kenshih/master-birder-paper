@@ -2,7 +2,7 @@
 echo "=== Step 5: Build phylogenetic tree with IQ-TREE ==="
 echo "Running IQ-TREE with model selection and bootstrap support..."
 
-iqtree -s concatenated_alignment.fna -m MFP -bb 1000 -nt AUTO --prefix bird_phylogeny
+iqtree -s concatenated_alignment.fna -m MFP -bb 1000 -nt AUTO --prefix bird_phylogeny/bird_phylogeny
 
 echo "=== ANALYSIS COMPLETE! ==="
 echo "Results:"
