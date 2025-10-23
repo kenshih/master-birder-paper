@@ -55,7 +55,7 @@ def extract_sequences(busco_dir, busco_id, species_name):
     return None
 
 def main():
-    species_list = ["chicken", "hummingbird", "duck"] #, "alligator"]
+    species_list = ["chicken", "hummingbird", "duck", "lizard"]
     busco_dirs = {sp: f"busco_out/{sp}" for sp in species_list}
     
     # Parse BUSCO results for each species

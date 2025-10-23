@@ -1,3 +1,4 @@
+### writes concatenated_alignment.fna in the current directory
 #cd ../trimmed_alignments
 print("=== Step 4: Concatenate alignments into supermatrix ===")
 

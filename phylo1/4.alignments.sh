@@ -3,8 +3,8 @@
 # BUSCO Gene Processing and Phylogenetic Analysis Pipeline
 # Run this after BUSCO analysis is complete
 
-eval "$(mamba shell hook --shell zsh)"
-mamba activate phylo
+# eval "$(mamba shell hook --shell zsh)"
+# mamba activate phylo
 unset PYTHONPATH
 
 # echo "=== Step 1: Extract single-copy BUSCO genes present in all species ==="

@@ -6,3 +6,9 @@ duck_busco/
 hummingbird_busco/
 turtle_busco/
 turtle_genome/
+bbmap.tar.gz
+bbmap/
+busco_out/chicken/
+busco_out/duck/
+busco_out/hummingbird/
+busco_out/lizard/
