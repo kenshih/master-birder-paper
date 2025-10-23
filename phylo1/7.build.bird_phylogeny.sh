@@ -10,8 +10,6 @@ echo "- Phylogenetic tree: bird_phylogeny.treefile"
 echo "- Bootstrap tree: bird_phylogeny.contree"
 echo "- Log file: bird_phylogeny.log"
 
-echo "View your tree with:"
-echo "1. FigTree (GUI): Open bird_phylogeny.contree"
-echo "2. Online: Upload to iTOL (https://itol.embl.de/)"
+echo "View your tree online: Upload to iTOL (https://itol.embl.de/)"
 
 ls -lh bird_phylogeny.*

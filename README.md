@@ -136,14 +136,33 @@ in https://itol.embl.de/
 
 ## 2nd Phylogenetic Tree
 
+Using species genomes:
 1. Chicken (Gallus gallus)
 1. Mallard Duck (Anas platyrhynchos)
 1. Anna's Hummingbird (Calypte anna)
-1. Common Lizard (Zootoca vivipara) 
+1. Common Lizard (Zootoca vivipara)
 
+Ran the following:
+1. `1.download_genomes.sh` - to download assemblies from NCBI util `datasets`
+2. `2.run_busco.sh` - run `busco` on each genome to extract known single copy orthologs for a taxon (sauropsida, since that covers both birds & our outgroup lizard).
+3. `3.extract_busco_genes_revisited.py` - read `single_copy_busco_sequences` from each species and write `orthologous_genes/*.fna` files, one per lined up amino acid sequence.
+4. `4.alginments.sh` - for each file `orthologous_genes/*.fna` run `mafft` to calculate corresponding `alignments/*_aligned.fna` files, which line up an orthologous set of 4 amino acid sequences, on per species, per aligned sequence.
+5. `5.trim_alignments` - use `trimal` to clean up alignments
+6. `6.concatenated_alignment.py` - build `concatenated_alignment.fna` by combining files from `alignments/trimmed_alignments/*_trimmed.fna` together, by species. So, there's 4 aligned sequences, in order.
+7. `7.build.bird_phylogeny.sh` - build phylogeny with `iqtree` from `concatenated_alignment.fna`
+
+(I should have used .faa instead of .fna for a bunch of these files)
+
+Using IOTL
 ![iotl_bird_phylogeny](./phylo1/bird_phylogeny/iotl_bird_phylogeny.png)
 
+Using ChatGPT to render the contents of my generated file from `7.build.bird_phylogeny.sh`: [bird_phylogeny.contree](./phylo1/bird_phylogeny/bird_phylogeny.contree):
 ```
+(lizard:0.3646782816,(chicken:0.0587516188,duck:0.0398160791)100:0.0203669191,hummingbird:0.0708048106);
+```
+
+![chatgpt_bird_phylogeny](./phylo1/bird_phylogeny/prompted_from_contree.png)
+
 # trying to switch to compleasm, since mamba install failed
 git clone https://github.com/huangnengCSU/compleasm.git
 cd compleasm
