@@ -21,7 +21,7 @@ From there I was able to connect to it to run a number of queries just to explor
 3. `data/master_birder.db` - the resulting db
 4. `data/AviList-v2025-11-extended.csv` - the raw avilist csv downloaded from https://www.avilist.org/
 5. `data/AL25-*.csv` - working files derived from `AviList-v2025-11-extended.csv`,
-   manipulated in `avibase_load_data.ipynb` 
+   manipulated in `avibase_load_data.ipynb`
 6. `data/avibase.schema.mermaid` - my version of schema that came from the Avibase paper
 7. `data/Problem.rows.csv` - 3 saved rows I removed that had errors, for expediency
 
@@ -33,7 +33,7 @@ From there I was able to connect to it to run a number of queries just to explor
 
 # Ontology investigation
 
-1. `data/ontology/3.2.ncbi_neornithes_hier.owl` - NBCI Taxon of Neorthines queried out of large `ncbitaxon.owl` (not in repo) by using `sparql/neorthines_hier.sparql`. Experimented with Jena, Fuseki, ChatGPT, and Kepler AI. Final procedure:
+1.  `data/ontology/3.2.ncbi_neornithes_hier.owl` - NBCI Taxon of Neorthines queried out of large `ncbitaxon.owl` (not in repo) by using `sparql/neorthines_hier.sparql`. Experimented with Jena, Fuseki, ChatGPT, and Kepler AI. Final procedure:
     1. Downloaded NBCI Taxonomy from OBO Foundry
     2. Loaded it into local Fuseki Server tbd
     3. Developed CONSTRUCT query `sparql/neorthines_hier.sparql`
@@ -41,37 +41,31 @@ From there I was able to connect to it to run a number of queries just to explor
     5. Also ran same query with command-line tool with `jena` instead of Fuseki, to take another timing: ~7s to build file
     6. Viewed file in Protégé
        ![In Protégé](./data/ontology/3.2.InProtege.png)
-    In all this took several hours over a few days, to get a better feel for SPARQL, troubleshoot/evolve query, experiment.
-2. [`neorthines_uberon_relations.sparql`](./sparql/neorthines_uberon_relations.sparql) is a query demonstrating linkage of local data (local NBCI Taxon data) to another ontology, in this case to the "Uberon Multi-species Anatomy Ontology" (https://uberon.org/). Using our desired set (Aves) the resulting list shows mappings that exist in Uberon & the corresponding taxon name in NCBI Taxonomy, resulting in only 92 rows: [`neorthines_uberon_relations.csv`](./data/ontology/neorthines_uberon_relations.csv)
-3. [`sample.uberon.detail.sparql`](./sparql/sample.uberon.detail.sparql) is a junky query just exploding out a sample of data that exists for anatomical parts in Uberon to illustrate what areas of discovery/traversal/information could be explored between Taxa and Anatomoy using these 2 datasets.
-4. create dataset that maps avibase-id to ncbi-taxon-id 
-    1. `sparql/select.ncbi-taxon-id-2-scientific-name.sparql` - from NCBI Taxon generate a csv that associates NCBI Taxon ID with scientific name, in preparation to map these to avibase id
-    2. `notebooks/ontology_ncbitaxon.ipynb`
-`sparql/create.ncbi-taxon-id-2-avibase-id.ttl` - load csv into new table in our local Avibase database.
-    3. `generate_avibase_turtle.py` - to create turtle data to load into Fuseki.
-        ```
-        python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl
-        ```
-    4. load `avibase-instances.ttl` into Fuseki
-    5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
-        ```
-        "aviLabel","taxon","aviId","avidb_link"
-        "Struthio molybdophanes","http://purl.obolibrary.org/obo/NCBITaxon_3150590","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-40329BB6","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-40329BB6"
-        "Struthio camelus","http://purl.obolibrary.org/obo/NCBITaxon_8801","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-2247CB05","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-2247CB05"
-        "Dromaius novaehollandiae","http://purl.obolibrary.org/obo/NCBITaxon_8790","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-FD2456D5","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-FD2456D5"
-        ...
+       In all this took several hours over a few days, to get a better feel for SPARQL, troubleshoot/evolve query, experiment.
+2.  [`neorthines_uberon_relations.sparql`](./sparql/neorthines_uberon_relations.sparql) is a query demonstrating linkage of local data (local NBCI Taxon data) to another ontology, in this case to the "Uberon Multi-species Anatomy Ontology" (https://uberon.org/). Using our desired set (Aves) the resulting list shows mappings that exist in Uberon & the corresponding taxon name in NCBI Taxonomy, resulting in only 92 rows: [`neorthines_uberon_relations.csv`](./data/ontology/neorthines_uberon_relations.csv)
+3.  [`sample.uberon.detail.sparql`](./sparql/sample.uberon.detail.sparql) is a junky query just exploding out a sample of data that exists for anatomical parts in Uberon to illustrate what areas of discovery/traversal/information could be explored between Taxa and Anatomoy using these 2 datasets.
+4.  create dataset that maps avibase-id to ncbi-taxon-id 1. `sparql/select.ncbi-taxon-id-2-scientific-name.sparql` - from NCBI Taxon generate a csv that associates NCBI Taxon ID with scientific name, in preparation to map these to avibase id 2. `notebooks/ontology_ncbitaxon.ipynb`
+    `sparql/create.ncbi-taxon-id-2-avibase-id.ttl` - load csv into new table in our local Avibase database. 3. `generate_avibase_turtle.py` - to create turtle data to load into Fuseki.
+    `        python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl
+       ` 4. load `avibase-instances.ttl` into Fuseki 5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
+    ```
+    "aviLabel","taxon","aviId","avidb_link"
+    "Struthio molybdophanes","http://purl.obolibrary.org/obo/NCBITaxon_3150590","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-40329BB6","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-40329BB6"
+    "Struthio camelus","http://purl.obolibrary.org/obo/NCBITaxon_8801","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-2247CB05","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-2247CB05"
+    "Dromaius novaehollandiae","http://purl.obolibrary.org/obo/NCBITaxon_8790","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-FD2456D5","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-FD2456D5"
+    ...
 
-        ```
+            ```
 
 ## Ontology investigation: some takeaways
 
 1. While, my first exercise of selecting the Avian subset from NCBI Taxonomy was a good exercise and an essential step in my in understanding the dataset, SPARQL, and Semantic Web workflow, in a real-world scenario this is an artificial step. Instead, I might start with my own dataset, map it to NCBI Taxonomy IDs, in order to unlock Uberon, GO, and other OBO Foundary biological datasets. For example, if my goal is to enrich AviList utility, I can simply map AviList IDs to NCBITaxon IDs. In hindsight, this is the exercise I could have run. So... I ran it in step #4.
 2. Uberon's finest-grain mapping between Avian taxa is at the Order-level, and here it has a total of only 5 mappings across only 2 orders e.g. "Strigiformes","feathered ear tuft" & "Passeriformes","area X of basal ganglion". Most of the rows simply correspond to class "Aves", with no representation of skeletal structures, such as the avian keel, coracoid bone, or furcula. After reading the Uberon paper, this makes sense, Uberon is not meant to implement scAO (species anatomy ontologies), but rather as an attempt at cross-taxa language describing anatomy independent of specific embodiment as much as possible. It has structures that apply across all vertebres and more detailed species ontologies can use it as a backbone to unlock the power of other OBO ontologies.
-    1. An example, of specifics not meant to be defined in Uberon: Suliformes do not have external nares, absence of any unique beak structure representation for Suliformes suggests that conscription of Suliform phenotype needs to come from somewhere else. Same story with the few birds that don't have a furcula &  the albatross shoulder's lock-hinge. 1) intent of Uberon is to capture components-only, not anatomical conscriptions for taxa; that should be provided per-taxa elsewhere 2) There may be other gaps for avian life. Gaps can be filled simply by anyone providing for an extension set of data for missing Avian taxa, since Semantic Web is AAA (anyone can say anything about anything).
+   1. An example, of specifics not meant to be defined in Uberon: Suliformes do not have external nares, absence of any unique beak structure representation for Suliformes suggests that conscription of Suliform phenotype needs to come from somewhere else. Same story with the few birds that don't have a furcula & the albatross shoulder's lock-hinge. 1) intent of Uberon is to capture components-only, not anatomical conscriptions for taxa; that should be provided per-taxa elsewhere 2) There may be other gaps for avian life. Gaps can be filled simply by anyone providing for an extension set of data for missing Avian taxa, since Semantic Web is AAA (anyone can say anything about anything).
 3. The Uberon anatomy is extremely detailed. e.g. `Aves.telencephalic song nucleus HVC` `has part`s: "ectoderm-derived structure", "cellular anatomical entity", "atomic nucleus", "ectoderm-derived structure", "monoatomic monocation", "s-block molecular entity", etc totalling 54 `has_part` entities. In addition to `has_part`, 15 other relations exist, e.g. "causal agent in process", "developmentally preceded by", "mereotopologically related to", "has developmental contribution from", etc.
 
 # Genetic investigation
-    
+
 ```
 # mamba
 brew install miniforge
@@ -79,9 +73,10 @@ amba create -n phylo -c conda-forge -c bioconda python=3.11 iqtree mafft trimal 
 
 eval "$(mamba shell hook --shell zsh)"
 To automatically initialize all future (zsh) shells, run:
-    $ mamba shell init --shell zsh --root-prefix=~/.local/share/mamba 
+    $ mamba shell init --shell zsh --root-prefix=~/.local/share/mamba
 mamba activate phylo
 ```
+
 - run `phylo1/1.download_genomes.sh`
 
 ```
@@ -118,7 +113,7 @@ Successfully extracted 5963 orthologous genes!
 Gene files saved in: orthologous_genes
 ./4.alignments.sh
 ./5.trim_alignments.sh > 5.trim_alignments.OUT 2>&1 &
-python 6.concatenated_alignment.py > 6.concatenated_alignment.OUT 2>&1 
+python 6.concatenated_alignment.py > 6.concatenated_alignment.OUT 2>&1
 # creates a file called "concatenated_alignment.fna"
 ./7.build.bird_phylogeny.sh > 7.build.bird_phylogeny.OUT 2>&1 &
 # this failed because i'm only doing 3 species
@@ -126,10 +121,11 @@ python 6.concatenated_alignment.py > 6.concatenated_alignment.OUT 2>&1
 iqtree -s concatenated_alignment.fna -m MFP -nt AUTO --prefix bird_3species
 # results in this tree: (duck:0.039350353,chicken:0.056465082,hummingbird:0.1063995);
 ```
+
 in https://itol.embl.de/
 ![itol](phylo1/itol.3-species.png)
 
-## Issues 
+## Issues
 
 - [ ] anna's wrong assembly (was zebra finch)
 - [ ] mallard wrong assembly (was pink-footed goose)
@@ -137,19 +133,29 @@ in https://itol.embl.de/
 ## 2nd Phylogenetic Tree
 
 Using species genomes:
+
 1. Chicken (Gallus gallus)
 1. Mallard Duck (Anas platyrhynchos)
 1. Anna's Hummingbird (Calypte anna)
 1. Common Lizard (Zootoca vivipara)
 
 Ran the following:
-1. `1.download_genomes.sh` - to download assemblies from NCBI util `datasets`
-2. `2.run_busco.sh` - run `busco` on each genome to extract known single copy orthologs for a taxon (sauropsida, since that covers both birds & our outgroup lizard).
+
+1. `1.download_genomes.sh` - to download assemblies from NCBI util `datasets`<br>
+   Eric Cox, Mirian T N Tsuchiya, Stacy Ciufo, John Torcivia, Robert Falk, W Ray Anderson, J Bradley Holmes, Vichet Hem, Laurie Breen, Emily Davis, Anne Ketter, Peifen Zhang, Vladimir Soussov, Conrad L Schoch, Nuala A O’Leary, NCBI Taxonomy: enhanced access via NCBI Datasets, Nucleic Acids Research, Volume 53, Issue D1, 6 January 2025, Pages D1711–D1715, https://doi.org/10.1093/nar/gkae967<br>
+   Eddy SR (2011) Accelerated Profile HMM Searches. PLoS Comput Biol 7(10): e1002195. doi:10.1371/journal.pcbi.1002195
+2. `2.run_busco.sh` - run `busco` on each genome to extract known single copy orthologs for a taxon (sauropsida, since that covers both birds & our outgroup lizard).<br>
+   BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs. Felipe A. Simão, Robert M. Waterhouse, Panagiotis Ioannidis, Evgenia V. Kriventseva, and Evgeny M. Zdobnov Bioinformatics, published online June 9, 2015 doi: 10.1093/bioinformatics/btv351
 3. `3.extract_busco_genes_revisited.py` - read `single_copy_busco_sequences` from each species and write `orthologous_genes/*.fna` files, one per lined up amino acid sequence.
-4. `4.alginments.sh` - for each file `orthologous_genes/*.fna` run `mafft` to calculate corresponding `alignments/*_aligned.fna` files, which line up an orthologous set of 4 amino acid sequences, on per species, per aligned sequence.
+4. `4.alginments.sh` - for each file `orthologous_genes/*.fna` run `mafft` to calculate corresponding `alignments/*_aligned.fna` files, which line up an orthologous set of 4 amino acid sequences, on per species, per aligned sequence. <br>
+   Katoh K, Misawa K, Kuma K, Miyata T. MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform. Nucleic Acids Res. 2002 Jul 15;30(14):3059-66. doi: 10.1093/nar/gkf436. PMID: 12136088; PMCID: PMC135756.
 5. `5.trim_alignments` - use `trimal` to clean up alignments
+   https://trimal.readthedocs.io/en/latest/
+   Capella-Gutiérrez, S., Silla-Martínez, J. M., & Gabaldón, T. (2009). trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. Bioinformatics (Oxford, England), 25(15), 1972–1973. https://doi.org/10.1093/bioinformatics/btp348
 6. `6.concatenated_alignment.py` - build `concatenated_alignment.fna` by combining files from `alignments/trimmed_alignments/*_trimmed.fna` together, by species. So, there's 4 aligned sequences, in order.
 7. `7.build.bird_phylogeny.sh` - build phylogeny with `iqtree` from `concatenated_alignment.fna`
+   Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, Bui Quang Minh, IQ-TREE: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies, Molecular Biology and Evolution, Volume 32, Issue 1, January 2015, Pages 268–274, https://doi.org/10.1093/molbev/msu300 <br>
+   https://itol.embl.de/
 
 (I should have used .faa instead of .fna for a bunch of these files)
 
@@ -157,6 +163,7 @@ Using IOTL
 ![iotl_bird_phylogeny](./phylo1/bird_phylogeny/iotl_bird_phylogeny.png)
 
 Using ChatGPT to render the contents of my generated file from `7.build.bird_phylogeny.sh`: [bird_phylogeny.contree](./phylo1/bird_phylogeny/bird_phylogeny.contree):
+
 ```
 (lizard:0.3646782816,(chicken:0.0587516188,duck:0.0398160791)100:0.0203669191,hummingbird:0.0708048106);
 ```
@@ -164,26 +171,34 @@ Using ChatGPT to render the contents of my generated file from `7.build.bird_phy
 ![chatgpt_bird_phylogeny](./phylo1/bird_phylogeny/prompted_from_contree.png)
 
 # trying to switch to compleasm, since mamba install failed
+
 git clone https://github.com/huangnengCSU/compleasm.git
 cd compleasm
 
 # go into phylo venv and install compleasm locally
+
 cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo pip install ../compleasm/
 
 cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo conda install -c bioconda miniprot hmmer -y
 
-find /Users/ken/Documents/wk/master-birder-paper/phylo1/genomes -name "*.fna" -type f
+find /Users/ken/Documents/wk/master-birder-paper/phylo1/genomes -name "\*.fna" -type f
 
 cd /Users/ken/Documents/wk/master-birder-paper/phylo1 && mamba run -n phylo compleasm download sauropsida_odb12
+
 ```
 
 ```
+
 # use to sanity check: what species am i looking at?
-datasets summary genome accession GCF_000344595.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}' 
+
+datasets summary genome accession GCF_000344595.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}'
+
 ```
 
 ```
+
 ## will add this to my set in meantime
+
 datasets download genome accession GCA_002880195.1 --filename genomes/owl_genome.zip
 
 ```
@@ -192,75 +207,82 @@ datasets download genome accession GCA_002880195.1 --filename genomes/owl_genome
 
 
 ```
-## needed to correct this mistake
-(phylo) ➜  phylo1 git:(main) ✗ datasets summary genome accession GCF_003957555.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}' 
-{
-  "organism_name": "Calypte anna",
-  "common_name": "Anna's hummingbird",
-  "accession": "GCF_003957555.1"
-}
-(phylo) ➜  phylo1 git:(main) ✗ datasets summary genome accession GCA_003957565.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}' 
-{
-  "organism_name": "Taeniopygia guttata",
-  "common_name": "zebra finch",
-  "accession": "GCA_003957565.1"
-}
-###
-✗ cat alignments/trimmed_alignments/99952at8782_trimmed.fna
->chicken
-MAISNVRYGEGVTKEIGMDLQNLGAKRVCLMTDRNLSQLPPVDAVLNSLTKSGINFQMYD
-NVRVEPTDQSFLDAIEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPI
-GKGKAVTVPLKPLIAVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHT
-LSMPERIVANSGFDVLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDVWALHALR
-IVAKYLKRAIRNPEDREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDY
-NVDHSLVPHGLSVVLTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGLILADTLR
-KFLFDLNVDDGLAAIGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
->hummingbird
-MAISNIRYGEGVTKEIGMDLQNLGARRVCLMTDKNLSKLPPVNAVLNSLAKYGINFQMYD
-NVRVEPTDQSFLDAIQFAKKGEFDAYVAVGGGSVIDTCKAANLYAASPSSEFLDYVNAPI
-GKGKPVTVPLKPLIAVPTTSGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHT
-LSMPERIVANSGFDVLCHALESYTALPYNQRCPCPSNPINRPAYQGSNPVSDVWALHALR
-IVAKYLKRAIRNPEDHEARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDY
-NVDHSLVPHGLSVVLTSPAVFAFTAQIHPERHLEAAEILGADIRTARIKDAGLILADTLR
-KFLFDLNVDDGLAAIGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
->duck
-MAVSNIRYGEGVTKEIGMDLKNLGAQRVCLMTDKNLSQLPPVNAVLNSLAKYGVNFQMYD
-EVRVEPTDQSFLHAIEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPI
-GKGKPVTVPLKPHIAVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHT
-LSMPERIVANSGFDVLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDIWALHALR
-IVAKYLKRAIRNPEDREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDY
-NVDHSLVPHGLSVVLTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGFILADTLR
-KFLFDLNVDDGLAAIGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
 
-(phylo) ➜  phylo1 git:(main) ✗ cat alignments/99952at8782_aligned.fna
->chicken
-----------------------------------------------MAISNVRYGEGVTK
-EIGMDLQNLGAKRVCLMTDRNLSQLPPVDAVLNSLTKSGINFQMYDNVRVEPTDQSFLDA
-IEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPIGKGKAVTVPLKPLI
-AVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHTLSMPERIVANSGFD
-VLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDVWALHALRIVAKYLKRAIRNPE
-DREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDYNVDHSLVPHGLSVV
-LTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGLILADTLRKFLFDLNVDDGLAA
-IGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
->hummingbird
-MAAGRARVSRLLRLLQRAACRCPSHGHTYSQVPEQPNLGNTDYAFEMAISNIRYGEGVTK
-EIGMDLQNLGARRVCLMTDKNLSKLPPVNAVLNSLAKYGINFQMYDNVRVEPTDQSFLDA
-IQFAKKGEFDAYVAVGGGSVIDTCKAANLYAASPSSEFLDYVNAPIGKGKPVTVPLKPLI
-AVPTTSGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHTLSMPERIVANSGFD
-VLCHALESYTALPYNQRCPCPSNPINRPAYQGSNPVSDVWALHALRIVAKYLKRAIRNPE
-DHEARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDYNVDHSLVPHGLSVV
-LTSPAVFAFTAQIHPERHLEAAEILGADIRTARIKDAGLILADTLRKFLFDLNVDDGLAA
-IGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
->duck
-MAAGRERAARLLRQLQRAACRCPSHCHTYSRVPEHATLGNTDYAFEMAVSNIRYGEGVTK
-EIGMDLKNLGAQRVCLMTDKNLSQLPPVNAVLNSLAKYGVNFQMYDEVRVEPTDQSFLHA
-IEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPIGKGKPVTVPLKPHI
-AVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHTLSMPERIVANSGFD
-VLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDIWALHALRIVAKYLKRAIRNPE
-DREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDYNVDHSLVPHGLSVV
-LTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGFILADTLRKFLFDLNVDDGLAA
-IGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
-```
+## needed to correct this mistake
+
+(phylo) ➜ phylo1 git:(main) ✗ datasets summary genome accession GCF_003957555.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}'
+{
+"organism_name": "Calypte anna",
+"common_name": "Anna's hummingbird",
+"accession": "GCF_003957555.1"
+}
+(phylo) ➜ phylo1 git:(main) ✗ datasets summary genome accession GCA_003957565.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}'
+{
+"organism_name": "Taeniopygia guttata",
+"common_name": "zebra finch",
+"accession": "GCA_003957565.1"
+}
+
+###
+
+✗ cat alignments/trimmed_alignments/99952at8782_trimmed.fna
+
+> chicken
+> MAISNVRYGEGVTKEIGMDLQNLGAKRVCLMTDRNLSQLPPVDAVLNSLTKSGINFQMYD
+> NVRVEPTDQSFLDAIEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPI
+> GKGKAVTVPLKPLIAVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHT
+> LSMPERIVANSGFDVLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDVWALHALR
+> IVAKYLKRAIRNPEDREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDY
+> NVDHSLVPHGLSVVLTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGLILADTLR
+> KFLFDLNVDDGLAAIGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
+> hummingbird
+> MAISNIRYGEGVTKEIGMDLQNLGARRVCLMTDKNLSKLPPVNAVLNSLAKYGINFQMYD
+> NVRVEPTDQSFLDAIQFAKKGEFDAYVAVGGGSVIDTCKAANLYAASPSSEFLDYVNAPI
+> GKGKPVTVPLKPLIAVPTTSGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHT
+> LSMPERIVANSGFDVLCHALESYTALPYNQRCPCPSNPINRPAYQGSNPVSDVWALHALR
+> IVAKYLKRAIRNPEDHEARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDY
+> NVDHSLVPHGLSVVLTSPAVFAFTAQIHPERHLEAAEILGADIRTARIKDAGLILADTLR
+> KFLFDLNVDDGLAAIGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
+> duck
+> MAVSNIRYGEGVTKEIGMDLKNLGAQRVCLMTDKNLSQLPPVNAVLNSLAKYGVNFQMYD
+> EVRVEPTDQSFLHAIEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPI
+> GKGKPVTVPLKPHIAVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHT
+> LSMPERIVANSGFDVLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDIWALHALR
+> IVAKYLKRAIRNPEDREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDY
+> NVDHSLVPHGLSVVLTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGFILADTLR
+> KFLFDLNVDDGLAAIGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
+
+(phylo) ➜ phylo1 git:(main) ✗ cat alignments/99952at8782_aligned.fna
+
+> chicken
+> ----------------------------------------------MAISNVRYGEGVTK
+> EIGMDLQNLGAKRVCLMTDRNLSQLPPVDAVLNSLTKSGINFQMYDNVRVEPTDQSFLDA
+> IEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPIGKGKAVTVPLKPLI
+> AVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHTLSMPERIVANSGFD
+> VLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDVWALHALRIVAKYLKRAIRNPE
+> DREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDYNVDHSLVPHGLSVV
+> LTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGLILADTLRKFLFDLNVDDGLAA
+> IGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
+> hummingbird
+> MAAGRARVSRLLRLLQRAACRCPSHGHTYSQVPEQPNLGNTDYAFEMAISNIRYGEGVTK
+> EIGMDLQNLGARRVCLMTDKNLSKLPPVNAVLNSLAKYGINFQMYDNVRVEPTDQSFLDA
+> IQFAKKGEFDAYVAVGGGSVIDTCKAANLYAASPSSEFLDYVNAPIGKGKPVTVPLKPLI
+> AVPTTSGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHTLSMPERIVANSGFD
+> VLCHALESYTALPYNQRCPCPSNPINRPAYQGSNPVSDVWALHALRIVAKYLKRAIRNPE
+> DHEARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDYNVDHSLVPHGLSVV
+> LTSPAVFAFTAQIHPERHLEAAEILGADIRTARIKDAGLILADTLRKFLFDLNVDDGLAA
+> IGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
+> duck
+> MAAGRERAARLLRQLQRAACRCPSHCHTYSRVPEHATLGNTDYAFEMAVSNIRYGEGVTK
+> EIGMDLKNLGAQRVCLMTDKNLSQLPPVNAVLNSLAKYGVNFQMYDEVRVEPTDQSFLHA
+> IEFAKKGEFDAYVAVGGGSVIDTCKAANLYASSPTSDFLDYVNAPIGKGKPVTVPLKPHI
+> AVPTTAGTGSETTGVAIFDFKELKVKTGIASRAIKPTLGIIDPLHTLSMPERIVANSGFD
+> VLCHALESYTALPYKMRSPCPSNPINRPAYQGSNPISDIWALHALRIVAKYLKRAIRNPE
+> DREARANMHLASAFAGIGFGNAGVHLCHGMSYPISGLVKTYKPKDYNVDHSLVPHGLSVV
+> LTSPAVFAFTAQVHPERHLEAAEILGADIRTARIKDAGFILADTLRKFLFDLNVDDGLAA
+> IGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
+
+````
 
 
 - Anna's Hummingbird
@@ -296,27 +318,36 @@ IGYSKADIPALVKGTLPQERVTKLSPRPQTEEDLSALFEASMKLY
         }
         ```
 - Fuseki was not returning so used: `apache-jena-5.5.0` client tools on fuseki `tbd`.
-  ```
-  source .env
-  JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_with_parentage_lite.sparql > data/ontology/ncbi_neornithes_hier.ttl
-  ```
-  Even this light version didn't stop running after 1h of cpu time.
+````
+
+source .env
+JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_with_parentage_lite.sparql > data/ontology/ncbi_neornithes_hier.ttl
+
 ```
+Even this light version didn't stop running after 1h of cpu time.
+```
+
 time JAVA_TOOL_OPTIONS="-Xmx10g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_manually_created.sparql > data/ontology/ncbi_neornithes_hier.owl
 107.65s user 11.20s system 109% cpu 1:48.79 total
 
 time JAVA_TOOL_OPTIONS="-Xmx8g" tdb2.tdbquery --loc ../apache-jena-fuseki-5.5.0/run/databases/kendataset --query sparql/neorthines_hier.sparql > data/ontology/ncbi_neornithes_timing.owl
-JAVA_TOOL_OPTIONS="-Xmx8g" tdb2.tdbquery --loc  --query  >   6.92s user 0.47s system 280% cpu 2.632 total
+JAVA_TOOL_OPTIONS="-Xmx8g" tdb2.tdbquery --loc --query > 6.92s user 0.47s system 280% cpu 2.632 total
+
 ```
 break
 ```
+
 Unexpected error making the query: GET https://stars-app.renci.org/ubergraph/sparql?query=SELECT++%2A%0AWHERE%0A++%7B+%7B+?uberon++%3Chttp://purl.obolibrary.org/obo/RO_0002162%3E++%3Chttp://purl.obolibrary.org/obo/NCBITaxon_100%3E+%3B%0A+++++++++++++++%3Chttp://www.w3.org/2000/01/rdf-schema%23label%3E++?uberonLabel%0A++++++OPTIONAL%0A++++++++%7B+%3Chttp://purl.obolibrary.org/obo/NCBITaxon_100%3E%0A++++++++++++++++++++%3Chttp://www.w3.org/2000/01/rdf-schema%23label%3E++?taxonLabel%0A++++++++%7D%0A++++%7D%0A++++FILTER+strstarts%28str%28?uberon%29%2C+%22http://purl.obolibrary.org/obo/UBERON_%22%29%0A++%7D%0A
+
 ```
 
 ```
+
 # counting relation types
-cat data/ontology/sample.uberon.detail.csv | grep "telencephalic song nucleus HVC" | cut -d, -f3 | sort | uniq 
-```
+
+cat data/ontology/sample.uberon.detail.csv | grep "telencephalic song nucleus HVC" | cut -d, -f3 | sort | uniq
+
+````
 
 1. to mock out as if my ontology was public
         ```
@@ -330,10 +361,11 @@ cat data/ontology/sample.uberon.detail.csv | grep "telencephalic song nucleus HV
             "http://localhost:3030/birds?default"
         ```
     1. would need to put generated ttl into site/index.ttl
-    2. need to make ontology#ref references work. 
+    2. need to make ontology#ref references work.
 
 ## notes: Anna's Hummingbird
 
 - https://avibase.bsc-eoc.org/species.jsp?avibaseid=42393721
     - avibase-42393721
     - TSN: 178036
+````
