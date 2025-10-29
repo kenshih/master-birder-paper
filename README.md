@@ -66,6 +66,85 @@ From there I was able to connect to it to run a number of queries just to explor
 
 # Genetic investigation
 
+## 2nd Phylogenetic Tree
+
+Using species genomes:
+
+1. Chicken (Gallus gallus)
+1. Mallard Duck (Anas platyrhynchos)
+1. Anna's Hummingbird (Calypte anna)
+1. Common Lizard (Zootoca vivipara)
+
+Ran the following:
+
+1. `1.download_genomes.sh` - to download assemblies from NCBI util `datasets`<br>
+   Eric Cox, Mirian T N Tsuchiya, Stacy Ciufo, John Torcivia, Robert Falk, W Ray Anderson, J Bradley Holmes, Vichet Hem, Laurie Breen, Emily Davis, Anne Ketter, Peifen Zhang, Vladimir Soussov, Conrad L Schoch, Nuala A O’Leary, NCBI Taxonomy: enhanced access via NCBI Datasets, Nucleic Acids Research, Volume 53, Issue D1, 6 January 2025, Pages D1711–D1715, https://doi.org/10.1093/nar/gkae967<br>
+   Eddy SR (2011) Accelerated Profile HMM Searches. PLoS Comput Biol 7(10): e1002195. doi:10.1371/journal.pcbi.1002195
+2. `2.run_busco.sh` - run `busco` on each genome to extract known single copy orthologs for a taxon (sauropsida, since that covers both birds & our outgroup lizard).<br>
+   BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs. Felipe A. Simão, Robert M. Waterhouse, Panagiotis Ioannidis, Evgenia V. Kriventseva, and Evgeny M. Zdobnov Bioinformatics, published online June 9, 2015 doi: 10.1093/bioinformatics/btv351
+3. `3.extract_busco_genes_revisited.py` - read `single_copy_busco_sequences` from each species and write `orthologous_genes/*.fna` files, one per lined up amino acid sequence.
+4. `4.alginments.sh` - for each file `orthologous_genes/*.fna` run `mafft` to calculate corresponding `alignments/*_aligned.fna` files, which line up an orthologous set of 4 amino acid sequences, on per species, per aligned sequence. <br>
+   Katoh K, Misawa K, Kuma K, Miyata T. MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform. Nucleic Acids Res. 2002 Jul 15;30(14):3059-66. doi: 10.1093/nar/gkf436. PMID: 12136088; PMCID: PMC135756.
+5. `5.trim_alignments` - use `trimal` to clean up alignments
+   https://trimal.readthedocs.io/en/latest/
+   Capella-Gutiérrez, S., Silla-Martínez, J. M., & Gabaldón, T. (2009). trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. Bioinformatics (Oxford, England), 25(15), 1972–1973. https://doi.org/10.1093/bioinformatics/btp348
+6. `6.concatenated_alignment.py` - build `concatenated_alignment.fna` by combining files from `alignments/trimmed_alignments/*_trimmed.fna` together, by species. So, there's 4 aligned sequences, in order.
+7. `7.build.bird_phylogeny.sh` - build phylogeny with `iqtree` from `concatenated_alignment.fna`
+   Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, Bui Quang Minh, IQ-TREE: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies, Molecular Biology and Evolution, Volume 32, Issue 1, January 2015, Pages 268–274, https://doi.org/10.1093/molbev/msu300 <br>
+   https://itol.embl.de/
+
+(I should have used .faa instead of .fna for a bunch of these files)
+
+Using IOTL
+![iotl_bird_phylogeny](./phylo1/bird_phylogeny/iotl_bird_phylogeny.png)
+
+Using ChatGPT to render the contents of my generated file from `7.build.bird_phylogeny.sh`: [bird_phylogeny.contree](./phylo1/bird_phylogeny/bird_phylogeny.contree):
+
+```
+(lizard:0.3646782816,(chicken:0.0587516188,duck:0.0398160791)100:0.0203669191,hummingbird:0.0708048106);
+```
+
+![chatgpt_bird_phylogeny](./phylo1/bird_phylogeny/prompted_from_contree.png)
+
+
+## Unstructured Notes
+
+# trying to switch to compleasm, since mamba install failed
+
+git clone https://github.com/huangnengCSU/compleasm.git
+cd compleasm
+
+# go into phylo venv and install compleasm locally
+
+cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo pip install ../compleasm/
+
+cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo conda install -c bioconda miniprot hmmer -y
+
+find /Users/ken/Documents/wk/master-birder-paper/phylo1/genomes -name "\*.fna" -type f
+
+cd /Users/ken/Documents/wk/master-birder-paper/phylo1 && mamba run -n phylo compleasm download sauropsida_odb12
+
+```
+
+```
+
+# use to sanity check: what species am i looking at?
+
+datasets summary genome accession GCF_000344595.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}'
+
+```
+
+```
+
+## will add this to my set in meantime
+
+```
+datasets download genome accession GCA_002880195.1 --filename genomes/owl_genome.zip
+
+```
+
+### orig genome notes
+
 ```
 # mamba
 brew install miniforge
@@ -130,83 +209,6 @@ in https://itol.embl.de/
 - [ ] anna's wrong assembly (was zebra finch)
 - [ ] mallard wrong assembly (was pink-footed goose)
 
-## 2nd Phylogenetic Tree
-
-Using species genomes:
-
-1. Chicken (Gallus gallus)
-1. Mallard Duck (Anas platyrhynchos)
-1. Anna's Hummingbird (Calypte anna)
-1. Common Lizard (Zootoca vivipara)
-
-Ran the following:
-
-1. `1.download_genomes.sh` - to download assemblies from NCBI util `datasets`<br>
-   Eric Cox, Mirian T N Tsuchiya, Stacy Ciufo, John Torcivia, Robert Falk, W Ray Anderson, J Bradley Holmes, Vichet Hem, Laurie Breen, Emily Davis, Anne Ketter, Peifen Zhang, Vladimir Soussov, Conrad L Schoch, Nuala A O’Leary, NCBI Taxonomy: enhanced access via NCBI Datasets, Nucleic Acids Research, Volume 53, Issue D1, 6 January 2025, Pages D1711–D1715, https://doi.org/10.1093/nar/gkae967<br>
-   Eddy SR (2011) Accelerated Profile HMM Searches. PLoS Comput Biol 7(10): e1002195. doi:10.1371/journal.pcbi.1002195
-2. `2.run_busco.sh` - run `busco` on each genome to extract known single copy orthologs for a taxon (sauropsida, since that covers both birds & our outgroup lizard).<br>
-   BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs. Felipe A. Simão, Robert M. Waterhouse, Panagiotis Ioannidis, Evgenia V. Kriventseva, and Evgeny M. Zdobnov Bioinformatics, published online June 9, 2015 doi: 10.1093/bioinformatics/btv351
-3. `3.extract_busco_genes_revisited.py` - read `single_copy_busco_sequences` from each species and write `orthologous_genes/*.fna` files, one per lined up amino acid sequence.
-4. `4.alginments.sh` - for each file `orthologous_genes/*.fna` run `mafft` to calculate corresponding `alignments/*_aligned.fna` files, which line up an orthologous set of 4 amino acid sequences, on per species, per aligned sequence. <br>
-   Katoh K, Misawa K, Kuma K, Miyata T. MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform. Nucleic Acids Res. 2002 Jul 15;30(14):3059-66. doi: 10.1093/nar/gkf436. PMID: 12136088; PMCID: PMC135756.
-5. `5.trim_alignments` - use `trimal` to clean up alignments
-   https://trimal.readthedocs.io/en/latest/
-   Capella-Gutiérrez, S., Silla-Martínez, J. M., & Gabaldón, T. (2009). trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. Bioinformatics (Oxford, England), 25(15), 1972–1973. https://doi.org/10.1093/bioinformatics/btp348
-6. `6.concatenated_alignment.py` - build `concatenated_alignment.fna` by combining files from `alignments/trimmed_alignments/*_trimmed.fna` together, by species. So, there's 4 aligned sequences, in order.
-7. `7.build.bird_phylogeny.sh` - build phylogeny with `iqtree` from `concatenated_alignment.fna`
-   Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, Bui Quang Minh, IQ-TREE: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies, Molecular Biology and Evolution, Volume 32, Issue 1, January 2015, Pages 268–274, https://doi.org/10.1093/molbev/msu300 <br>
-   https://itol.embl.de/
-
-(I should have used .faa instead of .fna for a bunch of these files)
-
-Using IOTL
-![iotl_bird_phylogeny](./phylo1/bird_phylogeny/iotl_bird_phylogeny.png)
-
-Using ChatGPT to render the contents of my generated file from `7.build.bird_phylogeny.sh`: [bird_phylogeny.contree](./phylo1/bird_phylogeny/bird_phylogeny.contree):
-
-```
-(lizard:0.3646782816,(chicken:0.0587516188,duck:0.0398160791)100:0.0203669191,hummingbird:0.0708048106);
-```
-
-![chatgpt_bird_phylogeny](./phylo1/bird_phylogeny/prompted_from_contree.png)
-
-# trying to switch to compleasm, since mamba install failed
-
-git clone https://github.com/huangnengCSU/compleasm.git
-cd compleasm
-
-# go into phylo venv and install compleasm locally
-
-cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo pip install ../compleasm/
-
-cd /Users/ken/Documents/wk/master-birder-paper && mamba run -n phylo conda install -c bioconda miniprot hmmer -y
-
-find /Users/ken/Documents/wk/master-birder-paper/phylo1/genomes -name "\*.fna" -type f
-
-cd /Users/ken/Documents/wk/master-birder-paper/phylo1 && mamba run -n phylo compleasm download sauropsida_odb12
-
-```
-
-```
-
-# use to sanity check: what species am i looking at?
-
-datasets summary genome accession GCF_000344595.1 | jq '.reports[0] | {organism_name: .organism.organism_name, common_name: .organism.common_name, accession}'
-
-```
-
-```
-
-## will add this to my set in meantime
-
-datasets download genome accession GCA_002880195.1 --filename genomes/owl_genome.zip
-
-```
-
-## Unstructured Notes
-
-
-```
 
 ## needed to correct this mistake
 
