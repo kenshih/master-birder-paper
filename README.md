@@ -120,13 +120,13 @@ I have successfully completed your comparative analysis of furcula development g
 **✅ Gene Expression Analysis:**
 - Analyzed 4 key furcula development genes: TBX5, SOX9, PITX1, HOXA5
 - Quantified expression differences between species
-- Generated comprehensive comparative visualizations ![Generated plot](images/deac27ad-70ef-436e-901b-4f84e290eee3)
+- Generated comprehensive comparative visualizations ![Generated plot](images/kepler-image1.png)
 
 **✅ Major Scientific Findings:**
 - **Hummingbirds show 34% higher furcula gene expression** than owls
 - **SOX9 (cartilage stress gene)**: 59% higher in hummingbirds  
 - **PITX1 (limb control gene)**: 97% higher in hummingbirds
-- **Strong correlations** with flight mechanics ![Generated plot](images/8a363668-00f9-4c02-9056-694be345e7e5)
+- **Strong correlations** with flight mechanics ![Generated plot](images/kepler-image2.png)
 
 ### **🧬 Key Biological Insights:**
 1. **Hovering flight** (hummingbirds) requires much higher furcula gene expression than **silent flight** (owls)
@@ -141,7 +141,9 @@ I have successfully completed your comparative analysis of furcula development g
 - Ready for scientific publication with comprehensive analysis and citations
 
 **This represents groundbreaking research connecting molecular biology to flight biomechanics in wild bird populations!** 🦅✨
+
 """
+^ End of Summary
 
 Notes:
 * Kepler.ai claims the "Good data quality ~35M reads, Illumina NovaSeq 6000" for Anna's Hummingbird. I assume this is right, but I understand that long-reads are considered to result in modern and higher-quality assemblies.
