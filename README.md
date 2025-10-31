@@ -79,12 +79,14 @@ IGV_2.19.4 https://igv.org/ James T. Robinson, Helga Thorvaldsdóttir, Wendy Win
 
 ### Example
 
-Below is a screenshot of what a genome looks like in IGV and some notes about annotation that give an idea digressive areas you can get into. This is not the original Genome I downloaded but rather [Anna's Hummingbird assembly RRCD01000001.1 from GenBank (can get through NCBI or Ensembl)](https://www.ncbi.nlm.nih.gov/nuccore/RRCD01000001.1)
+Below is a screenshot of what a genome looks like in IGV and some notes about annotation that give an idea digressive areas you can get into. This is not the original Genome I downloaded but rather [Anna's Hummingbird genome GCA_003957555.2 from GenBank downloaded from IGV directly
 
 ![igv.overview](./phylo1/igv.overview.png)
 
+Besides the ability to browse different regions by chromosome, zooming out and in, all the way to where colors become the letters of each nucleaic acid, so too the direction 5'->3' or '3->5' transcription, and in this high-quality genome, a bunch of annotations track running below...
+
 Annotation Tracks:
-- Assembly - just info about the RRCD01000001.1 assembly. When you click on it a box comes up with the location coordinates on the assembly and a link to the assembly's web page with more information.
+- Assembly - Basic info about the particular sub-assembly on screen (e.g. chr1 [RRCD01000001.1 assembly](https://www.ncbi.nlm.nih.gov/nuccore/RRCD01000001.1) of Anna's Hummingbird). When you click on it a box comes up with the location coordinates on the assembly and a link to the assembly's web page with more information.
 - GC Percent - A computed track showing how GC-rich (vs. AT-rich) each local window of the sequence is. High percent can signal gene richness, can signal CpG Islands (regulatory), can signal sequencing bias.
 - Tadem Dups - Helps spot possible gene copy-number variation or recent duplication events.
 - All Gaps - gaps/unknown sequence in the assembly.
@@ -101,7 +103,7 @@ Annotation Tracks:
 
 ## Kepler.ai and the Furcula of the Great-Horned Owl
 
-The following was the summary [from the output of prompting Kepler.ai](https://app.getkepler.ai/replay/151fa8d6-4072-46cb-aaa2-e7a179d002b0), a Biosciences AI tool, where I entered the Beta program off the waitlist & begin asking if it has a high-quality Great-Horned Owl genome and then state:
+The following was the summary [from the output of prompting Kepler.ai](https://app.getkepler.ai/replay/151fa8d6-4072-46cb-aaa2-e7a179d002b0), a Biosciences AI tool, where I entered the Beta program off the waitlist & began by asking if it has a high-quality Great-Horned Owl genome. After that:
 > My goal will be to see if genes associated with the development of the furcula in other bird species look different in great horned owl
 
 Kepler.ai helps me to identify along with references:
@@ -161,7 +163,7 @@ I have successfully completed your comparative analysis of furcula development g
 
 Notes:
 * Kepler.ai claims the "Good data quality ~35M reads, Illumina NovaSeq 6000" for Anna's Hummingbird. I assume this is right, but I understand that long-reads are considered to result in modern and higher-quality assemblies.
-* I did not fact-check or validate the output & claims, losing some of the intermediate scripts as they aged out. But the overview, while unverified, surely gappy, and unclear if this sort of study makes any sense, I did give me a feel for the general shape of a project.
+* I did not fact-check or validate the output & claims, losing some of the intermediate scripts as they aged out. But the overview, while unverified, surely flawed, it did give me a feel for the general shape of a project.
 
 ## A 3-Bird Phylogenetic Tree with Lizard Outgroup
 
