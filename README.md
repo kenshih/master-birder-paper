@@ -209,6 +209,10 @@ Using ChatGPT to render the contents of my generated file from `7.build.bird_phy
 
 ## AlphaFold
 
+Taking one of the first single-copy sequences from Anna's Hummingbird in the exercise directly above, I went to AlphaFold to see what kind of predicted shape it may have. 
+
+Here's a low-quality example, appearently, so looks like another area to explore with fun visuals!
+
 ```
 # from phylo1/busco_out/hummingbird/run_sauropsida_odb12/busco_sequences/single_copy_busco_sequences/31at8457.faa
 >31at8457_240206_0:000ae0|NC_044255.1:10559871-10561264|+ <unknown description>
@@ -216,3 +220,12 @@ SLYFALTNLFLRWNSENQIESCSCLLLDACLRCQAENKQEDCVVVWGECNHSFHNCCMSL
 WVKQNNRCPLCQQDWVVQRIGK*
 ```
 https://alphafold.ebi.ac.uk/search/sequence/SLYFALTNLFLRWNSENQIESCSCLLLDACLRCQAENKQEDCVVVWGECNHSFHNCCMSLWVKQNNRCPLCQQDWVVQRIGK
+
+Protein
+cullin-RING-type E3 NEDD8 transferase
+Gene
+Not available
+Source organism
+Bubo bubo (Eurasian eagle-owl)
+
+![Bubo bubo, cullin-RING-type E3 NEDD8 transferase, Sequence length 104](./images/bubo.png)
