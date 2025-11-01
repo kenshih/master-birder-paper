@@ -8,6 +8,8 @@ Exercises for [the MB 2025 paper](https://docs.google.com/document/d/1nJN-wq_8vs
 
 # AviList Investigation
 
+Rheindt, F.E., Donald, P.F., Donsker, D.B. et al. AviList: a unified global bird checklist. Biodivers Conserv (2025). https://doi.org/10.1007/s10531-025-03120-y
+
 An investigation of AviList data through the exercise of creating and loading it into a simplified Avibase schema described the Avibase paper:
 
 Lepage D, Vaidya G, Guralnick R (2014) Avibase – a database system for managing and organizing taxonomic concepts. ZooKeys 420: 117–135. doi: 10.3897/zookeys.420.7089
@@ -35,6 +37,12 @@ From there I was able to connect to it to run a number of queries just to explor
 
 # Ontology Investigation
 
+Allemang, D., Hendler, J., Gandon, F. Semantic Web for the Working Ontologist: Effective Modeling for Linked Data, RDFS, and OWL, 3rd Edition. ACM Books #33 (2020). ISBN: 978-1-4503-7614-3. Doi: 10.1145/3382097
+
+Sayers, Eric W et al. “Database resources of the National Center for Biotechnology Information in 2025.” Nucleic acids research vol. 53,D1 (2025): D20-D29. doi:10.1093/nar/gkae979. In particular, NCBI Taxonomy: https://bioportal.bioontology.org/ontologies/NCBITAXON
+
+Mungall CJ, Torniai C, Gkoutos GV, Lewis SE, Haendel MA. Uberon, an integrative multi-species anatomy ontology. Genome Biol. 2012 Jan 31;13(1):R5. doi: 10.1186/gb-2012-13-1-r5. PMID: 22293552; PMCID: PMC3334586.
+
 1.  `data/ontology/3.2.ncbi_neornithes_hier.owl` - NBCI Taxon of Neorthines queried out of large `ncbitaxon.owl` (not in repo) by using `sparql/neorthines_hier.sparql`. Experimented with Jena, Fuseki, ChatGPT, and Kepler AI. Final procedure:
     1. Downloaded NBCI Taxonomy from OBO Foundry
     2. Loaded it into local Fuseki Server tbd
@@ -48,8 +56,7 @@ From there I was able to connect to it to run a number of queries just to explor
 3.  [`sample.uberon.detail.sparql`](./sparql/sample.uberon.detail.sparql) is a junky query just exploding out a sample of data that exists for anatomical parts in Uberon to illustrate what areas of discovery/traversal/information could be explored between Taxa and Anatomoy using these 2 datasets.
 4.  create dataset that maps avibase-id to ncbi-taxon-id 1. `sparql/select.ncbi-taxon-id-2-scientific-name.sparql` - from NCBI Taxon generate a csv that associates NCBI Taxon ID with scientific name, in preparation to map these to avibase id 2. `notebooks/ontology_ncbitaxon.ipynb`
     `sparql/create.ncbi-taxon-id-2-avibase-id.ttl` - load csv into new table in our local Avibase database. 3. `generate_avibase_turtle.py` - to create turtle data to load into Fuseki.
-    `       python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl
-  ` 4. load `avibase-instances.ttl` into Fuseki 5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
+    `      python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl` 4. load `avibase-instances.ttl` into Fuseki 5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
 
     ````
     "aviLabel","taxon","aviId","avidb_link"
@@ -222,6 +229,8 @@ Using ChatGPT to render the contents of my generated file from `7.build.bird_phy
 ![chatgpt_bird_phylogeny](./phylo1/bird_phylogeny/prompted_from_contree.png)
 
 ## AlphaFold
+
+Jumper, J., Evans, R., Pritzel, A. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021). https://doi.org/10.1038/s41586-021-03819-2
 
 Taking one of the first single-copy sequences from Anna's Hummingbird in the exercise directly above, I went to AlphaFold to see what kind of predicted shape it may have. The search revealed 1992 Unreviewed (TrEMBL) sequences and 6 Reviewed (Swiss-Prot).
 
