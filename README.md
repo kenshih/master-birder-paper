@@ -228,4 +228,9 @@ Not available
 Source organism
 Bubo bubo (Eurasian eagle-owl)
 
-![Bubo bubo, cullin-RING-type E3 NEDD8 transferase, Sequence length 104](./images/bubo.png)
+![Bubo bubo, cullin-RING-type E3 NEDD8 transferase, Sequence length 104](./images/alpha.bubo.png)
+
+Match with high-quality reviewed sequence from UniProt/Swiss-Prot from Homo sapiens [RING-box protein 2 from](https://alphafold.ebi.ac.uk/entry/AF-Q9UBF6-F1)
+
+![AF-Q9UBF6-F1](./images/alpha.AF-Q9UBF6-F1.png)
+![Human alignment](./images/alpha.human.png)
