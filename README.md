@@ -1,6 +1,7 @@
 # master-birder-paper
 
 Exercises for [the MB 2025 paper](https://docs.google.com/document/d/1nJN-wq_8vsSNDPlJ4wbwbdFcOmzKnPIHCFVVgiVns18/edit?usp=sharing)
+
 - [AviList Investigation](#avilist-investigation)
 - [Ontology Investigation](#ontology-investigation)
 - [Genetic Investigation](#genetic-investigation)
@@ -47,9 +48,10 @@ From there I was able to connect to it to run a number of queries just to explor
 3.  [`sample.uberon.detail.sparql`](./sparql/sample.uberon.detail.sparql) is a junky query just exploding out a sample of data that exists for anatomical parts in Uberon to illustrate what areas of discovery/traversal/information could be explored between Taxa and Anatomoy using these 2 datasets.
 4.  create dataset that maps avibase-id to ncbi-taxon-id 1. `sparql/select.ncbi-taxon-id-2-scientific-name.sparql` - from NCBI Taxon generate a csv that associates NCBI Taxon ID with scientific name, in preparation to map these to avibase id 2. `notebooks/ontology_ncbitaxon.ipynb`
     `sparql/create.ncbi-taxon-id-2-avibase-id.ttl` - load csv into new table in our local Avibase database. 3. `generate_avibase_turtle.py` - to create turtle data to load into Fuseki.
-    `        python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl
-       ` 4. load `avibase-instances.ttl` into Fuseki 5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
-    ```
+    `       python generate_avibase_turtle.py data/avibase/master_birder.db sparql/avibase-instances.ttl
+  ` 4. load `avibase-instances.ttl` into Fuseki 5. `sparql/sample.avibase2ncbi.sparql` - query shows association example query: `data/ontology/sample.avibase2ncbi.csv`
+
+    ````
     "aviLabel","taxon","aviId","avidb_link"
     "Struthio molybdophanes","http://purl.obolibrary.org/obo/NCBITaxon_3150590","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-40329BB6","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-40329BB6"
     "Struthio camelus","http://purl.obolibrary.org/obo/NCBITaxon_8801","http://kenshih.com/master-birder/ontology#AvibaseID_avibase-2247CB05","https://avibase.bsc-eoc.org/species.jsp?avibaseid=avibase-2247CB05"
@@ -57,6 +59,7 @@ From there I was able to connect to it to run a number of queries just to explor
     ...
 
             ```
+    ````
 
 ## Ontology investigation: some takeaways
 
@@ -86,6 +89,7 @@ Below is a screenshot of what a genome looks like in IGV and some notes about an
 Besides the ability to browse different regions by chromosome, zooming out and in, all the way to where colors become the letters of each nucleaic acid, so too the direction 5'->3' or '3->5' transcription, and in this high-quality genome, a bunch of annotations track running below...
 
 Annotation Tracks:
+
 - Assembly - Basic info about the particular sub-assembly on screen (e.g. chr1 [RRCD01000001.1 assembly](https://www.ncbi.nlm.nih.gov/nuccore/RRCD01000001.1) of Anna's Hummingbird). When you click on it a box comes up with the location coordinates on the assembly and a link to the assembly's web page with more information.
 - GC Percent - A computed track showing how GC-rich (vs. AT-rich) each local window of the sequence is. High percent can signal gene richness, can signal CpG Islands (regulatory), can signal sequencing bias.
 - Tadem Dups - Helps spot possible gene copy-number variation or recent duplication events.
@@ -95,7 +99,7 @@ Annotation Tracks:
   Introns as connecting lines. Read direction is indicated by arrows.
 - CpG Islands - Indicates potential regulatory or promoter regions. CpG islands are regions of DNA where
   Cytosine (C) and Guanine (G) nucleotides occur together more frequently than expected by chance (the “p” referes to the phosphate between them).
-- Unmasked CpG - Often repeated sequences are "masked" out to reduce noise, but CpG islands identified in the
+  - Unmasked CpG - Often repeated sequences are "masked" out to reduce noise, but CpG islands identified in the
   unmasked version of the genome.
 - Simple Repeats - shows locations of "short tandem repeat" sequences (e.g. “ATATATAT”). These can "destabilize" the recording of the sequence itself in some cases, while others provide signal of genetic disorders.
 - WM + SDust - Shows low-complexity or masked regions from NCBI tool WindowMasker and Segmentation Dust (an algorithm)
@@ -104,11 +108,14 @@ Annotation Tracks:
 ## Kepler.ai and the Furcula of the Great-Horned Owl
 
 The following was the summary [from the output of prompting Kepler.ai](https://app.getkepler.ai/replay/151fa8d6-4072-46cb-aaa2-e7a179d002b0), a Biosciences AI tool, where I entered the Beta program off the waitlist & began by asking if it has a high-quality Great-Horned Owl genome. After that:
+
 > My goal will be to see if genes associated with the development of the furcula in other bird species look different in great horned owl
 
 Kepler.ai helps me to identify along with references:
+
 > Key Genes Associated with Furcula Development<br>
 > Based on the literature, several important genes are involved in furcula/clavicle development [1]<br>
+>
 > - Tbx5 - Major regulator of sternum and clavicle development [2]<br>
 > - Sox9 - Important for cartilage and bone formation<br>
 > - Hox genes (particularly Hox4-6) - Positional identity genes<br>
@@ -122,35 +129,41 @@ It presents some research strategies and I decide on a "Transcriptome Approach",
 Here's a copy of the summary:
 
 """
+
 ### 🎉 COMPLETE SUCCESS! 🎉
 
-I have successfully completed your comparative analysis of furcula development genes between Great Horned Owls and Anna's Hummingbirds! 
+I have successfully completed your comparative analysis of furcula development genes between Great Horned Owls and Anna's Hummingbirds!
 
 #### **🔬 What We Accomplished:**
 
 **✅ Data Collection & Processing:**
+
 - Downloaded and analyzed RNA-seq data from both species (84.9M owl reads, 35M hummingbird reads)
 - Validated excellent data quality for both datasets
 - Successfully processed using identical analytical pipelines
 
 **✅ Gene Expression Analysis:**
+
 - Analyzed 4 key furcula development genes: TBX5, SOX9, PITX1, HOXA5
 - Quantified expression differences between species
 - Generated comprehensive comparative visualizations ![Generated plot](images/kepler-image1.png)
 
 **✅ Major Scientific Findings:**
+
 - **Hummingbirds show 34% higher furcula gene expression** than owls
-- **SOX9 (cartilage stress gene)**: 59% higher in hummingbirds  
+- **SOX9 (cartilage stress gene)**: 59% higher in hummingbirds
 - **PITX1 (limb control gene)**: 97% higher in hummingbirds
 - **Strong correlations** with flight mechanics ![Generated plot](images/kepler-image2.png)
 
 ### **🧬 Key Biological Insights:**
+
 1. **Hovering flight** (hummingbirds) requires much higher furcula gene expression than **silent flight** (owls)
 2. **SOX9 upregulation** reflects intense bone/cartilage stress from 50-80 Hz wing beats
 3. **PITX1 enhancement** supports precision limb control for hovering maneuvers
 4. Gene expression patterns **directly correlate** with biomechanical flight demands
 
 #### **📊 Research Impact:**
+
 - **FIRST** molecular comparison of furcula genes between flight types
 - Links gene expression to flight mechanics with literature support
 - Provides framework for future comparative flight genomics
@@ -162,8 +175,9 @@ I have successfully completed your comparative analysis of furcula development g
 ^ End of Summary. Wow, pretty high-falutin' claims, Kep.
 
 Notes:
-* Kepler.ai claims the "Good data quality ~35M reads, Illumina NovaSeq 6000" for Anna's Hummingbird. I assume this is right, but I understand that long-reads are considered to result in modern and higher-quality assemblies.
-* I did not fact-check or validate the output & claims, losing some of the intermediate scripts as they aged out. But the overview, while unverified, surely flawed, it did give me a feel for the general shape of a project.
+
+- Kepler.ai claims the "Good data quality ~35M reads, Illumina NovaSeq 6000" for Anna's Hummingbird. I assume this is right, but I understand that long-reads are considered to result in modern and higher-quality assemblies.
+- I did not fact-check or validate the output & claims, losing some of the intermediate scripts as they aged out. But the overview, while unverified, surely flawed, it did give me a feel for the general shape of a project.
 
 ## A 3-Bird Phylogenetic Tree with Lizard Outgroup
 
@@ -209,9 +223,9 @@ Using ChatGPT to render the contents of my generated file from `7.build.bird_phy
 
 ## AlphaFold
 
-Taking one of the first single-copy sequences from Anna's Hummingbird in the exercise directly above, I went to AlphaFold to see what kind of predicted shape it may have. 
+Taking one of the first single-copy sequences from Anna's Hummingbird in the exercise directly above, I went to AlphaFold to see what kind of predicted shape it may have. The search revealed 1992 Unreviewed (TrEMBL) sequences and 6 Reviewed (Swiss-Prot).
 
-Here's a low-quality example, appearently, so looks like another area to explore with fun visuals!
+Here's the first hit (Unreviewed) and with low predicted quality:
 
 ```
 # from phylo1/busco_out/hummingbird/run_sauropsida_odb12/busco_sequences/single_copy_busco_sequences/31at8457.faa
@@ -219,18 +233,17 @@ Here's a low-quality example, appearently, so looks like another area to explore
 SLYFALTNLFLRWNSENQIESCSCLLLDACLRCQAENKQEDCVVVWGECNHSFHNCCMSL
 WVKQNNRCPLCQQDWVVQRIGK*
 ```
+
 https://alphafold.ebi.ac.uk/search/sequence/SLYFALTNLFLRWNSENQIESCSCLLLDACLRCQAENKQEDCVVVWGECNHSFHNCCMSLWVKQNNRCPLCQQDWVVQRIGK
 
-Protein
-cullin-RING-type E3 NEDD8 transferase
-Gene
-Not available
-Source organism
-Bubo bubo (Eurasian eagle-owl)
+Protein, cullin-RING-type E3 NEDD8 transferase, from Bubo bubo (Eurasian eagle-owl)
 
 ![Bubo bubo, cullin-RING-type E3 NEDD8 transferase, Sequence length 104](./images/alpha.bubo.png)
+![Alpha Bubo alignment](./images/alpha.bubo.alignment.png)
 
 Match with high-quality reviewed sequence from UniProt/Swiss-Prot from Homo sapiens [RING-box protein 2 from](https://alphafold.ebi.ac.uk/entry/AF-Q9UBF6-F1)
 
 ![AF-Q9UBF6-F1](./images/alpha.AF-Q9UBF6-F1.png)
 ![Human alignment](./images/alpha.human.png)
+
+Both sequences seem to represent some sort catalytic activity and share the RING structure.
