@@ -1,6 +1,6 @@
 # master-birder-paper
 
-Exercises for [the MB 2025 paper](https://docs.google.com/document/d/1nJN-wq_8vsSNDPlJ4wbwbdFcOmzKnPIHCFVVgiVns18/edit?usp=sharing)
+This repo is just a jumble of notes having to do with exercises I did in relation to [a 2025 paper for the Master Birder program at Cal Academy](https://docs.google.com/document/d/1nJN-wq_8vsSNDPlJ4wbwbdFcOmzKnPIHCFVVgiVns18/edit?usp=sharing)
 
 - [AviList Investigation](#avilist-investigation)
 - [Ontology Investigation](#ontology-investigation)
