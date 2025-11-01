@@ -16,6 +16,74 @@ Lepage D, Vaidya G, Guralnick R (2014) Avibase – a database system for managin
 
 The goal is just to get a feel of the RDBMS representation and manipulation. While it would be most interesting to get a feel for how related but unequal circumscriptions relate (e.g. sensu lato vs. sensu stricto characterizations across lists in time); or, to simulate the 7-step process using the fractional weight algorithm to include and validate a checklist's incorporation into the db. In the interest of time, this investigation really just re-creates a baseline of data to play around with.
 
+```mermaid
+erDiagram
+    AvibaseID }|..|{ OriginalConcepts : is-a
+    AvibaseID ||--o{ ParentChildRelationships : parent
+    AvibaseID ||--o{ ParentChildRelationships : child
+    AvibaseID ||--o{ OtherRelationships : has
+    AvibaseID ||--o{ OtherRelationships : toRelation
+    TaxanomicConcepts ||--|{ OriginalConcepts : are
+    NameConcepts ||--o{ TaxanomicConcepts : are
+    AvibaseID ||--o{ Synonyms : has
+    AvibaseID ||--o{ LifeHistory : has
+    AvibaseID ||--o{ GeoGraphicRange : has
+    AvibaseID {
+        Avibase_ID 🔑 PK
+        Concept_label str
+    }
+    ParentChildRelationships {
+        Avibase_ID 🔑 FK
+        Version 🔑
+        Parent_ID id FK
+        FractWeight float
+    }
+    OriginalConcepts {
+        Avibase_ID 🔑 FK
+        Concept_ID id FK
+    }
+    TaxanomicConcepts {
+        Concept_ID 🔑 PK
+        Avibase_ID id FK
+        Taxon_Name_ID id FK
+        Authority str
+        Scientific_Name str
+        Common_Name str
+        Higher_Classification str
+
+    }
+    NameConcepts {
+        Taxon_Name_ID 🔑 PK
+        Protonym str
+        Authors arr
+        Year int
+        Publication_Source str
+        TSN id
+    }
+    LifeHistory {
+        Avibase_ID cid FK
+        Trait cid FK
+        Reference cid FK
+        Value str
+    }
+    GeoGraphicRange {
+        Avibase_ID id FK
+        Region id FK
+        Status enum
+    }
+    OtherRelationships {
+        Avibase_ID id FK
+        Related_ID id FK
+        Relationship_Type enum
+    }
+    Synonyms {
+        Avibase_ID id FK
+        Language id FK
+        Synonym id FK
+        Reference str
+    }
+```
+
 This simple exercise re-creates the database schema described in the Avibase paper, then takes the public list released by AviList (AviList 2025), transforms it and loads it into that database.
 
 From there I was able to connect to it to run a number of queries just to explore what was there to exercise the mechanics involved in manipulating that data for query or a data application. (note data has been moved from data/ to data/avibase, so paths may need to be updated in notebooks)
@@ -72,7 +140,7 @@ Mungall CJ, Torniai C, Gkoutos GV, Lewis SE, Haendel MA. Uberon, an integrative 
 
 - While, my first exercise of selecting the Avian subset from NCBI Taxonomy was a good exercise and an essential step in my in understanding the dataset, SPARQL, and Semantic Web workflow, in a real-world scenario this is an artificial step. Instead, I might start with my own dataset, map it to NCBI Taxonomy IDs, in order to unlock Uberon, GO, and other OBO Foundary biological datasets. For example, if my goal is to enrich AviList utility, I can simply map AviList IDs to NCBITaxon IDs. In hindsight, this is the exercise I could have run. So... I ran it in step #4.
 - Uberon's finest-grain mapping between Avian taxa is at the Order-level, and here it has a total of only 5 mappings across only 2 orders e.g. "Strigiformes","feathered ear tuft" & "Passeriformes","area X of basal ganglion". Most of the rows simply correspond to class "Aves", with no representation of skeletal structures, such as the avian keel, coracoid bone, or furcula. After reading the Uberon paper, this makes sense, Uberon is not meant to implement scAO (species anatomy ontologies), but rather as an attempt at cross-taxa language describing anatomy independent of specific embodiment as much as possible. It has structures that apply across all vertebres and more detailed species ontologies can use it as a backbone to unlock the power of other OBO ontologies.
-   - An example, of specifics not meant to be defined in Uberon: Suliformes do not have external nares, absence of any unique beak structure representation for Suliformes suggests that conscription of Suliform phenotype needs to come from somewhere else. Same story with the few birds that don't have a furcula & the albatross shoulder's lock-hinge. 1) intent of Uberon is to capture components-only, not anatomical conscriptions for taxa; that should be provided per-taxa elsewhere 2) There may be other gaps for avian life. Gaps can be filled simply by anyone providing for an extension set of data for missing Avian taxa, since Semantic Web is AAA (anyone can say anything about anything).
+  - An example, of specifics not meant to be defined in Uberon: Suliformes do not have external nares, absence of any unique beak structure representation for Suliformes suggests that conscription of Suliform phenotype needs to come from somewhere else. Same story with the few birds that don't have a furcula & the albatross shoulder's lock-hinge. 1) intent of Uberon is to capture components-only, not anatomical conscriptions for taxa; that should be provided per-taxa elsewhere 2) There may be other gaps for avian life. Gaps can be filled simply by anyone providing for an extension set of data for missing Avian taxa, since Semantic Web is AAA (anyone can say anything about anything).
 - The Uberon anatomy is extremely detailed. e.g. `Aves.telencephalic song nucleus HVC` `has part`s: "ectoderm-derived structure", "cellular anatomical entity", "atomic nucleus", "ectoderm-derived structure", "monoatomic monocation", "s-block molecular entity", etc totalling 54 `has_part` entities. In addition to `has_part`, 15 other relations exist, e.g. "causal agent in process", "developmentally preceded by", "mereotopologically related to", "has developmental contribution from", etc.
 - Didn't have time to play around with OWL+SPARQL's reasoning capabilities.
 
